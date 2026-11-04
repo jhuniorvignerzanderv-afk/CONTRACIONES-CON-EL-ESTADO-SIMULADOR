@@ -1,0 +1,480 @@
+window.OECE_MODULES = [
+  {
+    id: "M1",
+    code: "MÓDULO 01",
+    title: "Marco General Ley N° 32069, Actores, Principios y Estandarización",
+    subtitle: "Fundamentos del nuevo régimen de contrataciones públicas, rol del OECE y Valor por Dinero",
+    icon: "⚖️",
+    color: "#2563eb",
+    competencia: "Competencia I: Gestión General y Actuaciones Preparatorias",
+    summary: "Comprende el cambio de paradigma de la Ley N° 32069 (Ley General de Contrataciones Públicas) y su Reglamento (D.S. N° 009-2025-EF): enfoque en gestión por resultados, el principio rector de Valor por Dinero, los nuevos actores institucionales (OECE, DGA, Perú Compras, DEC, Oficiales de Compras) y las herramientas de estandarización (Homologación y Fichas Técnicas).",
+    keyPoints: [
+      {
+        title: "Principio de Valor por Dinero (Pilar de la Ley N° 32069)",
+        body: "Ya no se busca simplemente comprar 'lo más barato', sino obtener la <strong>mejor relación entre calidad, precio, oportunidad y resultados esperados</strong> considerando todo el <strong>ciclo de vida del activo</strong> (incluyendo operación, mantenimiento y disposición final).",
+        highlight: "Fija de Examen: En Valor por Dinero se evalúa Calidad + Precio + Resultados esperados (nunca 'solo el precio más bajo sin evaluación técnica')."
+      },
+      {
+        title: "Actores del Sistema Nacional de Abastecimiento en Contrataciones",
+        body: "<ul><li><strong>DGA - MEF:</strong> Ente rector del Sistema Nacional de Abastecimiento; dicta normas y directivas generales (como la Directiva del PAC).</li><li><strong>OECE (Organismo Especializado para las Contrataciones Públicas Eficientes):</strong> Antes OSCE. Supervisa los procedimientos de selección según su <strong>Plan Anual</strong> y ante <strong>alertas ciudadanas</strong>, administra el PLADICOP/RNP y certifica a los compradores públicos.</li><li><strong>Perú Compras:</strong> Aprueba y gestiona los <strong>Catálogos Electrónicos de Acuerdos Marco</strong>, promueve la Homologación y ejecuta Compras Corporativas y Centralizadas.</li><li><strong>Tribunal de Contrataciones Públicas (TCP):</strong> Órgano resolutivo que resuelve apelaciones (según cuantía) y ejerce la potestad sancionadora en Fase Sancionadora.</li></ul>",
+        highlight: "Fija de Examen: Para ser designado como <strong>Oficial de Compras</strong> (comprador público de la DEC), es obligatorio contar con <strong>Certificación nivel Intermedio o Avanzado del OECE</strong>."
+      },
+      {
+        title: "Roles dentro de la Entidad Contratante",
+        body: "<ul><li><strong>Área Usuaria:</strong> Formula el requerimiento (alcance, condiciones de ejecución, entregables), participa en la aprobación del expediente, verifica el cumplimiento y <strong>emite la conformidad</strong> de la prestación.</li><li><strong>Dependencia Encargada de Contrataciones (DEC):</strong> Antes OEC/Logística. Realiza la segmentación, verifica si hay stock en almacén, revisa y propone mejoras al requerimiento (pidiendo no objeción al área usuaria), realiza la interacción con el mercado, elabora la Estrategia de Contratación y monitorea la ejecución de todos los contratos.</li></ul>",
+        highlight: "Fija de Examen: Si la DEC modifica técnicamente un requerimiento deficiente, debe pedir la <strong>no objeción al Área Usuaria</strong>, quien puede objetar solo si se afecta la satisfacción de su necesidad."
+      },
+      {
+        title: "Estandarización: Homologación, Fichas Técnicas y Consorcios",
+        body: "<ul><li><strong>Homologación (Homogenización):</strong> Metodología por la cual los ministerios uniformizan características de bienes/servicios. Si existe una <strong>Ficha de Homologación vigente</strong> o el bien está en el <strong>Catálogo Electrónico</strong>, el requerimiento debe ajustarse <strong>obligatoriamente</strong> a ella.</li><li><strong>Ficha Técnica:</strong> Documento estandarizado (aprobado por Perú Compras) que especifica la descripción y características de un bien o servicio común para Subasta Inversa Electrónica.</li><li><strong>Consorcio:</strong> Asociación de dos o más personas o empresas que combinan recursos y capacidades para participar conjuntamente sin crear una nueva persona jurídica.</li></ul>",
+        highlight: "Fija de Examen: Es nulo o inválido convocar una licitación abierta para bienes que ya se encuentran en un Catálogo Electrónico vigente o desatender una Ficha de Homologación."
+      }
+    ]
+  },
+  {
+    id: "M2",
+    code: "MÓDULO 02",
+    title: "PLADICOP, RNP, CMN y Plan Anual de Contrataciones (PAC)",
+    subtitle: "Plataforma Digital integrada, transparencia en tiempo real y Directiva N° 0002-2025-EF/54.01",
+    icon: "💻",
+    color: "#0891b2",
+    competencia: "Competencia I: Planificación, Programación y Sistemas Digitales",
+    summary: "Estudia el funcionamiento de la PLADICOP (que integra al SEACE y al RNP), las reglas de publicidad obligatoria en las tres fases de la contratación, la vinculación con el Cuadro Multianual de Necesidades (CMN) y los indicadores de evaluación del PAC según la Directiva N° 0002-2025-EF/54.01.",
+    keyPoints: [
+      {
+        title: "PLADICOP: La Plataforma Digital para las Contrataciones Públicas",
+        body: "<ul><li><strong>Integración Total:</strong> El PLADICOP integró al <strong>SEACE y al Registro Nacional de Proveedores (RNP)</strong> en una sola plataforma digital.</li><li><strong>Alcance:</strong> Gestiona toda la información de bienes, servicios y obras, desde la planificación y actuaciones preparatorias hasta la selección y la ejecución contractual.</li><li><strong>Acceso y Transparencia:</strong> Es 100% digital y de acceso público para <strong>cualquier ciudadano, proveedor o entidad</strong> (incluyendo consulta de ejercicios anteriores y de otras entidades).</li><li><strong>Responsabilidad y Consecuencias:</strong> La <strong>entidad pública contratante</strong> es responsable de registrar y validar la información antes de iniciar el proceso. Omitir el registro de actuaciones preparatorias o de ejecución constituye infracción, afecta la trazabilidad y puede invalidar/suspender el proceso y generar sanciones.</li></ul>",
+        highlight: "Fija de Examen: Todas las notificaciones durante la selección y la ejecución contractual se realizan válidamente mediante su registro en el PLADICOP."
+      },
+      {
+        title: "Registro Nacional de Proveedores (RNP) y Listas en PLADICOP",
+        body: "<ul><li>Para participar y contratar con el Estado, todo proveedor debe contar con <strong>inscripción vigente en el RNP</strong>.</li><li>En procedimientos competitivos en PLADICOP con <strong>Lista Abierta</strong>, cualquier proveedor con RNP vigente puede registrarse como participante, momento en el cual <strong>se adhiere al procedimiento de selección</strong>.</li><li>Para acreditar activos propios o solvencia en inscripciones/reinscripciones según corresponda, se presentan <strong>Estados Financieros Auditados o Situacionales</strong>.</li></ul>",
+        highlight: "Fija de Examen: El proveedor se adhiere al procedimiento en el momento de su <strong>registro como participante</strong> en el PLADICOP."
+      },
+      {
+        title: "Plan Anual de Contrataciones (PAC) y Cuadro Multianual de Necesidades (CMN)",
+        body: "<ul><li><strong>Requisito Previo Obligatorio:</strong> El PAC debe ser aprobado y publicado en el PLADICOP antes de ejecutar las contrataciones. <strong>No se puede convocar un procedimiento y registrarlo después en el PAC</strong>.</li><li><strong>Falta de inclusión en el PAC del CMN:</strong> Si la DEC recibe un requerimiento que no está en el PAC del CMN, debe esperar a que se <strong>modifique el CMN y luego segmentarlo</strong>.</li><li><strong>Exclusiones:</strong> Si la Unidad de Logística/DEC detecta que contrataciones del PAC no se ejecutarán, <strong>es obligatorio registrar su exclusión</strong> porque el PAC debe reflejar las contrataciones efectivamente previstas.</li></ul>",
+        highlight: "Fija de Examen: Convocar primero y registrar después en el PAC vulnera el Reglamento."
+      },
+      {
+        title: "Indicadores del PAC (Directiva N° 0002-2025-EF/54.01)",
+        body: "<ul><li><strong>Supuesto Central:</strong> Que las entidades hayan realizado una buena programación con base en su <strong>Presupuesto Institucional de Apertura (PIA)</strong>.</li><li><strong>Criterio de Procedimiento Convocado:</strong> Se contabiliza <strong>únicamente la primera convocatoria del año fiscal</strong>, sin importar si luego fue declarado nulo o desierto.</li><li><strong>Criterio en Catálogo Electrónico de Acuerdo Marco:</strong> Se considera <em>convocada</em> con la <strong>emisión de una solicitud de cotización</strong>, y se considera <em>contratada</em> cuando cuenta con <strong>orden de compra</strong>.</li><li><strong>Necesidad que deja de persistir:</strong> Si una necesidad programada desaparece en el año, para el indicador se considera como <strong>procedimiento no convocado</strong>.</li><li><strong>Contrataciones No Programadas e Indicador de Eficacia Total:</strong> El indicador de eficacia total incluye tanto las contrataciones programadas como las <strong>no programadas convocadas y contratadas</strong> (incorporadas automáticamente por el SEACE/PLADICOP en el PAC).</li></ul>",
+        highlight: "Fija de Examen: En Acuerdo Marco: Convocada = Solicitud de cotización | Contratada = Orden de compra."
+      }
+    ]
+  },
+  {
+    id: "M3",
+    code: "MÓDULO 03",
+    title: "Actuaciones Preparatorias: Segmentación, Requerimiento y Estrategia",
+    subtitle: "Del anuncio de contratación futura e interacción con el mercado al expediente de contratación",
+    icon: "📋",
+    color: "#059669",
+    competencia: "Competencia I: Actuaciones Preparatorias",
+    summary: "Aborda paso a paso la primera fase de la contratación pública: cómo se segmentan las necesidades del CMN, cómo se formula y valida el requerimiento, la matriz de riesgos obligatoria, la consulta al mercado y la elaboración de la Estrategia de Contratación.",
+    keyPoints: [
+      {
+        title: "1. Segmentación y Anuncio de Contratación Futura",
+        body: "<ul><li><strong>Segmentación de Contrataciones:</strong> Realizada por la <strong>DEC</strong> clasificando las contrataciones según el PAC del CMN. Su finalidad es <strong>determinar la estrategia de contratación, definir requisitos específicos y optimizar recursos</strong>. Tras la segmentación, la DEC elabora el cronograma para que las áreas usuarias presenten sus requerimientos.</li><li><strong>Anuncio de Contratación Futura:</strong> Publicado por la entidad contratante a través de la <strong>DEC en la PLADICOP</strong> antes de las actuaciones preparatorias o de la convocatoria para dar a conocer al mercado la intención de contratar y sus condiciones preliminares (no obliga a contratar ni selecciona aún al proveedor).</li></ul>",
+        highlight: "Fija de Examen: La DEC elabora el cronograma de presentación de requerimientos <strong>después de la segmentación</strong>."
+      },
+      {
+        title: "2. El Requerimiento, Riesgos, Marcas y Prestaciones Accesorias",
+        body: "<ul><li><strong>Contenido Mínimo del Requerimiento:</strong> Formulado por el Área Usuaria; debe incluir el <strong>alcance de la contratación, plazo, entregables y condiciones de ejecución</strong> (sin condiciones desproporcionadas que limiten la concurrencia). En <em>Diálogo Competitivo</em>, el requerimiento preliminar contiene la <strong>descripción de la necesidad y la finalidad pública</strong>.</li><li><strong>Objeto en prestaciones diversas:</strong> Se determina por la <strong>prestación que represente el mayor costo</strong>, sin desvirtuar su naturaleza.</li><li><strong>Gestión de Riesgos:</strong> Durante la elaboración del requerimiento se debe iniciar obligatoriamente la <strong>identificación y evaluación de riesgos</strong> (con el fin de prever obstáculos y establecer medidas preventivas/mitigación). En <strong>obras</strong>, elaborar la <strong>Matriz de Riesgos es siempre obligatorio</strong> (incluso si parecen poco probables, como heladas en zonas altoandinas).</li><li><strong>Prohibición de Marcas:</strong> No se permite hacer referencia a marcas, patentes o procedencias específicas, <strong>salvo que exista un proceso de compatibilización (estandarización) previamente aprobado</strong>.</li><li><strong>Normas Técnicas Voluntarias y Prestaciones Accesorias:</strong> Las normas técnicas voluntarias pueden incluirse solo si <strong>se sustentan en la estrategia de contratación</strong>. Las prestaciones accesorias (mantenimiento/operación) buscan atender el <strong>ciclo de vida del activo</strong>.</li></ul>",
+        highlight: "Fija de Examen: Si un requerimiento puede cubrirse con bienes almacenados, la DEC primero debe <strong>verificarlo con la oficina de almacén o patrimonio</strong>."
+      },
+      {
+        title: "3. Interacción con el Mercado (Consulta y Difusión del Requerimiento)",
+        body: "<ul><li><strong>Obligatoriedad y Propósito:</strong> La interacción con el mercado permite conocer tendencias, capacidades del sector, medir la existencia de oferta/competencia y <strong>reducir el riesgo de frustración (desierto) del proceso</strong>. No puede omitirse en contrataciones relevantes alegando especificidad.</li><li><strong>Difusión del Requerimiento y Plazos en PLADICOP:</strong> Garantiza el acceso equitativo a la información. El plazo mínimo para que los proveedores formulen consultas y/o comentarios técnicos es de <strong>5 días hábiles</strong>, y la entidad tiene <strong>3 días hábiles</strong> para absolverlos. La <strong>DEC</strong> publica las actas de las reuniones en el PLADICOP.</li></ul>",
+        highlight: "Fija de Examen: Plazos de Difusión del Requerimiento en PLADICOP: <strong>5 días hábiles</strong> para formular consultas técnicas y <strong>3 días hábiles</strong> para absolverlas."
+      },
+      {
+        title: "4. La Estrategia de Contratación y el Expediente de Contratación",
+        body: "<ul><li><strong>Estrategia de Contratación:</strong> Documento fundamental elaborado por la DEC que sustenta las decisiones clave del proceso y forma parte obligatoria del expediente. Contiene como mínimo: <strong>tipo de procedimiento de selección, perfil/tipo de evaluador, sistema de entrega, modalidad de pago, lógica de segmentación, análisis de mercado, actualización de cuantía, riesgos inherentes y posibilidad de usar modalidades eficientes</strong>.</li><li><strong>Expediente de Contratación:</strong> Debe estar aprobado (con participación del área usuaria y conteniendo el requerimiento aprobado, estrategia de contratación y bases) <strong>antes de convocar cualquier procedimiento</strong>. Llevar a cabo un proceso sin expediente aprobado <strong>es nulo</strong>. Debe conservarse por al menos <strong>5 años</strong> tras la recepción o liquidación.</li></ul>",
+        highlight: "Fija de Examen: Si no se actualiza la cuantía en la estrategia de contratación, <strong>puede afectarse la selección del procedimiento adecuado</strong>."
+      }
+    ]
+  },
+  {
+    id: "M4",
+    code: "MÓDULO 04",
+    title: "Modalidades de Pago, Sistemas de Entrega y Fraccionamiento",
+    subtitle: "Suma Alzada, Precios Unitarios, Tarifas, Costo Reembolsable, Llave en Mano y Consolidación",
+    icon: "💳",
+    color: "#7c3aed",
+    competencia: "Competencia I y II: Estructuración Económica y Sistemas de Entrega",
+    summary: "Domina la elección correcta de la modalidad de pago y el sistema de entrega según la naturaleza de la prestación, así como las reglas de agrupamiento/consolidación para no incurrir en fraccionamiento ilegal.",
+    keyPoints: [
+      {
+        title: "Modalidades de Pago en el Reglamento D.S. N° 009-2025-EF",
+        body: "<ul><li><strong>Suma Alzada (Monto Fijo Integral):</strong> Se aplica cuando las <strong>cantidades, magnitudes y calidades de la prestación están totalmente definidas</strong> en el requerimiento (ej. adquisición de bienes homogéneos).</li><li><strong>Precios Unitarios:</strong> Se aplica cuando la naturaleza de la prestación no permite conocer con exactitud o precisión las cantidades o magnitudes requeridas.</li><li><strong>Tarifas:</strong> El postor propone tarifas basadas en el <strong>tiempo estimado de ejecución</strong>. Las tarifas incluyen <strong>costos directos, cargas sociales, tributos y utilidades</strong>.</li><li><strong>Costo Reembolsable:</strong> La entidad contratante <strong>reembolsa los costos reales</strong> en los que incurre el contratista durante la ejecución contractual, más el margen/honorario pactado.</li><li><strong>En base a Porcentajes:</strong> Se aplica cuando el pago se realiza en función de un porcentaje de <strong>recuperación o cobranzas</strong>.</li><li><strong>Pago Mixto y Pago por Disponibilidad:</strong> El <em>Pago Mixto</em> es adecuado cuando los <strong>costos de instalación superan el 10% del monto contractual</strong>. El <em>Pago por Disponibilidad</em> se aplica en contratos de contingencia para bienes/servicios indispensables en emergencias.</li></ul>",
+        highlight: "Fija de Examen: En un contrato de servicios continuados (ej. por 9 meses), el pago NO puede hacerse todo al final sin hitos; debe vincularse al <strong>cumplimiento progresivo de hitos</strong>."
+      },
+      {
+        title: "Sistemas de Entrega y Suministro",
+        body: "<ul><li><strong>Suministro:</strong> Entrega periódica de bienes a lo largo de un periodo mediante entregas periódicas programadas.</li><li><strong>Llave en Mano:</strong> Aplica exclusivamente a la adquisición de bienes que conllevan una <strong>instalación compleja o proyectos integrales</strong> hasta su puesta en servicio. <em>No es adecuado usar 'llave en mano' para comprar mobiliario escolar simple</em>.</li><li><strong>Diseño y Construcción (Obras):</strong> El contratista elabora el expediente técnico (diseño) y ejecuta la obra. El requerimiento debe incluir <strong>propuestas de incentivos y el plan de licencias</strong>. Es el sistema priorizado para rehabilitación de infraestructura post-emergencia (nivel 4 o 5), salvo que la estrategia sustente otro más eficiente.</li></ul>",
+        highlight: "Fija de Examen: Comprar mobiliario escolar simple bajo 'Llave en mano' es un error técnico porque ese sistema exige instalación compleja o proyecto integral."
+      },
+      {
+        title: "Agrupamiento de Prestaciones vs. Fraccionamiento Ilegal",
+        body: "<ul><li><strong>Agrupamiento / Consolidación:</strong> Mecanismo que obliga a la entidad a agrupar o consolidar bienes, servicios u obras similares cuando existe <strong>identidad técnica y oportunidad</strong> (ej. 12 compras mensuales de kits escolares o 12 mantenimientos de colegios en una misma región).</li><li><strong>¿Cuándo existe Fraccionamiento Ilegal?</strong> Cuando se divide o desagrega artificialmente una contratación (ej. varias compras menores con el mismo objeto en el ejercicio fiscal) para <strong>evadir el tipo de procedimiento de selección más riguroso</strong> que correspondía por la cuantía total.</li><li><strong>Excepciones que NO son fraccionamiento:</strong> Contratar por Catálogo Electrónico de Acuerdo Marco, una contratación adicional por evento imprevisible, o realizar compras parciales de stock para atención inmediata de una emergencia.</li></ul>",
+        highlight: "Fija de Examen: Antes de realizar una contratación menor (ej. S/ 38,000 en limpieza o fumigación), la DEC debe verificar que <strong>no exista una contratación similar previa dentro del mismo ejercicio fiscal</strong>."
+      }
+    ]
+  },
+  {
+    id: "M5",
+    code: "MÓDULO 05",
+    title: "Fase de Selección: Procedimientos, Topes, Evaluación y Comités",
+    subtitle: "Licitación Pública, Concurso Público, Modalidades Abreviadas, Subasta Inversa y Evaluadores",
+    icon: "🏆",
+    color: "#d97706",
+    competencia: "Competencia II: Fase de Selección",
+    summary: "Revisa los procedimientos competitivos y no competitivos, los topes monetarios (S/ 42,800 y S/ 485,000), la conformación y validación de evaluadores/comités, los factores de evaluación y las causales de declaratoria de desierto o nulidad.",
+    keyPoints: [
+      {
+        title: "Procedimientos de Selección Competitivos y Topes Clave",
+        body: "<ul><li><strong>Licitación Pública (LP):</strong> Para contratación de <strong>Bienes</strong> cuyo monto supera los <strong>S/ 485,000</strong> y para la ejecución de <strong>Obras de gran envergadura</strong> (en obras se exige evaluación de <em>solvencia económica</em>).</li><li><strong>Licitación Pública Abreviada:</strong> Cuando el monto de la contratación de bienes se encuentra <strong>entre S/ 42,800 y S/ 485,000</strong> (el criterio que diferencia LP de LP Abreviada es el <em>monto de la contratación</em>).</li><li><strong>Concurso Público (CP):</strong> Para contratación de <strong>Servicios</strong> y <strong>Consultorías de Obras</strong> por montos mayores a <strong>S/ 485,000</strong>, así como cuando se busca <strong>fomentar la innovación</strong>. <em>Nota: Consultoría de obra incluye fichas técnicas de inversiones, expediente técnico y supervisión de obra, pero NO la construcción directa de la obra.</em></li><li><strong>Subasta Inversa Electrónica (SIE):</strong> Los postores compiten en <strong>tiempo real con ofertas económicas</strong> para bienes/servicios con Ficha Técnica y <strong>gana quien ofrezca el menor precio</strong>. En dispositivos médicos con una única oferta válida, se puede otorgar la buena pro si se sustenta la urgencia y el impacto en los beneficiarios.</li><li><strong>Comparación de Precios:</strong> Exclusivo para comparar precios de bienes o servicios estándar de disponibilidad inmediata que <strong>no requieren alta especialización</strong> (ej. servicios simples por S/ 70,000).</li></ul>",
+        highlight: "Fija de Examen: Convocar una Licitación Pública para contratar un Estudio de Impacto Ambiental (consultoría) por S/ 500,000 es un error: por ser consultoría corresponde <strong>Concurso Público</strong>."
+      },
+      {
+        title: "Procedimientos No Competitivos (Contratación Directa)",
+        body: "<ul><li>No son procedimientos competitivos y requieren <strong>justificación técnica y económica</strong> previa.</li><li><strong>Supuestos clave del Balotario:</strong><ul><li>Cuando existe un <strong>proveedor único con habilitación legal exclusiva</strong>.</li><li>Ante una <strong>situación de desabastecimiento inminente</strong> (cuando el bien o servicio es esencial y no hay otra opción en el mercado) o situación de emergencia.</li><li>Contratación de servicios profesionales independientes de alta especialización o contrataciones de prestaciones adicionales.</li></ul></li></ul>",
+        highlight: "Fija de Examen: En Compras Corporativas, una vez determinado el proveedor seleccionado, <strong>cada entidad contratante suscribe su contrato respectivo</strong> con el proveedor."
+      },
+      {
+        title: "Bases, Consultas, Evaluadores y Comité de Selección",
+        body: "<ul><li><strong>Inicio formal de la Selección:</strong> Se da con la <strong>convocatoria publicada en el PLADICOP</strong> (contando previamente con expediente y bases aprobadas).</li><li><strong>Contenido de las Bases:</strong> Deben incluir obligatoriamente los <strong>factores de evaluación, requisitos de calificación/aceptabilidad y la proforma del contrato elegido con adecuaciones</strong> (Art. 221).</li><li><strong>Modificación e Integración de Bases:</strong> Las bases solo se modifican por aclaración o enmienda técnica debidamente sustentada tras las consultas/observaciones. <strong>Omitir la publicación de las bases integradas en PLADICOP invalida el procedimiento</strong> (no basta enviarlas por correo). Si hay un error insalvable en las bases, se declara la <strong>nulidad del procedimiento</strong>.</li><li><strong>Comité de Selección y Evaluadores:</strong> Su función es <strong>calificar, evaluar las ofertas según los factores de las bases y otorgar la buena pro</strong> (emitiendo el <em>Acta de Evaluación</em> antes de adjudicar). En procesos complejos, la <strong>DEC debe participar en la validación del equipo evaluador</strong>, el cual debe tener <strong>competencias técnicas en el objeto de la contratación</strong> (ej. un comité sin abogados no puede evaluar una consultoría jurídica).</li></ul>",
+        highlight: "Fija de Examen: La calificación 'A' obtenida por un proveedor en el registro de calificación de ejecución contractual genera <strong>incentivos obligatorios</strong> que el comité no puede ignorar."
+      },
+      {
+        title: "Oferta Económica, Exoneración de IGV y Declaratoria de Desierto",
+        body: "<ul><li><strong>Oferta Económica:</strong> Se evalúa de forma objetiva e incluye <strong>todos los tributos y costos asociados</strong>. La cuantía de la contratación considera todos los conceptos incluido el IGV; pero en procedimientos con exoneración de IGV, la oferta se formula <strong>excluido el IGV si el postor goza de la exoneración, e incluido el IGV si no goza de ella</strong>.</li><li><strong>Declaratoria de Desierto:</strong> Se declara desierto cuando <strong>no se presentan ofertas válidas</strong> o ninguna oferta cumplió los requisitos/calidad necesaria.</li></ul>",
+        highlight: "Fija de Examen: Nunca se debe incluir en la oferta técnica información que contradiga o no respete las especificaciones técnicas."
+      }
+    ]
+  },
+  {
+    id: "M6",
+    code: "MÓDULO 06",
+    title: "Recursos de Apelación y Perfeccionamiento del Contrato",
+    subtitle: "Plazos de 5 y 8 días hábiles, competencia resolutiva, garantías y suscripción contractual",
+    icon: "🏛️",
+    color: "#dc2626",
+    competencia: "Competencia II y III: Impugnaciones y Perfeccionamiento",
+    summary: "Analiza las reglas procesales de las apelaciones durante el procedimiento de selección y los requisitos formales y plazos estrictos para perfeccionar (firmar) el contrato.",
+    keyPoints: [
+      {
+        title: "Plazos y Efectos del Recurso de Apelación",
+        body: "<ul><li><strong>Plazos Legales de Interposición:</strong><ul><li><strong>8 días hábiles</strong> desde la notificación en <strong>Licitación Pública y Concurso Público</strong>.</li><li><strong>5 días hábiles</strong> desde la notificación en <strong>Modalidades / Selecciones Abreviadas</strong>.</li><li>Si se presenta fuera de estos plazos (ej. al día 9 hábil en LP), el recurso es <strong>improcedente por extemporáneo</strong>.</li></ul></li><li><strong>Consentimiento de la Buena Pro:</strong> Vencido el plazo sin apelación, la buena pro queda consentida, lo que implica que <strong>ya no se puede impugnar en vía administrativa</strong>.</li><li><strong>Efecto Suspensivo:</strong> La interposición del recurso <strong>suspende obligatoriamente el perfeccionamiento del contrato</strong> hasta que se resuelva. Si el proceso es por ítems y solo se apela uno, <strong>se suspende únicamente el ítem impugnado</strong>.</li><li><strong>Límite Temporal:</strong> <strong>No procede apelación después de perfeccionado/suscrito el contrato</strong>.</li></ul>",
+        highlight: "Fija de Examen: Si un procedimiento se declara desierto y se convoca nuevamente, el plazo para apelar <strong>se rige por el nuevo procedimiento convocado</strong>."
+      },
+      {
+        title: "Garantía por Apelación, Competencia e Imparcialidad",
+        body: "<ul><li><strong>Garantía Obligatoria:</strong> Todo recurso de apelación debe acompañarse de la garantía de ley. Si se presenta sin garantía, debe ser declarado <strong>inadmisible</strong> (es inválido tramitarlo o declararlo fundado sin ella).</li><li><strong>Ejecución por Mala Fe:</strong> Si el apelante pierde el recurso y se demuestra que actuó con <strong>mala fe manifiesta</strong>, la entidad debe <strong>ejecutar la garantía</strong> (incluso si el recurso es improcedente por extemporáneo, debe evaluarse primero si hubo mala fe antes de devolverla).</li><li><strong>¿Quién resuelve la Apelación?</strong> En contrataciones de menor cuantía (que no superan el tope para ir al TCP, como procesos de S/ 150,000 o S/ 220,000 en el balotario), <strong>resuelve la propia Entidad Contratante</strong> (a través de su Autoridad de Gestión Administrativa / DEC según corresponda), por lo que es incorrecto remitirlo al TCP.</li><li><strong>Prohibición de Conflicto de Intereses:</strong> Jamás puede resolver la apelación el mismo Comité de Selección ni el funcionario que elaboró las bases; debe hacerlo un <strong>órgano distinto e imparcial</strong>.</li><li><strong>Efecto de la Resolución:</strong> Si el TCP declara <em>fundado</em> el recurso, <strong>revoca el acto impugnado</strong>. La entidad debe <strong>cumplir la resolución sin calificarla y en sus propios términos</strong>.</li></ul>",
+        highlight: "Fija de Examen: Apelación sin garantía = <strong>Inadmisible</strong>. Apelación fuera de plazo o tras firmar contrato = <strong>Improcedente</strong>."
+      },
+      {
+        title: "Perfeccionamiento (Suscripción) del Contrato",
+        body: "<ul><li><strong>Requisitos Indispensables al firmar:</strong> El proveedor adjudicado debe contar con <strong>inscripción vigente en el RNP</strong> (si está suspendido o no vigente al día de la firma, o no subsana en plazo, <strong>no se perfecciona el contrato</strong>).</li><li><strong>Cumplimiento estricto de plazos:</strong> Si el postor presenta los documentos fuera del plazo máximo (ej. al día 9 cuando las bases daban 7 días hábiles, o al día 12 cuando el máximo era 10), o si presenta la garantía a tiempo pero <strong>omite firmar el contrato en la fecha acordada</strong>, <strong>pierde automáticamente la buena pro</strong> y no se perfecciona el contrato.</li><li><strong>Obligación de la Entidad y Documentos del Contrato:</strong> La entidad debe convocar/comunicar la suscripción dentro del plazo legal. El contrato se conforma obligatoriamente por el <strong>documento que lo contiene, las bases integradas y la oferta ganadora</strong> (no basta emitir una orden general sin las bases ni la oferta).</li></ul>",
+        highlight: "Fija de Examen: Presentar la carta fianza a tiempo pero no asistir a firmar el contrato en la fecha acordada = <strong>Pierde automáticamente la buena pro</strong>."
+      }
+    ]
+  },
+  {
+    id: "M7",
+    code: "MÓDULO 07",
+    title: "Fase de Ejecución Contractual: Modificaciones, Pagos y Liquidación",
+    subtitle: "Supervisión, Adicionales, Reducciones, Ampliación de Plazo, Penalidades, Resolución y Nulidad",
+    icon: "🏗️",
+    color: "#4f46e5",
+    competencia: "Competencia III: Ejecución Contractual",
+    summary: "Estudia a fondo la gestión del contrato desde su perfeccionamiento hasta su liquidación final: vigencia, cuaderno de obra, modificaciones contractuales, plazos de pago, penalidades y causales de terminación.",
+    keyPoints: [
+      {
+        title: "Inicio, Supervisión, Cuaderno de Obra y PLADICOP en Ejecución",
+        body: "<ul><li><strong>Primer paso e Inicio del plazo:</strong> El primer paso de la ejecución contractual es el <strong>perfeccionamiento del contrato</strong>. El plazo de ejecución inicia al <strong>día siguiente del perfeccionamiento</strong> (o desde la fecha de notificación de la orden de compra, ej. si se firma el 1 de marzo y la orden se notifica el 15 de marzo, inicia el 15 de marzo).</li><li><strong>Registro en PLADICOP:</strong> Es obligatorio publicar el contrato y actualizar en el PLADICOP el <strong>progreso de los trabajos, pagos y cualquier modificación</strong>. Su omisión invalida actos y genera sanciones.</li><li><strong>Supervisión y Control:</strong> La <strong>Entidad Contratante</strong> (a través de la DEC, el Área Usuaria y el <strong>Supervisor del Contrato</strong>) verifica el cumplimiento técnico, económico y administrativo (Art. 187.1). El supervisor evalúa y remite el programa de ejecución (Art. 206.1), realiza supervisión periódica como máximo <strong>cada 30 días</strong> y lleva obligatoriamente el <strong>Cuaderno de Obra</strong> (no puede reemplazarse por simples informes).</li><li><strong>Reemplazo de Personal Clave y Subcontratación:</strong> Si el contratista pide reemplazar al residente de obra, el sustituto debe tener <strong>igual o mejor calificación</strong>. El contratista mantiene la responsabilidad total por los actos u omisiones de terceros/subcontratistas.</li></ul>",
+        highlight: "Fija de Examen: El <strong>Cuaderno de Obra</strong> es el instrumento obligatorio de control; no llevarlo durante la obra incumple el Reglamento aunque existan informes del supervisor."
+      },
+      {
+        title: "Modificaciones Contractuales: Adicionales, Reducciones y Ampliación de Plazo",
+        body: "<ul><li><strong>Regla General:</strong> Las modificaciones ajustan los términos originales sin alterar la esencia del contrato, requiriendo <strong>justificación técnica/económica y aprobación de la entidad contratante</strong> (y sustento de capacidad presupuestal de la Oficina de Planeamiento y Presupuesto cuando altere significativamente el monto). Si una nueva ley exige nuevas condiciones técnicas, se modifica el contrato <strong>mediante adenda</strong>. En <em>contratos estandarizados</em> no se pueden modificar condiciones unilateralmente sin adenda.</li><li><strong>Adicionales y Reducciones:</strong><ul><li>La entidad puede disponer reducciones por necesidad operativa dentro del límite permitido (en el balotario se valida el 22% dentro del margen de hasta 25%).</li><li>En <strong>Adicionales de Obra</strong>: Si se aprueba un adicional (ej. 30%), es obligatorio exigir el <strong>ajuste proporcional de la garantía de fiel cumplimiento</strong>. Los adicionales de obra que <strong>excedan el 40%</strong> requieren autorización expresa, y <strong>nunca pueden aprobarse modificaciones que excedan el 50% del valor original</strong>.</li></ul></li><li><strong>Ampliación de Plazo:</strong> El contratista debe solicitarla <strong>dentro del plazo contractual vigente</strong> (si la pide 5 días después de vencido el contrato, es improcedente). Para aprobar o denegar una ampliación (ej. por lluvias intensas), la entidad <strong>debe sustentar su decisión con un informe técnico previo</strong>.</li></ul>",
+        highlight: "Fija de Examen: Límites en adicionales de obra: > 40% requiere autorización expresa | > 50% del valor original está prohibido | Todo adicional exige actualizar proporcionalmente la garantía."
+      },
+      {
+        title: "Conformidad, Plazos de Pago, Penalidades y Falta de Pago",
+        body: "<ul><li><strong>Recepción y Conformidad:</strong> El <strong>Área Usuaria</strong> emite la conformidad tras verificar que los bienes/servicios cumplen las especificaciones técnicas (si no está conforme, solicita la <em>rectificación o corrección</em>). En <strong>obras</strong>, comunicada la culminación, si la entidad no se pronuncia en <strong>30 días hábiles</strong>, <strong>se presume la conformidad de la obra</strong>.</li><li><strong>Plazo Máximo de Pago de Valorizaciones:</strong> Otorgada la conformidad a una valorización, la entidad debe pagar en un plazo máximo de <strong>15 días hábiles</strong>. Si el contratante incumple sus obligaciones de pago, <strong>el contratista puede suspender la ejecución del contrato hasta recibir el pago</strong>.</li><li><strong>Penalidades:</strong> Ante retrasos injustificados o no presentación de informes obligatorios, la entidad aplica <strong>penalidades económicas por cada día de retraso</strong> (sustentadas en documentación acreditativa y en las cláusulas del contrato).</li></ul>",
+        highlight: "Fija de Examen: Plazo máximo para pagar una valorización tras su conformidad = <strong>15 días hábiles</strong>. Silencio en recepción de obra = <strong>30 días hábiles</strong> (presunción de conformidad)."
+      },
+      {
+        title: "Resolución, Terminación Anticipada, Nulidad y Liquidación",
+        body: "<ul><li><strong>Resolución del Contrato:</strong> Terminación por <strong>incumplimiento grave o reiterado, cumplimiento parcial insatisfactorio o insolvencia/incapacidad</strong> del contratista. Requiere contar con <strong>informes técnico y legal previos</strong> y obliga a la entidad a <strong>ejecutar la garantía de fiel cumplimiento</strong> como medida de protección.</li><li><strong>Terminación Anticipada:</strong> Se invoca cuando <strong>desaparece la necesidad que motivó el contrato por un cambio de política institucional</strong> (sin culpa del contratista).</li><li><strong>Nulidad del Contrato:</strong> Si durante la ejecución se descubre que el proveedor presentó <strong>documentos falsificados</strong> para ganar el proceso, la entidad debe <strong>declarar la nulidad del contrato</strong>.</li><li><strong>Liquidación Final:</strong> Procede cuando el contratista ha cumplido todas sus obligaciones (evaluando cumplimiento, calidad y entrega conforme). Si la entidad no inicia la liquidación de obra tras la solicitud del contratista, este puede solicitar formalmente que se tramite su liquidación presentada.</li></ul>",
+        highlight: "Fija de Examen: Distingue siempre las 3 figuras: Incumplimiento grave = <strong>Resolución</strong> (y se ejecuta la garantía) | Cambio de política institucional = <strong>Terminación Anticipada</strong> | Documentos falsos = <strong>Nulidad del Contrato</strong>."
+      }
+    ]
+  },
+  {
+    id: "M8",
+    code: "MÓDULO 08",
+    title: "JPRD, Arbitraje, Régimen Sancionador (TCP), Emergencias y MDA",
+    subtitle: "Solución de controversias, plazos de la Directiva JPRD, PAS del TCP, Contratos de Contingencia y Salud",
+    icon: "🛡️",
+    color: "#be123c",
+    competencia: "Competencia III y Especiales: Controversias, Sanciones y Regímenes Especiales",
+    summary: "Cubre los temas avanzados del Balotario 2026: la Junta de Prevención y Resolución de Disputas (JPRD), el Código de Ética en Arbitraje, el Procedimiento Administrativo Sancionador del TCP, las contrataciones de Emergencia/Contingencia y los Mecanismos Diferenciados de Adquisición (MDA).",
+    keyPoints: [
+      {
+        title: "1. Junta de Prevención y Resolución de Disputas (JPRD - Directiva N° 002-2025-OECE-CD)",
+        body: "<ul><li><strong>Organización y Formalización:</strong> Administrada por un <strong>Centro de Administración acordado por las partes</strong> mediante un <strong>Contrato Tripartito</strong> (Entidad, Centro y Adjudicador único o plural).</li><li><strong>Obligatoriedad por Duración:</strong> El límite mínimo de duración contractual para aplicar obligatoriamente la JPRD es de <strong>240 días calendario</strong>.</li><li><strong>Cómputo de Plazos:</strong> En días hábiles (excluyendo sábados, domingos y feriados oficiales).</li><li><strong>Línea de Tiempo de Plazos JPRD (¡Fijas de Examen!):</strong><ul><li>Primera reunión tras activarse el encargo: máximo <strong>5 días hábiles</strong>.</li><li>Precisar por escrito una consulta observada: hasta <strong>2 días hábiles</strong> tras notificación.</li><li>Extensión de plazo por consulta de elevada complejidad: hasta <strong>15 días hábiles adicionales</strong>.</li><li>Pronunciamiento de la Entidad sobre una <em>recomendación</em>: <strong>7 días hábiles</strong>.</li><li>Plazo para que una <em>decisión</em> quede firme y obligatoria sin objeción: <strong>7 días calendario</strong>.</li><li>Plazo de la Entidad para iniciar la implementación de una decisión firme: <strong>10 días calendario</strong>.</li><li>Suspensión de funciones de la JPRD por no pago de tarifas: hasta por <strong>30 días hábiles</strong>.</li></ul></li></ul>",
+        highlight: "Fija de Examen: En JPRD fíjate si preguntan por <em>recomendación</em> (7 días hábiles para pronunciarse) o por <em>decisión</em> (7 días calendario para quedar firme y 10 días calendario para iniciar su implementación)."
+      },
+      {
+        title: "2. Arbitraje y Deberes Éticos del Árbitro",
+        body: "<ul><li>El arbitraje y los mecanismos alternativos buscan <strong>celeridad y reducción de costos</strong> sin paralizar la ejecución contractual.</li><li><strong>Los 9 Binomios Éticos del Árbitro en el Balotario:</strong><ol><li>Mantener su <strong>independencia</strong> y garantizar una actitud <strong>imparcial</strong>.</li><li>Realizar una <strong>revelación</strong> completa sobre hechos que comprometan su <strong>objetividad</strong>.</li><li>Evitar <strong>prejuzgamientos</strong> en la causa que comprometan la <strong>integridad</strong> del proceso.</li><li>No permitir que ninguna influencia externa o <strong>presión</strong> afecte su <strong>decisión</strong>.</li><li>Guardar <strong>reserva</strong> sobre información confidencial y no usarla para <strong>beneficio</strong> personal.</li><li>Abstenerse de emitir <strong>comentarios</strong> que parezcan juicios anticipados sobre el <strong>fondo</strong>.</li><li>Actuar con <strong>diligencia</strong> y evitar cualquier conflicto de <strong>interés</strong>.</li><li>Promover el proceso con <strong>celeridad</strong> respetando el principio de <strong>debido proceso</strong>.</li><li>Abstenerse de aceptar regalos o cualquier forma de <strong>beneficio</strong> que afecte la <strong>neutralidad</strong>.</li></ol></li></ul>",
+        highlight: "Fija de Examen: Las preguntas 323 a 331 del balotario evalúan exactamente estos 9 pares de palabras clave del Código de Ética Arbitral."
+      },
+      {
+        title: "3. Procedimiento Administrativo Sancionador (PAS) ante el TCP",
+        body: "<ul><li><strong>Fases del PAS:</strong> Consta de <strong>Fase Instructiva</strong> (a cargo de la <strong>Secretaría Técnica / unidad instructora</strong>) y <strong>Fase Sancionadora</strong> (a cargo del <strong>Tribunal de Contrataciones Públicas - TCP</strong>).</li><li><strong>Requisitos de la Denuncia:</strong> Identificación del procedimiento, del presunto infractor, infracción imputada y documentos de sustento (<strong>salvo aquellos que ya están en la PLADICOP</strong>).</li><li><strong>Plazos del PAS:</strong> La Secretaría Técnica formula la imputación de cargos y otorga al presunto infractor un plazo máximo de <strong>10 días hábiles</strong> para presentar descargos escritos. La Fase Instructiva tiene un máximo de <strong>4 meses</strong> para emitir el informe final.</li><li><strong>Reconsideración y Antecedentes:</strong> El <strong>TCP</strong> conoce y resuelve los recursos de reconsideración. Una multa ya ejecutada se considera como <strong>antecedente sancionador</strong>.</li><li><strong>Individualización en Consorcios:</strong> Se evalúa según la <strong>naturaleza de la infracción, el aporte del documento, la promesa formal y el contrato de consorcio</strong> (si no aplica ningún criterio, no se puede individualizar y responden solidariamente).</li></ul>",
+        highlight: "Fija de Examen: En el PAS del TCP: Descargos = <strong>10 días hábiles</strong> | Informe Final Instructivo = <strong>4 meses</strong> | Órgano Instructor = <strong>Secretaría Técnica</strong>."
+      },
+      {
+        title: "4. Contrataciones en Emergencias, Contratos de Contingencia y MDA",
+        body: "<ul><li><strong>Contratos de Contingencia (Preparación):</strong> Condicionados a un <strong>evento futuro e incierto</strong>. Usan modalidad de <strong>pago por disponibilidad</strong> (si el evento no ocurre en 18 meses, se mantiene el pago periódico hasta su liquidación; si no se activa en 3 años y se desea continuar, se suscribe <strong>adenda para ampliar plazo</strong>).</li><li><strong>Contrataciones de Emergencia:</strong><ul><li><strong>Plazo de Regularización:</strong> Máximo <strong>20 días hábiles</strong> desde el inicio del servicio (se amplía a <strong>40 días hábiles</strong> en emergencias masivas, ej. 25 contrataciones en un mes).</li><li><strong>Pago Adelantado:</strong> Hasta <strong>30 UIT para el Gobierno Nacional</strong>.</li><li><strong>Garantías:</strong> Se exonera la carta fianza en contrataciones no competitivas de emergencia realizadas en <strong>72 horas</strong>, y no se exige garantía tras la conformidad de recepción en consultorías de emergencia. Cuando sí aplica garantía de fiel cumplimiento en obra de emergencia, es el <strong>10% del contrato original o de las prestaciones no ejecutadas</strong>.</li><li><strong>Compras Centralizadas de Emergencia:</strong> <strong>INDECI y CENEPRED</strong> proponen el listado, y el comité técnico lo conforman representantes de <strong>INDECI, CENEPRED, DGA y Perú Compras (quien preside)</strong>.</li><li><strong>Incentivo a evaluadores presenciales en emergencia:</strong> <strong>50% del sueldo mínimo vital (RMV)</strong> por cumplimiento de cada meta.</li></ul></li><li><strong>Mecanismos Diferenciados de Adquisición (MDA - Salud):</strong> Aplican a <strong>tecnologías sanitarias de alto costo, enfermedades raras u oncológicas</strong>. Exigen <strong>Registro Sanitario vigente o condicionado en Perú</strong> (fase de nominación), definir cantidades mínimas/máximas en el <strong>requerimiento inicial (actuaciones preparatorias)</strong> y permiten <strong>acuerdos híbridos</strong> (modalidades financieras + desempeño).</li></ul>",
+        highlight: "Fija de Examen: Regularización en emergencia = <strong>20 días hábiles</strong> (o <strong>40 días hábiles</strong> si son múltiples contrataciones masivas). Adelanto Gobierno Nacional = <strong>30 UIT</strong>."
+      }
+    ]
+  }
+];
+
+window.OECE_FLASHCARDS = [
+  { id: 1, category: "Plazos Preparatorios", front: "¿Cuál es el plazo mínimo para formular consultas/comentarios técnicos en la difusión del requerimiento en PLADICOP y el plazo de la entidad para absolverlos?", back: "5 días hábiles para formular consultas técnicas y 3 días hábiles para que la entidad contratante las absuelva." },
+  { id: 2, category: "Actores y Certificación", front: "¿Qué nivel de certificación del OECE se exige para ser designado Oficial de Compras?", back: "Certificación de nivel Intermedio o Avanzado del OECE." },
+  { id: 3, category: "Topes de Selección", front: "¿Qué procedimiento se utiliza para contratar Bienes por más de S/ 485,000 y cuál si está entre S/ 42,800 y S/ 485,000?", back: "Mayor a S/ 485,000: Licitación Pública.\nEntre S/ 42,800 y S/ 485,000: Licitación Pública Abreviada." },
+  { id: 4, category: "Topes de Selección", front: "¿Qué procedimiento aplica para Consultoría de Obras o Servicios mayores a S/ 485,000?", back: "Concurso Público." },
+  { id: 5, category: "Apelaciones", front: "¿Cuáles son los plazos máximos para interponer Recurso de Apelación contra la buena pro?", back: "• 8 días hábiles en Licitación Pública y Concurso Público.\n• 5 días hábiles en Selección / Modalidad Abreviada." },
+  { id: 6, category: "Apelaciones", front: "¿Quién resuelve una apelación en un proceso de S/ 150,000 o S/ 220,000?", back: "La propia Entidad Contratante (a través de un órgano imparcial / DEC / Autoridad de Gestión Administrativa, nunca el comité de selección ni el TCP por ser menor al tope)." },
+  { id: 7, category: "Ejecución Contractual", front: "¿Cuál es el plazo máximo para pagar una valorización luego de otorgada la conformidad?", back: "15 días hábiles." },
+  { id: 8, category: "Ejecución Contractual", front: "Si el contratista comunica la culminación de la obra y la entidad no se pronuncia en 30 días hábiles, ¿qué ocurre?", back: "Se presume legalmente la conformidad de la obra." },
+  { id: 9, category: "Ejecución Contractual", front: "¿Cuáles son los topes del 40% y 50% en adicionales de obra y modificaciones?", back: "• Si un adicional de obra supera el 40% del monto contractual, requiere autorización expresa.\n• Ninguna modificación puede aprobarse si excede el 50% del valor original." },
+  { id: 10, category: "JPRD", front: "¿Cuántos días calendario como mínimo debe durar un contrato para aplicar obligatoriamente la JPRD?", back: "240 días calendario." },
+  { id: 11, category: "JPRD", front: "¿Cuáles son los plazos de la JPRD para: 1) Primera reunión, 2) Precisar consulta, 3) Extensión por complejidad?", back: "1) Primera reunión: máx. 5 días hábiles.\n2) Precisar consulta: 2 días hábiles.\n3) Extensión por complejidad: hasta 15 días hábiles adicionales." },
+  { id: 12, category: "JPRD", front: "¿Cuál es la diferencia de plazo en la JPRD entre una Recomendación y una Decisión?", back: "• Recomendación: La Entidad tiene 7 días hábiles para pronunciarse.\n• Decisión: Queda firme en 7 días calendario sin objeción, y la Entidad tiene 10 días calendario para iniciar su implementación." },
+  { id: 13, category: "Régimen Sancionador (TCP)", front: "En el PAS del TCP, ¿cuál es el plazo para presentar descargos y el plazo máximo de la Fase Instructiva?", back: "• Descargos del presunto infractor: 10 días hábiles.\n• Informe final de la Fase Instructiva (Secretaría Técnica): máximo 4 meses." },
+  { id: 14, category: "Emergencias", front: "¿Cuál es el plazo máximo para regularizar una contratación directa por emergencia?", back: "• 20 días hábiles desde el inicio de la prestación (regla general).\n• 40 días hábiles cuando se realizan contrataciones masivas en un mes (ej. 25 contrataciones)." },
+  { id: 15, category: "Emergencias", front: "¿Cuál es el monto máximo de pago adelantado en emergencia para el Gobierno Nacional y cuándo se exonera la carta fianza?", back: "• Pago adelantado Gobierno Nacional: hasta 30 UIT.\n• Se exonera carta fianza de fiel cumplimiento en contrataciones no competitivas de emergencia realizadas en 72 horas." },
+  { id: 16, category: "Modalidades de Pago", front: "Diferencia entre Suma Alzada, Tarifas, Costo Reembolsable y Pago Mixto", back: "• Suma Alzada: cantidades/calidades definidas (monto fijo integral).\n• Tarifas: según tiempo estimado (incluye costos directos, cargas, tributos y utilidad).\n• Costo Reembolsable: reembolsa costos reales.\n• Pago Mixto: cuando costos de instalación > 10% del contrato." },
+  { id: 17, category: "MDA (Salud)", front: "¿Qué es un MDA y qué requisito es indispensable en su fase de nominación?", back: "Mecanismo Diferenciado de Adquisición para tecnologías sanitarias de alto costo (enfermedades raras u oncológicas). Exige Registro Sanitario vigente o condicionado en el Perú." },
+  { id: 18, category: "Directiva PAC", front: "En la evaluación del PAC, ¿cuándo se considera 'convocada' y cuándo 'contratada' una compra por Catálogo Electrónico?", back: "• Convocada: Con la emisión de la solicitud de cotización.\n• Contratada: Cuando cuenta con Orden de Compra." },
+  { id: 19, category: "Expediente", front: "¿Por cuánto tiempo mínimo debe conservar la entidad los expedientes de contratación culminados?", back: "Al menos 5 años tras la recepción del bien/servicio o la liquidación final." },
+  { id: 20, category: "Ejecución Contractual", front: "Diferencia entre Resolución, Terminación Anticipada y Nulidad del Contrato", back: "• Resolución: Por incumplimiento grave del contratista (se ejecuta la garantía).\n• Terminación Anticipada: Desaparece la necesidad por cambio de política institucional.\n• Nulidad: Se descubre que el ganador presentó documentos falsos." }
+];
+
+window.OECE_CHEATSHEET = [
+  { group: "Actuaciones Preparatorias y PAC", item: "Conservación física/digital del expediente de contratación", value: "Mínimo 5 años tras recepción o liquidación" },
+  { group: "Actuaciones Preparatorias y PAC", item: "Plazo mínimo para formular consultas técnicas en PLADICOP", value: "5 días hábiles" },
+  { group: "Actuaciones Preparatorias y PAC", item: "Plazo de la entidad para absolver consultas técnicas en PLADICOP", value: "3 días hábiles" },
+  { group: "Selección y Topes Monetarios", item: "Licitación Pública (Bienes / Obras) y Concurso Público (Servicios / Consultorías)", value: "Mayor a S/ 485,000" },
+  { group: "Selección y Topes Monetarios", item: "Licitación Pública Abreviada (Bienes)", value: "Entre S/ 42,800 y S/ 485,000" },
+  { group: "Selección y Topes Monetarios", item: "Comparación de Precios (servicios no especializados del balotario)", value: "Ej. S/ 70,000 (disponibilidad inmediata)" },
+  { group: "Apelaciones y Perfeccionamiento", item: "Apelación en Licitación Pública y Concurso Público", value: "8 días hábiles desde notificación" },
+  { group: "Apelaciones y Perfeccionamiento", item: "Apelación en Selección / Modalidad Abreviada", value: "5 días hábiles desde notificación" },
+  { group: "Apelaciones y Perfeccionamiento", item: "Plazo de referencia para convocar/suscribir contrato tras consentimiento", value: "7 a 10 días hábiles (según bases/reglamento)" },
+  { group: "Ejecución Contractual", item: "Supervisión periódica máxima durante la ejecución", value: "Cada 30 días" },
+  { group: "Ejecución Contractual", item: "Plazo máximo para pago de valorización tras conformidad", value: "15 días hábiles" },
+  { group: "Ejecución Contractual", item: "Silencio de la entidad tras aviso de culminación de obra (presunción de conformidad)", value: "30 días hábiles" },
+  { group: "Ejecución Contractual", item: "Reducción unilateral permitida por necesidad operativa (balotario)", value: "Hasta 22% - 25% dentro del límite legal" },
+  { group: "Ejecución Contractual", item: "Adicional de obra que requiere autorización expresa", value: "Cuando excede el 40% del valor contractual" },
+  { group: "Ejecución Contractual", item: "Tope máximo absoluto para modificaciones contractuales", value: "No puede exceder el 50% del valor original" },
+  { group: "JPRD y Régimen Sancionador (TCP)", item: "Duración mínima del contrato para obligatoriedad de JPRD", value: "240 días calendario" },
+  { group: "JPRD y Régimen Sancionador (TCP)", item: "JPRD: 1ra reunión | Precisar consulta | Complejidad elevada", value: "5 días hábiles | 2 días hábiles | +15 días hábiles" },
+  { group: "JPRD y Régimen Sancionador (TCP)", item: "JPRD: Pronunciamiento recomendación | Firmeza decisión | Implementar decisión", value: "7 días hábiles | 7 días calendario | 10 días calendario" },
+  { group: "JPRD y Régimen Sancionador (TCP)", item: "JPRD: Suspensión de funciones por impago de tarifas", value: "Hasta 30 días hábiles" },
+  { group: "JPRD y Régimen Sancionador (TCP)", item: "PAS ante el TCP: Plazo para descargos | Plazo Fase Instructiva", value: "10 días hábiles | Máximo 4 meses" },
+  { group: "Emergencias y Regímenes Especiales", item: "Regularización de contratación directa de emergencia (ordinaria vs. masiva)", value: "20 días hábiles (ordinaria) | 40 días hábiles (masiva)" },
+  { group: "Emergencias y Regímenes Especiales", item: "Pago adelantado máximo en emergencia (Gobierno Nacional)", value: "30 UIT" },
+  { group: "Emergencias y Regímenes Especiales", item: "Exoneración de carta fianza en contrataciones de emergencia", value: "Contrataciones en 72 horas (y tras conformidad en consultoría)" },
+  { group: "Emergencias y Regímenes Especiales", item: "Contrato de contingencia: evaluación sin evento / ampliación por adenda", value: "18 meses (pago periódico) / 3 años (adenda)" }
+];
+
+
+window.OECE_COMPARATIVO = [
+  { topic: "Organismo Supervisor", oldLaw: "OSCE (Organismo Supervisor de las Contrataciones del Estado)", newLaw: "OECE (Organismo Especializado para las Contrataciones Públicas Eficientes)", trap: "Si una alternativa dice que el OECE firma contratos o adjudica la buena pro, es FALSA. El OECE supervisa según su Plan Anual, atiende alertas ciudadanas, administra el PLADICOP y certifica." },
+  { topic: "Órgano Logístico de la Entidad", oldLaw: "OEC (Órgano Encargado de las Contrataciones)", newLaw: "DEC (Dependencia Encargada de las Contrataciones)", trap: "Los compradores públicos de la DEC son los 'Oficiales de Compras' (requieren certificación Intermedia o Avanzada) y el jefe/responsable titular de la DEC requiere Nivel Avanzado." },
+  { topic: "Plataforma Digital", oldLaw: "SEACE y RNP como sistemas separados", newLaw: "PLADICOP (Plataforma Digital para las Contrataciones Públicas)", trap: "La PLADICOP integra SEACE + RNP y cubre las 3 fases (Actuaciones Preparatorias, Selección y Ejecución Contractual)." },
+  { topic: "Autoridades Internas de la Entidad", oldLaw: "Titular de la Entidad concentraba casi todas las aprobaciones", newLaw: "Se distingue entre Titular de la Entidad y Autoridad de la Gestión Administrativa (AGA: Secretario General / Gerente General / Gerente Municipal)", trap: "La AGA asume la aprobación del PAC, expedientes, designación de evaluadores y resolución de apelaciones que competen a la entidad." },
+  { topic: "Soporte en Requerimientos Complejos", oldLaw: "Área Usuaria o Comité Especial", newLaw: "Área Técnica Estratégica (ATE)", trap: "En obras u hospitales de alta complejidad, el ATE brinda soporte especializado o formula técnicamente el requerimiento junto al área usuaria." },
+  { topic: "Estudio de Mercado", oldLaw: "Indagación de Mercado / Estudio de Posibilidades que ofrece el Mercado", newLaw: "Interacción con el Mercado (Consulta al Mercado y Difusión del Requerimiento)", trap: "En la difusión del requerimiento por PLADICOP: mínimo 5 días hábiles para consultas de proveedores y 3 días hábiles para absolución." },
+  { topic: "Marcas o Patentes en el Requerimiento", oldLaw: "Proceso de Estandarización", newLaw: "Proceso de Compatibilización", trap: "Está prohibido pedir marcas específicas salvo que exista un proceso de COMPATIBILIZACIÓN aprobado." },
+  { topic: "Compras hasta 8 UIT", oldLaw: "Contrataciones excluidas del ámbito de aplicación (≤ 8 UIT)", newLaw: "Contratos Menores (≤ 8 UIT) regulados dentro de la Ley N° 32069", trap: "Los Contratos Menores SÍ se registran en PLADICOP, exigen RNP vigente y les aplican todos los impedimentos del Art. 30." },
+  { topic: "Procedimientos de Menor Cuantía Competitivos", oldLaw: "Adjudicación Simplificada (AS)", newLaw: "Modalidades Abreviadas (Licitación Pública Abreviada / Concurso Público Abreviado)", trap: "Para bienes entre S/ 42,800 y S/ 485,000 aplica Licitación Pública Abreviada (y el plazo de apelación en abreviadas es de 5 días hábiles)." },
+  { topic: "Excepciones a la Competencia", oldLaw: "Contratación Directa", newLaw: "Procedimiento de Selección No Competitivo (Art. 55)", trap: "Aplica en proveedor único con habilitación legal exclusiva, emergencia o desabastecimiento inminente." },
+  { topic: "Principio Rector de Evaluación", oldLaw: "Eficiencia / Menor precio en muchos casos", newLaw: "Principio de Valor por Dinero (Calidad + Precio + Oportunidad + Ciclo de Vida)", trap: "Nunca marques 'elegir la oferta más barata sin evaluación técnica'. Valor por dinero pondera calidad, precio y resultados esperados." }
+];
+
+window.OECE_ARTICLES = [
+  { art: "Art. 25 (Ley 32069)", title: "Autoridad de la Gestión Administrativa (AGA) y Actores", body: "Define los roles del Titular de la Entidad, la Autoridad de la Gestión Administrativa (Secretario General, Gerente General o Gerente Municipal), el Área Usuaria, el Área Técnica Estratégica (ATE) y la Dependencia Encargada de las Contrataciones (DEC)." },
+  { art: "Art. 30 (Ley 32069)", title: "Impedimentos para Contratar con el Estado", body: "Agrupa los impedimentos en 4 bloques: 1) Personales (autoridades y servidores), 2) Parentesco (cónyuge, conviviente y parientes hasta el 2° grado de consanguinidad o afinidad), 3) Personas jurídicas (participación > 30%), y 4) Sancionados/Inhabilitados. Son taxativos (no aplica analogía) y rigen también en Contratos Menores." },
+  { art: "Art. 55 (Ley 32069)", title: "Procedimientos de Selección No Competitivos", body: "Regula las causales excepcionales donde no hay etapa competitiva: proveedor único con habilitación exclusiva, situación de emergencia (prevención o atención inmediata), desabastecimiento inminente y servicios personalísimos." },
+  { art: "Art. 78 (D.S. 009-2025-EF)", title: "Subsanación de Ofertas en Selección", body: "Permite subsanar errores materiales o formales en documentos preexistentes en un plazo de 1 a 2 días hábiles vía PLADICOP, siempre que NO altere el contenido esencial de la oferta ni modifique el monto de la oferta económica." },
+  { art: "Art. 187.1 y 206 (D.S. 009-2025-EF)", title: "Supervisión del Contrato y Programa de Ejecución", body: "La supervisión es responsable del control técnico, económico y administrativo del contrato. Evalúa y remite a la entidad la versión definitiva del programa de ejecución, verifica la calidad de los trabajos y emite conformidad sobre el programa (no remite informes al público en general)." },
+  { art: "Art. 221 (D.S. 009-2025-EF)", title: "Contenido de las Bases y Proforma de Contrato", body: "Las bases del procedimiento deben incluir obligatoriamente los factores de evaluación, los requisitos de calificación y la proforma del contrato elegido con sus adecuaciones." },
+  { art: "Directiva N° 002-2025-OECE-CD", title: "Junta de Prevención y Resolución de Disputas (JPRD)", body: "Establece el Contrato Tripartito, obligatoriedad en contratos ≥ 240 días calendario, cómputo en días hábiles (sin sábados, domingos ni feriados), primera reunión en 5 días hábiles, precisión de consulta en 2 días hábiles, ampliación por complejidad hasta +15 días hábiles, recomendación en 7 días hábiles, firmeza de decisión en 7 días calendario e implementación en 10 días calendario." },
+  { art: "Directiva N° 0002-2025-EF/54.01", title: "Lineamientos y Evaluación del PAC", body: "Se basa en el PIA. Contabiliza solo la primera convocatoria del año fiscal (aunque luego sea nula o desierta). En Acuerdo Marco: convocada = solicitud de cotización; contratada = orden de compra. El indicador de eficacia total incluye las contrataciones no programadas incorporadas automáticamente por el SEACE/PLADICOP." }
+];
+
+
+window.OECE_TOPES_QUESTIONS = [
+  {
+    id: 421,
+    page: 69,
+    isWebFija: true,
+    isTopeCasuistica: true,
+    module: "M5",
+    concept: "Tope de Licitación Pública Abreviada vs. Licitación Pública en Bienes",
+    question: "[CASUÍSTICA DE TOPES] Una entidad pública requiere adquirir camionetas 4x4 para supervisión agraria por una cuantía total de S/ 390,000 (los bienes no están en Catálogo Electrónico ni tienen Ficha Técnica). Según los topes del Reglamento D.S. N° 009-2025-EF, ¿qué procedimiento de selección corresponde y cuál es el plazo para apelar la buena pro?",
+    correct: "B",
+    legalRef: "Ley N° 32069 y Reglamento D.S. N° 009-2025-EF (Cuadro de Topes y Plazos de Apelación)",
+    examTip: "En Bienes: Entre S/ 42,800 y S/ 485,000 = Licitación Pública Abreviada (Apelación: 5 días hábiles). Mayor a S/ 485,000 = Licitación Pública (Apelación: 8 días hábiles).",
+    explanation: "Respuesta Correcta: B) Licitación Pública Abreviada, y el plazo para interponer recurso de apelación es de 5 días hábiles.\n\nFundamento Normativo: Al tratarse de bienes por S/ 390,000, el monto se ubica dentro del rango de S/ 42,800 a S/ 485,000, por lo que corresponde una Licitación Pública Abreviada. En toda modalidad abreviada, el plazo para apelar el otorgamiento de la buena pro es de 5 días hábiles desde la notificación en el PLADICOP.",
+    options: [
+      { letter: "A", text: "Licitación Pública ordinaria, con plazo de apelación de 8 días hábiles", isCorrect: false, why: "Es incorrecta porque la Licitación Pública ordinaria en bienes aplica cuando el monto supera los S/ 485,000, y aquí el monto es S/ 390,000." },
+      { letter: "B", text: "Licitación Pública Abreviada, y el plazo para interponer recurso de apelación es de 5 días hábiles", isCorrect: true, why: "¡Es la alternativa CORRECTA! S/ 390,000 está entre S/ 42,800 y S/ 485,000 (LP Abreviada) y su plazo de apelación es de 5 días hábiles." },
+      { letter: "C", text: "Concurso Público Abreviado, con plazo de apelación de 10 días calendario", isCorrect: false, why: "Es incorrecta porque el Concurso Público es para servicios y consultorías (no para adquisición de camionetas/bienes) y el plazo no es de 10 días calendario." },
+      { letter: "D", text: "Contrato Menor directo, porque es inferior a S/ 485,000", isCorrect: false, why: "Es incorrecta porque los Contratos Menores solo aplican hasta 8 UIT (S/ 42,800 referencial), jamás para S/ 390,000." }
+    ]
+  },
+  {
+    id: 422,
+    page: 69,
+    isWebFija: true,
+    isTopeCasuistica: true,
+    module: "M5",
+    concept: "Tope de Concurso Público en Consultoría de Obras (> S/ 485,000)",
+    question: "[CASUÍSTICA DE TOPES] El Gobierno Regional de Junín necesita contratar la elaboración del expediente técnico de una carretera departamental por una cuantía de S/ 620,000. ¿Qué procedimiento de selección corresponde convocar y cuál es el plazo para apelar?",
+    correct: "A",
+    legalRef: "Ley N° 32069 y Reglamento D.S. N° 009-2025-EF (Consultoría de Obras y Topes)",
+    examTip: "Elaboración de expediente técnico o supervisión de obra = Consultoría de Obra. Si supera S/ 485,000 = Concurso Público (Apelación: 8 días hábiles).",
+    explanation: "Respuesta Correcta: A) Concurso Público, con un plazo máximo de 8 días hábiles para interponer apelación.\n\nFundamento Normativo: La elaboración de un expediente técnico de obra constituye una Consultoría de Obra. Al superar el tope de S/ 485,000 (S/ 620,000), corresponde convocar un Concurso Público, cuyo plazo de impugnación vía apelación es de 8 días hábiles.",
+    options: [
+      { letter: "A", text: "Concurso Público, con un plazo máximo de 8 días hábiles para interponer apelación", isCorrect: true, why: "¡Es la alternativa CORRECTA! Toda consultoría de obra mayor a S/ 485,000 se contrata por Concurso Público y tiene 8 días hábiles para apelación." },
+      { letter: "B", text: "Licitación Pública, porque está vinculada a una carretera", isCorrect: false, why: "Es una trampa frecuente: la ejecución física de la obra va por Licitación Pública, pero el expediente técnico y la supervisión son Consultorías de Obra y van por Concurso Público." },
+      { letter: "C", text: "Subasta Inversa Electrónica, ganando quien ofrezca menor precio", isCorrect: false, why: "Es incorrecta porque una consultoría de obra intelectual no tiene Ficha Técnica ni se contrata por Subasta Inversa." },
+      { letter: "D", text: "Comparación de Precios por tratarse de un estudio técnico", isCorrect: false, why: "Es incorrecta porque la Comparación de Precios no aplica a consultorías ni a montos de S/ 620,000." }
+    ]
+  },
+  {
+    id: 423,
+    page: 69,
+    isWebFija: true,
+    isTopeCasuistica: true,
+    module: "M7",
+    concept: "Tope del 30%, 40% y 50% en Adicionales de Obra y Garantías",
+    question: "[CASUÍSTICA DE TOPES] En un contrato de obra suscrito por S/ 10,000,000 (con garantía de fiel cumplimiento de S/ 1,000,000), la entidad aprueba primero una prestación adicional de obra del 25% y meses después evalúa un segundo adicional que llevaría el acumulado al 44% del monto original. ¿Qué reglas de topes se activan según el Reglamento?",
+    correct: "C",
+    legalRef: "Ley N° 32069 y Reglamento D.S. N° 009-2025-EF (Adicionales de Obra, Límites del 40% y 50% y Garantías)",
+    examTip: "Tres reglas de oro en adicionales de obra: 1) Siempre se actualiza proporcionalmente la garantía del 10%; 2) Si supera el 40%, requiere autorización expresa; 3) Jamás puede superar el 50% del monto original.",
+    explanation: "Respuesta Correcta: C) El contratista debe aumentar proporcionalmente su garantía de fiel cumplimiento; además, por superar el 40% (sin exceder el tope máximo de 50%), se requiere autorización expresa previa.\n\nFundamento Normativo: Todo adicional exige el ajuste proporcional de la garantía de fiel cumplimiento (10%). Asimismo, cuando los adicionales de obra superan el 40% del monto del contrato original, se exige autorización expresa previa, no pudiendo en ningún caso superar el límite máximo del 50%.",
+    options: [
+      { letter: "A", text: "No se puede aprobar porque el límite máximo absoluto para adicionales de obra es el 15%", isCorrect: false, why: "Es incorrecta porque en el nuevo marco el límite donde se exige autorización especial es el 40% y el tope máximo es el 50%." },
+      { letter: "B", text: "Se aprueba directamente por el residente de obra sin actualizar la carta fianza", isCorrect: false, why: "Es incorrecta porque el residente no aprueba adicionales y omitir el ajuste proporcional de la garantía vulnera el Reglamento." },
+      { letter: "C", text: "El contratista debe aumentar proporcionalmente su garantía de fiel cumplimiento; además, por superar el 40% (sin exceder el tope máximo de 50%), se requiere autorización expresa previa", isCorrect: true, why: "¡Es la alternativa CORRECTA! Aplica simultáneamente la regla del ajuste de garantía y el umbral de control del 40%/50%." },
+      { letter: "D", text: "Se pueden aprobar adicionales hasta por el 90% del contrato sin ningún requisito", isCorrect: false, why: "Es incorrecta porque ninguna modificación o adicional puede exceder el 50% del valor original del contrato." }
+    ]
+  },
+  {
+    id: 424,
+    page: 69,
+    isWebFija: true,
+    isTopeCasuistica: true,
+    module: "M8",
+    concept: "Topes de Emergencia: Pago Adelantado (30 UIT) y Regularización (20 vs 40 días)",
+    question: "[CASUÍSTICA DE TOPES] Un Ministerio (Gobierno Nacional) realiza 25 contrataciones no competitivas en un mismo mes para atender una emergencia por inundaciones, pactando pagos adelantados y servicios urgentes. ¿Cuál es el tope máximo de pago adelantado permitido para el Gobierno Nacional y cuál es el plazo máximo para regularizar estas 25 contrataciones?",
+    correct: "D",
+    legalRef: "Reglamento D.S. N° 009-2025-EF (Contrataciones de Emergencia: Adelantos y Regularización)",
+    examTip: "En Emergencias: Pago adelantado Gobierno Nacional = máx. 30 UIT. Regularización ordinaria = 20 días hábiles, pero en contrataciones masivas (ej. 25 en un mes) se amplía a 40 días hábiles.",
+    explanation: "Respuesta Correcta: D) Pago adelantado de hasta 30 UIT para el Gobierno Nacional y un plazo de regularización de 40 días hábiles por tratarse de contrataciones masivas de emergencia.\n\nFundamento Normativo: El Reglamento establece un tope de 30 UIT para pagos adelantados en emergencias del Gobierno Nacional. Asimismo, aunque el plazo ordinario de regularización es de 20 días hábiles, cuando la entidad realiza un alto volumen de contrataciones directas de emergencia en un mes (como 25 procesos), el plazo se extiende a 40 días hábiles.",
+    options: [
+      { letter: "A", text: "Pago adelantado de 100 UIT y regularización en 5 días calendario", isCorrect: false, why: "Es incorrecta tanto en el tope de UIT (es 30 UIT para Gobierno Nacional, no 100 UIT) como en el plazo de regularización." },
+      { letter: "B", text: "No se permite ningún pago adelantado y no existe obligación de regularizar", isCorrect: false, why: "Es incorrecta porque el régimen de emergencias sí autoriza pagos adelantados según nivel de gobierno y exige siempre regularizar la documentación en PLADICOP." },
+      { letter: "C", text: "Pago adelantado de 10 UIT y regularización en 90 días útiles", isCorrect: false, why: "Es incorrecta porque para el Gobierno Nacional el tope es 30 UIT y el plazo máximo especial es de 40 días hábiles." },
+      { letter: "D", text: "Pago adelantado de hasta 30 UIT para el Gobierno Nacional y un plazo de regularización de 40 días hábiles por tratarse de contrataciones masivas de emergencia", isCorrect: true, why: "¡Es la alternativa CORRECTA! Combina con precisión los dos topes especiales de emergencia evaluados en el Balotario 2026." }
+    ]
+  },
+  {
+    id: 425,
+    page: 70,
+    isWebFija: true,
+    isTopeCasuistica: true,
+    module: "M8",
+    concept: "Topes de Plazos en la JPRD (240 días, 5d, 7d hábiles, 7d y 10d calendario)",
+    question: "[CASUÍSTICA DE TOPES Y PLAZOS] En una obra pública con un plazo de ejecución de 300 días calendario, se constituye obligatoriamente una JPRD. Si la JPRD emite una DECISIÓN vinculante sobre una controversia técnica y ninguna de las partes formula objeción, ¿en cuántos días queda firme dicha decisión y cuántos días tiene la Entidad para iniciar su implementación?",
+    correct: "B",
+    legalRef: "Reglamento D.S. N° 009-2025-EF y Directiva N° 002-2025-OECE-CD (Plazos de la JPRD)",
+    examTip: "No confundas Recomendación (7 días hábiles para pronunciarse) con Decisión de la JPRD: la Decisión queda firme a los 7 días calendario sin objeción y la Entidad tiene 10 días calendario para iniciar su implementación.",
+    explanation: "Respuesta Correcta: B) Queda firme transcurridos 7 días calendario sin objeción, y la Entidad tiene 10 días calendario para iniciar su implementación.\n\nFundamento Normativo: Al superar el límite mínimo de 240 días calendario (300 días), aplica la JPRD. Notificada una decisión de la JPRD, queda firme y de cumplimiento obligatorio si ninguna parte la objeta en 7 días calendario, contando luego la Entidad con 10 días calendario para iniciar su implementación.",
+    options: [
+      { letter: "A", text: "Queda firme en 30 días hábiles y se implementa al finalizar la liquidación de la obra", isCorrect: false, why: "Es incorrecta porque la JPRD busca soluciones inmediatas en obra: son 7 días calendario para firmeza y 10 días calendario para iniciar implementación." },
+      { letter: "B", text: "Queda firme transcurridos 7 días calendario sin objeción, y la Entidad tiene 10 días calendario para iniciar su implementación", isCorrect: true, why: "¡Es la alternativa CORRECTA! Respeta exactamente los plazos en días calendario fijados para las decisiones de la JPRD." },
+      { letter: "C", text: "Queda firme inmediatamente en el acto y la Entidad tiene 60 días hábiles para implementarla", isCorrect: false, why: "Es incorrecta porque las partes tienen 7 días calendario para formular objeción antes de que quede firme." },
+      { letter: "D", text: "Requiere primero ser ratificada por la Contraloría General en un plazo de 15 días", isCorrect: false, why: "Es incorrecta porque las decisiones de la JPRD son autónomas y vinculantes entre las partes sin requerir ratificación de la Contraloría." }
+    ]
+  },
+  {
+    id: 426,
+    page: 70,
+    isWebFija: true,
+    isTopeCasuistica: true,
+    module: "M4",
+    concept: "Tope del 10% en Modalidad de Pago Mixto vs. Suma Alzada",
+    question: "[CASUÍSTICA DE TOPES] Una entidad del sector agrario e hídrico contrata un servicio especializado que incluye la instalación de equipos hidrometeorológicos. Según el Reglamento, ¿qué tope porcentual hace adecuada la elección de la modalidad de 'Pago Mixto'?",
+    correct: "A",
+    legalRef: "Reglamento D.S. N° 009-2025-EF (Modalidades de Pago: Pago Mixto)",
+    examTip: "Pago Mixto = Adecuado cuando los costos de instalación superan el 10% del monto contractual.",
+    explanation: "Respuesta Correcta: A) Cuando los costos de instalación superan el 10% del monto contractual.\n\nFundamento Normativo: Conforme a las reglas sobre modalidades de pago en el Reglamento D.S. N° 009-2025-EF (evaluado también en la pregunta 351 del balotario), la modalidad de pago mixto resulta técnicamente adecuada cuando los costos de instalación superan el 10% del monto total del contrato.",
+    options: [
+      { letter: "A", text: "Cuando los costos de instalación superan el 10% del monto contractual", isCorrect: true, why: "¡Es la alternativa CORRECTA! El umbral del 10% en costos de instalación es la condición técnica que justifica la modalidad de pago mixto." },
+      { letter: "B", text: "Cuando el contrato dura menos de 5 días calendario", isCorrect: false, why: "Es incorrecta porque una duración de 5 días no es el criterio normativo para el pago mixto." },
+      { letter: "C", text: "Solo cuando el monto es inferior a 1 UIT", isCorrect: false, why: "Es incorrecta porque la modalidad de pago mixto aplica a contratos de envergadura donde coexisten componentes de distinta naturaleza e instalación > 10%." },
+      { letter: "D", text: "Cuando el proveedor exige que se le pague el 100% antes de firmar el contrato", isCorrect: false, why: "Es incorrecta porque en el Estado nunca se paga el 100% del contrato antes de su firma y ejecución." }
+    ]
+  },
+  {
+    id: 427,
+    page: 70,
+    isWebFija: true,
+    isTopeCasuistica: true,
+    module: "M7",
+    concept: "Topes de Plazos en Ejecución: Pago (15d hábiles), Supervisión (30d) y Recepción (30d hábiles)",
+    question: "[CASUÍSTICA DE TOPES Y PLAZOS] Durante la ejecución de una obra pública se presentan tres hitos: 1) Frecuencia máxima de supervisión periódica; 2) Plazo máximo para pagar una valorización tras su conformidad; y 3) Plazo tras el cual se presume la conformidad de la obra si la entidad guarda silencio ante el aviso de culminación. ¿Cuáles son estos tres plazos exactos?",
+    correct: "C",
+    legalRef: "Reglamento D.S. N° 009-2025-EF (Supervisión, Pago de Valorizaciones y Recepción de Obra)",
+    examTip: "Trilogía de plazos en Ejecución Contractual: Supervisión periódica = máx. cada 30 días | Pago de valorización = máx. 15 días hábiles | Silencio en culminación de obra = 30 días hábiles.",
+    explanation: "Respuesta Correcta: C) Supervisión periódica: cada 30 días; Pago de valorización: máximo 15 días hábiles; Presunción de conformidad por silencio en culminación de obra: 30 días hábiles.\n\nFundamento Normativo: Reúne tres de los plazos más preguntados en la competencia de Ejecución Contractual del examen OECE.",
+    options: [
+      { letter: "A", text: "Supervisión: cada 90 días; Pago: 60 días calendario; Silencio en obra: 5 días", isCorrect: false, why: "Todos los plazos son incorrectos y exceden o distorsionan los límites del Reglamento." },
+      { letter: "B", text: "Supervisión: solo al final; Pago: 3 días hábiles; Silencio en obra: 120 días", isCorrect: false, why: "La supervisión no se hace solo al final (es periódica, máx. cada 30 días) y el pago de valorización tiene un tope de 15 días hábiles." },
+      { letter: "C", text: "Supervisión periódica: cada 30 días; Pago de valorización: máximo 15 días hábiles; Presunción de conformidad por silencio en culminación de obra: 30 días hábiles", isCorrect: true, why: "¡Es la alternativa CORRECTA! Contiene los tres plazos exactos exigidos por el Reglamento D.S. N° 009-2025-EF." },
+      { letter: "D", text: "Supervisión: cada 15 días; Pago: 45 días hábiles; Silencio en obra: 10 días", isCorrect: false, why: "Es incorrecta porque el pago de valorización no puede demorar 45 días hábiles (el máximo es 15 días hábiles)." }
+    ]
+  },
+  {
+    id: 428,
+    page: 70,
+    isWebFija: true,
+    isTopeCasuistica: true,
+    module: "M6",
+    concept: "Competencia Resolutiva en Apelaciones según Tope de Cuantía",
+    question: "[CASUÍSTICA DE TOPES] Una municipalidad convoca una Licitación Pública Abreviada para adquirir equipos informáticos por S/ 180,000. Un postor descalificado interpone recurso de apelación al cuarto día hábil de notificada la buena pro, adjuntando la garantía respectiva. ¿Es admisible el recurso y quién es competente para resolverlo?",
+    correct: "A",
+    legalRef: "Ley N° 32069 y Reglamento D.S. N° 009-2025-EF (Recurso de Apelación: Plazos y Competencia)",
+    examTip: "En una LP Abreviada (plazo máximo: 5 días hábiles), presentar la apelación al 4° día hábil con garantía es ADMISIBLE y PROCEDENTE. Por su cuantía (S/ 180,000, menor al tope para el TCP), resuelve la propia Entidad Contratante (AGA/DEC), nunca el Comité de Selección.",
+    explanation: "Respuesta Correcta: A) Sí es procedente porque se presentó dentro de los 5 días hábiles con garantía, y debe ser resuelto por la propia Entidad Contratante (a través de un órgano imparcial / Autoridad de la Gestión Administrativa).\n\nFundamento Normativo: En modalidades abreviadas el plazo para apelar es de 5 días hábiles (el 4° día está en plazo). Además, al ser un proceso de S/ 180,000, la competencia resolutiva recae en la propia Entidad Contratante (nunca en el comité de selección que emitió el acto ni en el TCP si no supera el umbral de ley).",
+    options: [
+      { letter: "A", text: "Sí es procedente porque se presentó dentro de los 5 días hábiles con garantía, y debe ser resuelto por la propia Entidad Contratante (a través de un órgano imparcial / Autoridad de la Gestión Administrativa)", isCorrect: true, why: "¡Es la alternativa CORRECTA! Cumple el plazo de 5 días hábiles, cuenta con garantía y define correctamente la competencia de la Entidad." },
+      { letter: "B", text: "Es improcedente por extemporáneo porque en abreviadas el plazo es de 2 días hábiles", isCorrect: false, why: "Es incorrecta porque el plazo en modalidades abreviadas es de 5 días hábiles, no de 2 días." },
+      { letter: "C", text: "Debe ser resuelto por el mismo Comité de Selección que otorgó la buena pro", isCorrect: false, why: "Es incorrecta porque el Comité de Selección jamás puede resolver apelaciones contra sus propios actos por conflicto de intereses y falta de imparcialidad." },
+      { letter: "D", text: "Se puede perfeccionar el contrato de todas formas mientras se tramita la apelación", isCorrect: false, why: "Es incorrecta porque la interposición del recurso de apelación suspende obligatoriamente el perfeccionamiento del contrato." }
+    ]
+  }
+];

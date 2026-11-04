@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificación OECE 2026 | Academia, Balotario Explicado y Simulador – Ley N° 32069</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- SIDEBAR NAVIGATION -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand-box">
+      <div class="brand-logo">OECE</div>
+      <div>
+        <div class="brand-title">CERTIFICACIÓN OECE</div>
+        <div class="brand-subtitle">Ley N° 32069 · D.S. 009-2025-EF</div>
+      </div>
+    </div>
+
+    <div class="user-profile-card">
+      <div class="user-profile-label">Participante / Especialista</div>
+      <input
+        type="text"
+        id="userNameInput"
+        class="user-name-input"
+        value="JHUNIOR VARGAS GORDON"
+        placeholder="Tu nombre para el certificado"
+        oninput="updateUserName(this.value)"
+      />
+
+      <div class="level-selector-row">
+        <span>Meta de Certificación:</span>
+        <select id="targetLevelSelect" class="level-select" onchange="updateTargetLevel(this.value)">
+          <option value="Básico">Nivel Básico (≥58%)</option>
+          <option value="Intermedio" selected>Nivel Intermedio (≥70%)</option>
+          <option value="Avanzado">Nivel Avanzado (≥80%)</option>
+        </select>
+      </div>
+
+      <div class="readiness-bar-wrap">
+        <div class="readiness-header">
+          <span style="color:#cbd5e1">Índice de Preparación</span>
+          <strong id="sidebarReadinessPct" style="color:#34d399">0%</strong>
+        </div>
+        <div class="readiness-track">
+          <div class="readiness-fill" id="sidebarReadinessFill" style="width:0%"></div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav-menu">
+      <button class="nav-btn active" data-view="dashboard" onclick="switchView('dashboard')">
+        <span class="nav-icon">🏠</span>
+        <span>Inicio & Mi Ruta OECE</span>
+      </button>
+
+      <button class="nav-btn" data-view="academy" onclick="switchView('academy')">
+        <span class="nav-icon">📚</span>
+        <span>1. Aprender con Explicaciones</span>
+        <span class="nav-badge">8 Mód.</span>
+      </button>
+
+      <button class="nav-btn" data-view="trainer" onclick="switchView('trainer')">
+        <span class="nav-icon">🧠</span>
+        <span>2. Entrenar con Preguntas</span>
+        <span class="nav-badge" id="navBadgeTrainer">0/428</span>
+      </button>
+
+      <button class="nav-btn" data-view="topes" onclick="switchView('topes')">
+        <span class="nav-icon">🎯</span>
+        <span>Simulador Topes & Casuísticas</span>
+        <span class="nav-badge" style="background:#10b981; color:#062e22">Fijas</span>
+      </button>
+
+      <button class="nav-btn" data-view="tools" onclick="switchView('tools')">
+        <span class="nav-icon">🧮</span>
+        <span>Calculadora & Anti-Trampas</span>
+        <span class="nav-badge" style="background:#f59e0b; color:#0f172a">Nuevo</span>
+      </button>
+
+      <button class="nav-btn" data-view="flashcards" onclick="switchView('flashcards')">
+        <span class="nav-icon">⚡</span>
+        <span>Flashcards & Plazos Fijos</span>
+      </button>
+
+      <button class="nav-btn" data-view="simulator" onclick="switchView('simulator')">
+        <span class="nav-icon">⏱️</span>
+        <span>3. Simulacro Examen OECE</span>
+      </button>
+
+      <button class="nav-btn" data-view="certificate" onclick="switchView('certificate')">
+        <span class="nav-icon">🎓</span>
+        <span>Mi Certificado & Historial</span>
+        <span class="nav-badge" id="navBadgeCert">0</span>
+      </button>
+    </nav>
+
+    <div class="sidebar-footer">
+      <button class="sidebar-util-btn" onclick="toggleTheme()" title="Cambiar modo claro/oscuro">
+        🌗 Tema
+      </button>
+      <button class="sidebar-util-btn" onclick="resetAllProgress()" title="Reiniciar estadísticas">
+        🔄 Reiniciar
+      </button>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT AREA -->
+  <div class="main-wrapper">
+    <header class="topbar">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <button class="mobile-menu-btn" onclick="toggleMobileSidebar()">☰</button>
+        <div style="font-weight:700; font-size:0.95rem;">
+          Plataforma Interactiva de Estudio y Certificación OECE 2026
+        </div>
+      </div>
+
+      <div class="topbar-info">
+        <span class="pill-tag green" id="topStatsPill">✅ 0 dominadas · 🎯 Precisión: 0%</span>
+        <button class="btn btn-outline btn-sm" id="topbarThemeBtn" onclick="toggleTheme()" title="Alternar Modo Oscuro / Modo Claro">
+          🌙 Modo Oscuro Activo
+        </button>
+        <a href="6401561-ds009_2025ef.pdf" target="_blank" class="btn btn-outline btn-sm" title="Abrir PDF del Reglamento D.S. N° 009-2025-EF">
+          📄 Reglamento D.S. 009-2025-EF
+        </a>
+        <a href="BALOTARIO MASTER 2026.pdf" target="_blank" class="btn btn-outline btn-sm" title="Abrir PDF del Balotario Original">
+          📑 Balotario PDF
+        </a>
+      </div>
+    </header>
+
+    <main class="content-area">
+      <!-- VIEW 1: DASHBOARD -->
+      <section id="view-dashboard" class="view-section active">
+        <div id="dashboardContent"></div>
+      </section>
+
+      <!-- VIEW 2: ACADEMY (THEORETICAL EXPLANATIONS) -->
+      <section id="view-academy" class="view-section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">📚 Academia Interactiva: Aprende con Explicaciones Didácticas</h2>
+            <p style="font-size:0.88rem; color:var(--text-secondary)">Domina la teoría completa de la Ley N° 32069 y su Reglamento D.S. N° 009-2025-EF estructurada en 8 módulos con las "Fijas de Examen OECE".</p>
+          </div>
+        </div>
+        <div class="academy-layout">
+          <div class="academy-toc" id="academyToc"></div>
+          <div class="academy-reader" id="academyReader"></div>
+        </div>
+      </section>
+
+      <!-- VIEW 3: TRAINER (LEARN THROUGH QUESTIONS) -->
+      <section id="view-trainer" class="view-section">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">🧠 Entrenador Guiado: Aprende a través de las 405 Preguntas Oficiales</h2>
+            <p style="font-size:0.88rem; color:var(--text-secondary)">Responde cada pregunta y recibe al instante la explicación normativa paso a paso, por qué se descartan los distractores y el tip de examen.</p>
+          </div>
+        </div>
+        <div id="trainerContent"></div>
+      </section>
+
+      <!-- VIEW 4: FLASHCARDS & CHEATSHEET -->
+      <section id="view-flashcards" class="view-section">
+        <div id="flashcardsContent"></div>
+      </section>
+
+      <!-- VIEW 4A: SIMULADOR DE TOPES Y CASUÍSTICAS -->
+      <section id="view-topes" class="view-section">
+        <div id="topesContent"></div>
+      </section>
+
+      <!-- VIEW 4B: CALCULATOR, ANTI-TRAPS & ARTICLES -->
+      <section id="view-tools" class="view-section">
+        <div id="toolsContent"></div>
+      </section>
+
+      <!-- VIEW 5: EXAM SIMULATOR -->
+      <section id="view-simulator" class="view-section">
+        <div id="simulatorContent"></div>
+      </section>
+
+      <!-- VIEW 6: CERTIFICATE & HISTORY -->
+      <section id="view-certificate" class="view-section">
+        <div id="certificateContent"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- BARRA INFERIOR PARA CELULAR (ESTILO APP MÓVIL) -->
+  <nav class="mobile-bottom-nav no-print">
+    <button class="mob-nav-btn active" data-mob-view="dashboard" onclick="switchView('dashboard')">
+      <span class="mob-icon">📊</span>
+      <span>Inicio</span>
+    </button>
+    <button class="mob-nav-btn" data-mob-view="trainer" onclick="switchView('trainer')">
+      <span class="mob-icon">🧠</span>
+      <span>Practicar</span>
+    </button>
+    <button class="mob-nav-btn" data-mob-view="topes" onclick="switchView('topes')">
+      <span class="mob-icon">🎯</span>
+      <span>Topes</span>
+    </button>
+    <button class="mob-nav-btn" data-mob-view="simulator" onclick="switchView('simulator')">
+      <span class="mob-icon">⏱️</span>
+      <span>Simulacro</span>
+    </button>
+    <button class="mob-nav-btn" data-mob-view="flashcards" onclick="switchView('flashcards')">
+      <span class="mob-icon">🃏</span>
+      <span>Tarjetas</span>
+    </button>
+  </nav>
+
+  <script src="data.js"></script>
+  <script src="study_content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
