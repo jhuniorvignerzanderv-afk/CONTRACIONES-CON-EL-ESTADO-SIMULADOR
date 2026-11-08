@@ -735,5 +735,325 @@ window.OECE_TOPES_QUESTIONS = [
       { letter: "C", text: "No se aplica ninguna penalidad si el retraso es menor a 30 días", isCorrect: false, why: "Es incorrecta porque la penalidad por mora se aplica de forma automática desde el primer día calendario de retraso injustificado." },
       { letter: "D", text: "El factor F para bienes es 0.15 y el tope máximo de penalidad es 50%", isCorrect: false, why: "Es incorrecta porque 0.15 corresponde a obras con plazos mayores a 60 días, y el tope de penalidades es 10% (50% es el tope prohibido para adicionales)." }
     ]
+  },
+  {
+    id: 441,
+    page: 72,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M1",
+    concept: "Casuística Real M1: Principio de Valor por Dinero y Costo del Ciclo de Vida (Art. 5 Ley N° 32069)",
+    question: "[CASUÍSTICA DE EXAMEN SICAN-OECE] El Gobierno Regional de Junín requiere adquirir 15 tractores agrícolas para un proyecto productivo. Durante la elaboración de la estrategia de contratación, el especialista financiero propone que el único factor de evaluación sea el precio de compra inicial más bajo, descartando evaluar el consumo de combustible, la garantía extendida y el costo de mantenimiento durante 5 años. Como Oficial de Compras certificado por el OECE, ¿qué observación técnica debes formular conforme al artículo 5 de la Ley N° 32069?",
+    correct: "C",
+    legalRef: "Artículo 5 de la Ley N° 32069 (Principio de Valor por Dinero y Gestión por Resultados)",
+    examTip: "Cómo resolver el caso: Cuando en un caso de bienes/equipos quieran evaluar SOLO el precio inicial ignorando mantenimiento, repuestos o consumo, marca siempre que vulnera el Principio de VALOR POR DINERO (Art. 5 Ley 32069).",
+    explanation: "Respuesta Correcta: C) Que dicha propuesta contraviene el principio de Valor por Dinero (Art. 5 de la Ley N° 32069), pues la entidad debe maximizar el valor de los recursos públicos evaluando la calidad, el costo total del ciclo de vida (operación y mantenimiento), la sostenibilidad y la oportunidad, no solo el menor precio inicial.\n\nDesglose del Caso:\n• Hecho clave: Quieren comprar tractores mirando solo el precio más barato hoy.\n• Regla aplicable: Art. 5 de la Ley N° 32069 (Valor por Dinero).\n• Conclusión: Debe integrarse calidad, garantía y costo del ciclo de vida.",
+    options: [
+      { letter: "A", text: "Que la propuesta es correcta porque en bienes agrícolas está prohibido evaluar factores técnicos distintos al precio", isCorrect: false, why: "Es falsa: la Ley N° 32069 promueve evaluar factores técnicos, garantía, sostenibilidad y ciclo de vida." },
+      { letter: "B", text: "Que se debe pedir autorización previa al OECE para que el OECE firme el contrato de los tractores", isCorrect: false, why: "Es una trampa clásica: el OECE jamás firma contratos ni autoriza compras específicas de las entidades." },
+      { letter: "C", text: "Que dicha propuesta contraviene el principio de Valor por Dinero (Art. 5 de la Ley N° 32069), pues la entidad debe maximizar el valor de los recursos públicos evaluando la calidad, el costo total del ciclo de vida (operación y mantenimiento), la sostenibilidad y la oportunidad, no solo el menor precio inicial", isCorrect: true, why: "¡Es la alternativa CORRECTA! Aplica directamente el principio rector de Valor por Dinero al caso práctico." },
+      { letter: "D", text: "Que al ser tractores agrícolas no se registran en la PLADICOP sino solo en cuadernos internos", isCorrect: false, why: "Es incorrecta porque todas las fases de la contratación pública se registran obligatoriamente en la PLADICOP." }
+    ]
+  },
+  {
+    id: 442,
+    page: 72,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M1",
+    concept: "Casuística Real M1: Omisión de Registro en PLADICOP en las 3 Fases",
+    question: "[CASUÍSTICA DE EXAMEN SICAN-OECE] Una municipalidad provincial adjudica la buena pro de un servicio de limpieza pública y suscribe el contrato respectivo. Sin embargo, durante los primeros cuatro meses de ejecución, el administrador del contrato decide llevar el control de pagos, avances y una primera adenda únicamente en archivos físicos de su oficina, sin registrarlos en la PLADICOP alegando que el sistema digital solo es obligatorio hasta el otorgamiento de la buena pro. ¿Cuál es la consecuencia jurídica de este proceder?",
+    correct: "A",
+    legalRef: "Ley N° 32069 y Reglamento D.S. N° 009-2025-EF (Obligatoriedad de la PLADICOP en Ejecución Contractual)",
+    examTip: "Cómo resolver el caso: Si el caso dice que alguien no registró actos en la PLADICOP durante la ejecución contractual, recuerda que la PLADICOP cubre las 3 FASES y omitir el registro invalida actos y genera responsabilidad funcional.",
+    explanation: "Respuesta Correcta: A) El proceder incumple la Ley N° 32069 y su Reglamento, ya que el registro y actualización en la PLADICOP es obligatorio en las tres fases (incluyendo contratos, avances, pagos y modificaciones en la ejecución contractual), bajo sanción de invalidez de los actos y responsabilidad administrativa.\n\nDesglose del Caso:\n• Error del funcionario: Creer que la PLADICOP termina en la buena pro.\n• Base legal: En la Ley N° 32069 la PLADICOP abarca Actuaciones Preparatorias, Selección y Ejecución Contractual.",
+    options: [
+      { letter: "A", text: "El proceder incumple la Ley N° 32069 y su Reglamento, ya que el registro y actualización en la PLADICOP es obligatorio en las tres fases (incluyendo contratos, avances, pagos y modificaciones en la ejecución contractual), bajo sanción de invalidez de los actos y responsabilidad administrativa", isCorrect: true, why: "¡Es la alternativa CORRECTA! Precisa la obligatoriedad de la PLADICOP durante toda la ejecución contractual." },
+      { letter: "B", text: "Es válido porque en la fase de ejecución contractual el uso de la PLADICOP es meramente facultativo", isCorrect: false, why: "Es incorrecta porque el registro de contratos, pagos y adendas en la PLADICOP es obligatorio." },
+      { letter: "C", text: "Solo es obligatorio registrar en la PLADICOP cuando el contrato supera los S/ 50,000,000", isCorrect: false, why: "Es incorrecta porque la obligación rige para todos los contratos, incluso los contratos menores." },
+      { letter: "D", text: "El contratista queda exonerado de ejecutar el servicio y cobra el 100% sin trabajar", isCorrect: false, why: "Es un distractor absurdo sin sustento legal." }
+    ]
+  },
+  {
+    id: 443,
+    page: 72,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M2",
+    concept: "Casuística Real M2: Designación en la DEC y Niveles de Certificación OECE",
+    question: "[CASUÍSTICA DE EXAMEN SICAN-OECE] En un Ministerio se requiere designar al nuevo Responsable titular (Jefe) de la Dependencia Encargada de las Contrataciones (DEC) y a dos Oficiales de Compras para conducir los procedimientos de selección del año 2026. Se presentan tres candidatos: Carlos (con certificación OECE Nivel Básico), Lucía (con certificación Nivel Intermedio) y Jorge (con certificación Nivel Avanzado). Conforme a la Ley N° 32069 y su Reglamento, ¿quiénes cumplen el requisito para cada cargo?",
+    correct: "D",
+    legalRef: "Ley N° 32069 y Reglamento D.S. N° 009-2025-EF (Certificación de Oficiales de Compras y Responsable de la DEC)",
+    examTip: "Cómo resolver el caso: Jefe/Responsable titular de la DEC = exige Nivel AVANZADO (Jorge). Oficial de Compras = exige Nivel INTERMEDIO o AVANZADO (Lucía y Jorge). Nivel Básico (Carlos) NO alcanza para ser Oficial de Compras.",
+    explanation: "Respuesta Correcta: D) Jorge (Nivel Avanzado) puede ser designado Responsable titular de la DEC, mientras que tanto Lucía (Nivel Intermedio) como Jorge (Nivel Avanzado) cumplen el requisito para desempeñarse como Oficiales de Compras; Carlos (Nivel Básico) no cumple el nivel mínimo requerido.\n\nDesglose del Caso:\n• Carlos (Básico): No alcanza el nivel mínimo para Oficial de Compras.\n• Lucía (Intermedio): Apta para Oficial de Compras, pero no para Jefe titular de la DEC.\n• Jorge (Avanzado): Apto para Jefe titular de la DEC y Oficial de Compras.",
+    options: [
+      { letter: "A", text: "Carlos (Nivel Básico) puede ser Jefe de la DEC porque cualquier nivel basta en un Ministerio", isCorrect: false, why: "Es incorrecta porque el Responsable titular de la DEC requiere obligatoriamente certificación de Nivel Avanzado." },
+      { letter: "B", text: "Lucía (Nivel Intermedio) puede ser Jefa titular de la DEC y Carlos Oficial de Compras", isCorrect: false, why: "Es incorrecta porque para Jefe titular de la DEC se exige Nivel Avanzado y para Oficial de Compras mínimo Nivel Intermedio." },
+      { letter: "C", text: "Ninguno requiere certificación del OECE si tienen más de un mes trabajando en el Estado", isCorrect: false, why: "Es incorrecta porque la certificación del OECE es obligatoria e indispensable para ejercer funciones en la DEC." },
+      { letter: "D", text: "Jorge (Nivel Avanzado) puede ser designado Responsable titular de la DEC, mientras que tanto Lucía (Nivel Intermedio) como Jorge (Nivel Avanzado) cumplen el requisito para desempeñarse como Oficiales de Compras; Carlos (Nivel Básico) no cumple el nivel mínimo requerido", isCorrect: true, why: "¡Es la alternativa CORRECTA! Aplica con exactitud los niveles de certificación OECE a los tres candidatos del caso." }
+    ]
+  },
+  {
+    id: 444,
+    page: 72,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M2",
+    concept: "Casuística Real M2: Intervención del Área Técnica Estratégica (ATE) y la AGA",
+    question: "[CASUÍSTICA DE EXAMEN SICAN-OECE] Una Dirección Regional de Salud necesita adquirir un resonador magnético de alta gama e infraestructura hospitalaria conexa, pero el Área Usuaria carece de ingenieros biomédicos especialistas para definir las especificaciones técnicas. Asimismo, se requiere aprobar el expediente de contratación una vez culminada la estrategia. ¿Qué órgano brinda el soporte especializado para formular el requerimiento y qué autoridad aprueba el expediente?",
+    correct: "B",
+    legalRef: "Artículo 25 de la Ley N° 32069 y Reglamento D.S. N° 009-2025-EF (Área Técnica Estratégica y Autoridad de la Gestión Administrativa)",
+    examTip: "Cómo resolver el caso: 1) Falta de conocimiento técnico especializado del área usuaria = interviene el ÁREA TÉCNICA ESTRATÉGICA (ATE). 2) Aprobación del expediente de contratación = AUTORIDAD DE LA GESTIÓN ADMINISTRATIVA (AGA).",
+    explanation: "Respuesta Correcta: B) El Área Técnica Estratégica (ATE) brinda el soporte técnico especializado para la formulación del requerimiento, y la Autoridad de la Gestión Administrativa (AGA) aprueba el expediente de contratación.\n\nDesglose del Caso:\n• Requerimiento complejo (resonador magnético): interviene el ATE.\n• Aprobación administrativa del expediente: competencia de la AGA (Art. 25 Ley 32069).",
+    options: [
+      { letter: "A", text: "El Tribunal de Contrataciones Públicas redacta el requerimiento y el Comité de Recepción aprueba el expediente", isCorrect: false, why: "Es incorrecta porque el TCP es un órgano resolutivo/sancionador y el comité de recepción actúa al final de una obra." },
+      { letter: "B", text: "El Área Técnica Estratégica (ATE) brinda el soporte técnico especializado para la formulación del requerimiento, y la Autoridad de la Gestión Administrativa (AGA) aprueba el expediente de contratación", isCorrect: true, why: "¡Es la alternativa CORRECTA! Identifica con precisión los roles del ATE y de la AGA en la Ley N° 32069." },
+      { letter: "C", text: "El proveedor ganador redacta las especificaciones técnicas antes de la convocatoria", isCorrect: false, why: "Es incorrecta porque direccionaría el proceso y vulneraría los principios de integridad e igualdad de trato." },
+      { letter: "D", text: "La Contraloría General de la República elabora el expediente y firma las órdenes de compra", isCorrect: false, why: "Es incorrecta porque la Contraloría ejerce control gubernamental, no gestión logística de las entidades." }
+    ]
+  },
+  {
+    id: 445,
+    page: 72,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M3",
+    concept: "Casuística Real M3: Segmentación Crítica vs. Operacional e Interacción con el Mercado (Art. 125 D.S. 009-2025-EF)",
+    question: "[CASUÍSTICA DE EXAMEN SICAN-OECE] La DEC de un hospital nacional analiza dos contrataciones incluidas en su PAC: 1) Compra de papel bond por S/ 600,000 (alta cuantía, donde en los últimos 2 años participaron en promedio 12 postores sin ningún desierto); y 2) Compra de reactivos especializados por S/ 90,000 (baja cuantía, pero cuyo proceso quedó desierto el año pasado y solo tuvo 2 postores en promedio). Según el artículo 125 del Reglamento D.S. N° 009-2025-EF, ¿cómo se clasifican ambas contrataciones en la matriz de segmentación?",
+    correct: "A",
+    legalRef: "Artículos 42 y 125 del Reglamento D.S. N° 009-2025-EF (Segmentación de Contrataciones)",
+    examTip: "Cómo resolver el caso: Compra 1 (Papel: alta cuantía + 12 postores = bajo riesgo) -> OPERACIONAL. Compra 2 (Reactivos: baja cuantía + desierto previo y <= 3 postores en bienes = alto riesgo) -> CRÍTICA.",
+    explanation: "Respuesta Correcta: A) La compra de papel bond se clasifica como Operacional (alta cuantía y bajo riesgo, orientada a atención oportuna y reducción de costos) y la de reactivos como Crítica (baja cuantía y alto riesgo, orientada a disminuir los riesgos).\n\nDesglose del Caso (Art. 125 D.S. 009-2025-EF):\n• Papel bond: Alta cuantía + Bajo riesgo (12 postores, sin desiertos) = OPERACIONAL.\n• Reactivos: Baja cuantía + Alto riesgo (quedó desierto en los últimos 2 años y promedio <= 3 postores en bienes) = CRÍTICA.",
+    options: [
+      { letter: "A", text: "La compra de papel bond se clasifica como Operacional (alta cuantía y bajo riesgo, orientada a atención oportuna y reducción de costos) y la de reactivos como Crítica (baja cuantía y alto riesgo, orientada a disminuir los riesgos)", isCorrect: true, why: "¡Es la alternativa CORRECTA! Cruza perfectamente Cuantía vs. Riesgo conforme al Art. 125 del D.S. N° 009-2025-EF." },
+      { letter: "B", text: "Ambas se clasifican como Contratos Menores excluidos del PAC", isCorrect: false, why: "Es incorrecta porque ambos montos (S/ 600,000 y S/ 90,000) superan las 8 UIT (S/ 42,800)." },
+      { letter: "C", text: "La de papel bond es Crítica por su alto monto y la de reactivos es Rutinaria por su bajo monto", isCorrect: false, why: "Es una trampa: confunde cuantía con riesgo. El papel bond tiene alta cuantía pero bajo riesgo (Operacional), y los reactivos tienen baja cuantía pero alto riesgo (Crítica)." },
+      { letter: "D", text: "Ninguna requiere estrategia de contratación ni interacción con el mercado", isCorrect: false, why: "Es incorrecta porque todo procedimiento competitivo del PAC requiere estrategia de contratación." }
+    ]
+  },
+  {
+    id: 446,
+    page: 72,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M3",
+    concept: "Casuística Real M3: Plazos en Difusión del Requerimiento por PLADICOP (5 y 3 Días Hábiles)",
+    question: "[CASUÍSTICA DE EXAMEN SICAN-OECE] Dentro de la Interacción con el Mercado, una entidad publica la difusión preliminar de su requerimiento en la PLADICOP el lunes 4 de mayo, otorgando únicamente un (1) día hábil para que los proveedores formulen consultas o comentarios técnicos, y diez (10) días hábiles para que la entidad los absuelva. Un proveedor observa dichos plazos. ¿Qué establece el Reglamento D.S. N° 009-2025-EF al respecto?",
+    correct: "C",
+    legalRef: "Reglamento D.S. N° 009-2025-EF (Interacción con el Mercado: Difusión del Requerimiento y Plazos)",
+    examTip: "Cómo resolver el caso: En difusión del requerimiento en PLADICOP los plazos son: mínimo 5 DÍAS HÁBILES para consultas de proveedores y máximo 3 DÍAS HÁBILES para que la entidad absuelva.",
+    explanation: "Respuesta Correcta: C) Los plazos fijados por la entidad son incorrectos, pues debe otorgarse como mínimo cinco (5) días hábiles para que los proveedores formulen consultas técnicas y tres (3) días hábiles para que la entidad contratante las absuelva.\n\nDesglose del Caso:\n• Plazo dado por la entidad: 1 día (proveedores) y 10 días (entidad) -> Incorrecto.\n• Plazo legal exacto: 5 días hábiles (proveedores) y 3 días hábiles (entidad).",
+    options: [
+      { letter: "A", text: "Los plazos de 1 y 10 días son válidos porque la entidad tiene discrecionalidad absoluta sin mínimos legales", isCorrect: false, why: "Es incorrecta porque el Reglamento establece un mínimo obligatorio de 5 días hábiles para consultas y 3 días hábiles para su absolución." },
+      { letter: "B", text: "El plazo legal es de 30 días calendario para consultas y 60 días calendario para absolución", isCorrect: false, why: "Es incorrecta tanto en el número como en el tipo de días (son 5 y 3 días hábiles)." },
+      { letter: "C", text: "Los plazos fijados por la entidad son incorrectos, pues debe otorgarse como mínimo cinco (5) días hábiles para que los proveedores formulen consultas técnicas y tres (3) días hábiles para que la entidad contratante las absuelva", isCorrect: true, why: "¡Es la alternativa CORRECTA! Aplica la regla exacta de 5 días hábiles y 3 días hábiles en la difusión del requerimiento." },
+      { letter: "D", text: "En la Ley N° 32069 está prohibido difundir el requerimiento antes de la convocatoria", isCorrect: false, why: "Es incorrecta porque la difusión del requerimiento es una herramienta central de la Interacción con el Mercado." }
+    ]
+  },
+  {
+    id: 447,
+    page: 73,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M4",
+    concept: "Casuística Real M4: Impedimentos en Personas Jurídicas (>30%) y Parientes (Art. 30 Ley N° 32069)",
+    question: "[CASUÍSTICA DE EXAMEN SICAN-OECE] En una Licitación Pública convocada por el Gobierno Regional de Arequipa se presentan dos postores: 1) La empresa 'Constructora Sur S.A.C.', en la cual el cuñado del Gobernador Regional posee el 35% de las acciones; y 2) El ingeniero Roberto, quien es primo hermano (cuarto grado de consanguinidad) del Gobernador Regional. Conforme al artículo 30 de la Ley N° 32069, ¿cuál de los postores se encuentra impedido de contratar con dicho Gobierno Regional?",
+    correct: "B",
+    legalRef: "Artículo 30 de la Ley N° 32069 (Impedimentos por Parentesco hasta 2° Grado y Participación > 30% en Personas Jurídicas)",
+    examTip: "Cómo resolver el caso: 1) Cuñado = 2° grado de afinidad (SÍ está impedido) y tiene 35% (> 30%) en la empresa -> Constructora Sur S.A.C. ESTÁ IMPEDIDA. 2) Primo hermano = 4° grado de consanguinidad -> Roberto NO está impedido (el tope es 2° grado y no hay analogía).",
+    explanation: "Respuesta Correcta: B) 'Constructora Sur S.A.C.' está impedida porque un pariente en segundo grado de afinidad (cuñado) del Gobernador posee más del 30% de participación (35%); en cambio, Roberto NO está impedido porque los primos hermanos son parientes de cuarto grado y el impedimento solo alcanza hasta el segundo grado.\n\nDesglose del Caso (Art. 30 Ley 32069):\n• Cuñado = 2° grado de afinidad (dentro del impedimento) + 35% de acciones (> 30%) = Empresa IMPEDIDA.\n• Primo hermano = 4° grado de consanguinidad (fuera del límite de 2° grado; prohibida la analogía) = NO impedido.",
+    options: [
+      { letter: "A", text: "Ambos están impedidos porque el impedimento alcanza hasta el cuarto grado de consanguinidad (primos hermanos)", isCorrect: false, why: "Es una trampa clásica: en la Ley N° 32069 el impedimento por parentesco llega únicamente hasta el SEGUNDO (2°) grado de consanguinidad y afinidad." },
+      { letter: "B", text: "'Constructora Sur S.A.C.' está impedida porque un pariente en segundo grado de afinidad (cuñado) del Gobernador posee más del 30% de participación (35%); en cambio, Roberto NO está impedido porque los primos hermanos son parientes de cuarto grado y el impedimento solo alcanza hasta el segundo grado", isCorrect: true, why: "¡Es la alternativa CORRECTA! Evalúa con exactitud tanto el grado de parentesco (2° vs 4° grado) como el tope societario (> 30%)." },
+      { letter: "C", text: "Ninguno está impedido porque para personas jurídicas el tope de participación prohibida es del 90%", isCorrect: false, why: "Es incorrecta porque el tope de participación en el Art. 30 es superior al 30% (> 30%), y 35% lo supera." },
+      { letter: "D", text: "Solo Roberto está impedido y la empresa Constructora Sur S.A.C. puede contratar libremente", isCorrect: false, why: "Es exactamente al revés: la empresa está impedida (cuñado 2° grado con 35% > 30%) y el primo (4° grado) no lo está." }
+    ]
+  },
+  {
+    id: 448,
+    page: 73,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M4",
+    concept: "Casuística Real M4: Fraccionamiento Indebido en Contratos Menores (<= 8 UIT)",
+    question: "[CASUÍSTICA DE EXAMEN SICAN-OECE] El área de logística de una UGEL conoce desde enero que necesita adquirir mobiliario escolar estandarizado para todo el distrito por un valor total programado de S/ 120,000. Para evitar convocar una Licitación Pública Abreviada, el comprador decide dividir la compra en cuatro órdenes de compra de S/ 30,000 cada una (menores a 8 UIT) durante el mismo mes con las mismas características. ¿Cómo califica la Ley N° 32069 esta actuación?",
+    correct: "D",
+    legalRef: "Ley N° 32069 y Reglamento D.S. N° 009-2025-EF (Prohibición de Fraccionamiento Indebido)",
+    examTip: "Cómo resolver el caso: Dividir artificialmente una necesidad conocida (S/ 120,000) en varias compras menores a 8 UIT (S/ 30,000 c/u) para evadir el procedimiento competitivo = FRACCIONAMIENTO INDEBIDO (prohibido y sancionable).",
+    explanation: "Respuesta Correcta: D) Constituye un fraccionamiento indebido prohibido por la Ley N° 32069, al dividir artificialmente una contratación previsible de S/ 120,000 en contratos menores con el fin de eludir la Licitación Pública Abreviada que correspondía, generando responsabilidad funcional.\n\nDesglose del Caso:\n• Monto real de la necesidad previsible: S/ 120,000 (entre S/ 42,800 y S/ 485,000 -> correspondía LP Abreviada).\n• Maniobra ilegal: Partirla en 4 compras de S/ 30,000 (<= 8 UIT) -> Fraccionamiento indebido.",
+    options: [
+      { letter: "A", text: "Es una práctica válida de eficiencia logística amparada en el principio de celeridad", isCorrect: false, why: "Es incorrecta porque evadir procedimientos competitivos dividiendo montos previsibles está expresamente prohibido como fraccionamiento." },
+      { letter: "B", text: "Es válido siempre que las cuatro órdenes se giren el mismo día", isCorrect: false, why: "Girar las cuatro órdenes el mismo día agrava la evidencia del fraccionamiento indebido." },
+      { letter: "C", text: "Correspondía convocar un Concurso Público de Consultoría de Obras", isCorrect: false, why: "Es incorrecta porque se trata de bienes (mobiliario escolar) por S/ 120,000, lo que corresponde a una Licitación Pública Abreviada." },
+      { letter: "D", text: "Constituye un fraccionamiento indebido prohibido por la Ley N° 32069, al dividir artificialmente una contratación previsible de S/ 120,000 en contratos menores con el fin de eludir la Licitación Pública Abreviada que correspondía, generando responsabilidad funcional", isCorrect: true, why: "¡Es la alternativa CORRECTA! Identifica el fraccionamiento y el procedimiento que se intentó evadir (LP Abreviada)." }
+    ]
+  },
+  {
+    id: 449,
+    page: 73,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M5",
+    concept: "Casuística Real M5: Subsanación de Oferta en PLADICOP y Solicitud de Prórroga (Art. 78.4 D.S. 009-2025-EF)",
+    question: "[CASUÍSTICA DE EXAMEN SICAN-OECE] Durante la evaluación de ofertas en un Concurso Público, los evaluadores notifican el martes a través de la PLADICOP a un postor para que subsane la falta de foliatura y una constancia emitida por una entidad pública con fecha anterior a la presentación de ofertas, otorgándole el plazo legal de dos (2) días hábiles. Antes de vencer dicho plazo, el postor solicita una prórroga de dos (2) días hábiles adicionales, pero la Entidad no emite pronunciamiento alguno dentro de los dos días hábiles siguientes. Según el artículo 78.4 del Reglamento D.S. N° 009-2025-EF, ¿qué ocurre con la prórroga solicitada?",
+    correct: "A",
+    legalRef: "Artículo 78 (numerales 78.2 y 78.4) del Reglamento D.S. N° 009-2025-EF (Subsanación de Ofertas y Prórroga Automática por Silencio)",
+    examTip: "Cómo resolver el caso (Art. 78.4 D.S. 009-2025-EF): Plazo inicial = 2 días hábiles. Prórroga a pedido del postor = +2 días hábiles adicionales. Si la Entidad no responde al pedido de prórroga en 2 días hábiles, SE CONSIDERA AUTORIZADA AUTOMÁTICAMENTE.",
+    explanation: "Respuesta Correcta: A) La prórroga de dos (2) días hábiles adicionales se considera autorizada automáticamente al no haberse pronunciado la Entidad dentro del plazo máximo de dos (2) días hábiles de recibida la solicitud.\n\nDesglose del Caso (Art. 78.4 D.S. 009-2025-EF):\n1) Documentos públicos preexistentes y foliatura: SÍ son subsanables (Art. 78.1 y 78.2).\n2) Plazo principal: 2 días hábiles.\n3) Prórroga solicitada (+2 días hábiles): La Entidad tiene hasta 2 días hábiles para responder; ante su silencio, opera la autorización automática.",
+    options: [
+      { letter: "A", text: "La prórroga de dos (2) días hábiles adicionales se considera autorizada automáticamente al no haberse pronunciado la Entidad dentro del plazo máximo de dos (2) días hábiles de recibida la solicitud", isCorrect: true, why: "¡Es la alternativa CORRECTA! Es la regla literal del numeral 78.4 del Reglamento D.S. N° 009-2025-EF." },
+      { letter: "B", text: "La solicitud se considera denegada por silencio negativo y la oferta queda descalificada en el acto", isCorrect: false, why: "Es incorrecta porque el Art. 78.4 prevé expresamente que la falta de pronunciamiento oportuno autoriza automáticamente la prórroga." },
+      { letter: "C", text: "El postor puede aprovechar la subsanación para rebajar en 20% el monto de su oferta económica", isCorrect: false, why: "Es incorrecta porque jamás se puede subsanar ni alterar el monto de la oferta económica." },
+      { letter: "D", text: "En el nuevo Reglamento no existe subsanación de documentos emitidos por entidades públicas", isCorrect: false, why: "Es incorrecta porque el Art. 78.2 permite expresamente subsanar documentos públicos emitidos antes de la fecha de presentación de ofertas." }
+    ]
+  },
+  {
+    id: 450,
+    page: 73,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M5",
+    concept: "Casuística Real M5: Elección de Procedimientos en Tres Requerimientos Simultáneos",
+    question: "[CASUÍSTICA DE EXAMEN SICAN-OECE] Una entidad del sector agricultura debe convocar tres contrataciones competitivas: 1) Adquisición de camionetas 4x4 por S/ 750,000; 2) Adquisición de equipos de cómputo por S/ 190,000; y 3) Contratación de la supervisión (consultoría de obra) para un canal de riego por S/ 620,000. ¿Qué procedimientos de selección corresponden respectivamente a los casos 1, 2 y 3?",
+    correct: "C",
+    legalRef: "Ley N° 32069 y Reglamento D.S. N° 009-2025-EF (Procedimientos de Selección Competitivos y Topes)",
+    examTip: "Cómo resolver el caso paso a paso:\n1) Camionetas (Bienes > S/ 485,000) -> Licitación Pública.\n2) Equipos de cómputo (Bienes entre S/ 42,800 y S/ 485,000) -> Licitación Pública Abreviada.\n3) Supervisión de obra (Consultoría de obra > S/ 485,000) -> Concurso Público.",
+    explanation: "Respuesta Correcta: C) 1) Licitación Pública; 2) Licitación Pública Abreviada; y 3) Concurso Público.\n\nDesglose del Caso:\n• Caso 1: Bienes por S/ 750,000 (> S/ 485,000) = Licitación Pública.\n• Caso 2: Bienes por S/ 190,000 (entre S/ 42,800 y S/ 485,000) = Licitación Pública Abreviada.\n• Caso 3: Consultoría de obra por S/ 620,000 (> S/ 485,000) = Concurso Público.",
+    options: [
+      { letter: "A", text: "1) Concurso Público; 2) Adjudicación Simplificada; y 3) Licitación Pública", isCorrect: false, why: "Tiene tres errores: bienes no van por Concurso Público, 'Adjudicación Simplificada' era de la Ley 30225 y consultoría de obras no va por Licitación Pública." },
+      { letter: "B", text: "1) Contrato Menor; 2) Subasta Inversa; y 3) Comparación de Precios", isCorrect: false, why: "Es incorrecta porque ninguno de los montos es menor a 8 UIT ni una consultoría de obras se contrata por comparación de precios." },
+      { letter: "C", text: "1) Licitación Pública; 2) Licitación Pública Abreviada; y 3) Concurso Público", isCorrect: true, why: "¡Es la alternativa CORRECTA! Aplica con exactitud la matriz de objeto contractual y topes en Soles." },
+      { letter: "D", text: "1) Licitación Pública Abreviada; 2) Licitación Pública; y 3) Concurso Público Abreviado", isCorrect: false, why: "Invierte los topes de S/ 485,000 en los tres casos." }
+    ]
+  },
+  {
+    id: 451,
+    page: 74,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M6",
+    concept: "Casuística Real M6: Apelación de una MYPE en Proceso > 50 UIT (Arts. 73.2 y 74 Ley N° 32069)",
+    question: "[CASUÍSTICA DE EXAMEN SICAN-OECE] En una Licitación Pública para la adquisición de maquinaria por una cuantía de S/ 1,000,000 (superior a 50 UIT), el postor 'Agroindustrial Andina S.R.L.', debidamente acreditado como MYPE, decide interponer recurso de apelación contra el otorgamiento de la buena pro. Conforme a los artículos 73.2 y 74 de la Ley N° 32069, ¿en qué plazo máximo debe apelar, ante qué órgano debe presentar el recurso y cuánto debe ser el monto de su garantía por apelación?",
+    correct: "B",
+    legalRef: "Artículos 73 (numeral 73.2) y 74 de la Ley N° 32069 y Reglamento D.S. N° 009-2025-EF",
+    examTip: "Cómo resolver los 3 datos del caso:\n1) Es Licitación Pública -> Plazo: 8 DÍAS HÁBILES.\n2) Cuantía S/ 1,000,000 (> 50 UIT) -> Resuelve el TRIBUNAL DE CONTRATACIONES PÚBLICAS (TCP del OECE) (Art. 74).\n3) El postor es MYPE -> Garantía reducida del 0.5% de S/ 1,000,000 = S/ 5,000 (Art. 73.2).",
+    explanation: "Respuesta Correcta: B) Dentro de los ocho (8) días hábiles siguientes a la notificación, ante el Tribunal de Contrataciones Públicas (TCP) por superar las 50 UIT, presentando una garantía equivalente al 0.5% de la cuantía (S/ 5,000) por su condición de MYPE.\n\nDesglose del Caso:\n• Plazo en Licitación Pública: 8 días hábiles.\n• Competencia (Art. 74): S/ 1,000,000 supera las 50 UIT -> competente el TCP del OECE.\n• Garantía MYPE (Art. 73.2): 0.5% de S/ 1,000,000 = S/ 5,000 (en vez del 3% = S/ 30,000 que pagaría una empresa no MYPE).",
+    options: [
+      { letter: "A", text: "Dentro de los 5 días hábiles, ante el Comité de Selección, con una garantía del 10% (S/ 100,000)", isCorrect: false, why: "Contiene tres errores: 5 días es para abreviadas, el Comité nunca resuelve apelaciones y 10% es la garantía de fiel cumplimiento." },
+      { letter: "B", text: "Dentro de los ocho (8) días hábiles siguientes a la notificación, ante el Tribunal de Contrataciones Públicas (TCP) por superar las 50 UIT, presentando una garantía equivalente al 0.5% de la cuantía (S/ 5,000) por su condición de MYPE", isCorrect: true, why: "¡Es la alternativa CORRECTA! Integra plazo (8d hábiles), competencia (> 50 UIT = TCP) y beneficio MYPE (0.5% = S/ 5,000)." },
+      { letter: "C", text: "Dentro de los 8 días hábiles, ante la propia Entidad Contratante, con una garantía del 3% (S/ 30,000)", isCorrect: false, why: "Es incorrecta porque al superar las 50 UIT la Entidad no es competente (resuelve el TCP) y al ser MYPE la garantía se reduce al 0.5%." },
+      { letter: "D", text: "Dentro de los 30 días calendario, ante la Contraloría, sin presentar ninguna garantía", isCorrect: false, why: "Plazo, órgano y requisito son totalmente ajenos a la Ley N° 32069." }
+    ]
+  },
+  {
+    id: 452,
+    page: 74,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M6",
+    concept: "Casuística Real M6: Retención de Garantía en Empresa No-MYPE vs. MYPE (Art. 114 D.S. 009-2025-EF)",
+    question: "[CASUÍSTICA DE EXAMEN SICAN-OECE] Dos empresas ganan la buena pro de sendas obras públicas de saneamiento por S/ 8,000,000 cada una: la empresa 'Constructora Alfa S.A.' (Gran Empresa, No MYPE) y la empresa 'Ingeniería Beta S.A.C.' (acreditada en el REMYPE como Pequeña Empresa - MYPE). Ambas solicitan acogerse a la retención del 10% en sus pagos a cuenta como garantía de fiel cumplimiento en lugar de entregar carta fianza. Según el artículo 114 del Reglamento D.S. N° 009-2025-EF, ¿a cuál de ellas le asiste este derecho?",
+    correct: "C",
+    legalRef: "Artículo 114 del Reglamento D.S. N° 009-2025-EF y Ley N° 32069 (Retención de Pago como Garantía de Fiel Cumplimiento)",
+    examTip: "Cómo resolver el caso (Art. 114 D.S. 009-2025-EF): El monto de la obra es S/ 8,000,000 (supera el tope de S/ 5,000,000 para obras de No-MYPE). Por tanto, 'Alfa' (Gran Empresa) NO puede pedir retención (debe dar carta fianza/póliza), pero 'Beta' (MYPE) SÍ puede pedir retención porque para las MYPE aplica SIN LÍMITE DE MONTO.",
+    explanation: "Respuesta Correcta: C) Únicamente a 'Ingeniería Beta S.A.C.' por ser MYPE (a quien aplica la retención con independencia del monto del contrato); en cambio, 'Constructora Alfa S.A.' (No MYPE) no puede acogerse a la retención porque la obra de S/ 8,000,000 supera el tope de S/ 5,000,000 previsto para obras.\n\nDesglose del Caso (Art. 114 D.S. 009-2025-EF):\n• Obra de S/ 8,000,000 (> S/ 5,000,000).\n• Constructora Alfa (No MYPE): Supera el tope de S/ 5,000,000 en obras -> debe presentar carta fianza o póliza de caución.\n• Ingeniería Beta (MYPE): Procede la retención del 10% sin límite de cuantía.",
+    options: [
+      { letter: "A", text: "A ninguna de las dos, porque en obras públicas está prohibida la retención de pagos", isCorrect: false, why: "Es incorrecta porque el Art. 114 sí permite la retención en obras (hasta S/ 5,000,000 para No-MYPE y sin tope para MYPE)." },
+      { letter: "B", text: "A las dos empresas por igual, porque el tope para grandes empresas en obras es de S/ 50,000,000", isCorrect: false, why: "Es incorrecta porque el tope para empresas No-MYPE en obras es de S/ 5,000,000, no de S/ 50,000,000." },
+      { letter: "C", text: "Únicamente a 'Ingeniería Beta S.A.C.' por ser MYPE (a quien aplica la retención con independencia del monto del contrato); en cambio, 'Constructora Alfa S.A.' (No MYPE) no puede acogerse a la retención porque la obra de S/ 8,000,000 supera el tope de S/ 5,000,000 previsto para obras", isCorrect: true, why: "¡Es la alternativa CORRECTA! Distingue perfectamente la regla general de obras (<= S/ 5M) frente a la regla especial MYPE (sin tope)." },
+      { letter: "D", text: "Solo a 'Constructora Alfa S.A.' por ser gran empresa y nunca a las MYPE", isCorrect: false, why: "Contradice abiertamente el régimen promocional MYPE de la Ley N° 32069." }
+    ]
+  },
+  {
+    id: 453,
+    page: 74,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M7",
+    concept: "Casuística Real M7: Adicional de Obra del 30%, Ajuste de Garantía y Tope del 50%",
+    question: "[CASUÍSTICA DE EXAMEN SICAN-OECE] Durante la ejecución de una carretera contratada por S/ 10,000,000, se aprueba una primera prestación adicional de obra del 30% por deficiencias del expediente técnico. Meses después, el contratista solicita un segundo adicional por otro 25% (con lo cual las modificaciones acumularían el 55% del valor original). ¿Qué obligación tenía el contratista al aprobarse el primer adicional del 30% y qué debe decidir la Entidad respecto al segundo adicional que llevaría el acumulado al 55%?",
+    correct: "A",
+    legalRef: "Ley N° 32069 y Reglamento D.S. N° 009-2025-EF (Límites de Adicionales de Obra y Ajuste Proporcional de Garantías)",
+    examTip: "Cómo resolver las 2 preguntas del caso:\n1) En el adicional del 30%: es obligatorio AUMENTAR PROPORCIONALMENTE LA GARANTÍA de fiel cumplimiento.\n2) En el acumulado del 55%: debe RECHAZARSE porque ninguna modificación puede exceder el tope máximo absoluto del 50% del valor original.",
+    explanation: "Respuesta Correcta: A) Por el primer adicional del 30% el contratista debía actualizar (aumentar) proporcionalmente su garantía de fiel cumplimiento; y el segundo adicional debe ser rechazado porque ninguna modificación contractual puede superar el tope máximo del 50% del monto original.\n\nDesglose del Caso:\n• Primer adicional (30%): exige ajuste proporcional de la garantía.\n• Segundo adicional (acumulado 30% + 25% = 55%): supera el límite máximo absoluto del 50%, por lo que está legalmente prohibido.",
+    options: [
+      { letter: "A", text: "Por el primer adicional del 30% el contratista debía actualizar (aumentar) proporcionalmente su garantía de fiel cumplimiento; y el segundo adicional debe ser rechazado porque ninguna modificación contractual puede superar el tope máximo del 50% del monto original", isCorrect: true, why: "¡Es la alternativa CORRECTA! Resuelve con exactitud las dos reglas de adicionales evaluadas en el examen." },
+      { letter: "B", text: "En los adicionales nunca se actualiza la garantía y se pueden aprobar adicionales hasta el 100% del contrato", isCorrect: false, why: "Ambos extremos son falsos: siempre se ajusta la garantía y el tope prohibido es > 50%." },
+      { letter: "C", text: "El primer adicional del 30% estaba prohibido porque el límite máximo en obras es del 5%", isCorrect: false, why: "Es incorrecta porque en obras sí proceden adicionales mayores al 5% (con autorización expresa si superan el 40% y tope absoluto en el 50%)." },
+      { letter: "D", text: "El residente de obra puede aprobar por sí solo el 55% mediante una anotación simple sin adenda", isCorrect: false, why: "El residente no tiene competencia para aprobar adicionales ni se puede superar el 50%." }
+    ]
+  },
+  {
+    id: 454,
+    page: 74,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M7",
+    concept: "Casuística Real M7: Tres Escenarios de Terminación Contractual (Resolución, Terminación Anticipada y Nulidad)",
+    question: "[CASUÍSTICA DE EXAMEN SICAN-OECE] El Jefe de Asesoría Jurídica de un Ministerio tiene sobre su escritorio tres expedientes de contratos en ejecución: Expediente 1: El contratista abandonó la obra y acumuló el tope máximo del 10% de penalidad por mora; Expediente 2: El Ministerio decidió cancelar un servicio de consultoría porque una nueva ley cambió la política sectorial e hizo desaparecer la necesidad institucional sin culpa del contratista; Expediente 3: En fiscalización posterior se comprobó que el contratista presentó un certificado de experiencia falsificado para ganar la buena pro. ¿Qué figura jurídica corresponde aplicar a los Expedientes 1, 2 y 3 respectivamente?",
+    correct: "D",
+    legalRef: "Ley N° 32069 y Reglamento D.S. N° 009-2025-EF (Resolución, Terminación Anticipada y Nulidad del Contrato)",
+    examTip: "Cómo resolver el caso en 5 segundos:\n• Exp. 1 (Incumplimiento grave / tope 10% mora) -> RESOLUCIÓN DEL CONTRATO (y se ejecuta la garantía).\n• Exp. 2 (Cambio de política institucional sin culpa) -> TERMINACIÓN ANTICIPADA.\n• Exp. 3 (Documento falso para ganar la buena pro) -> NULIDAD DEL CONTRATO.",
+    explanation: "Respuesta Correcta: D) Expediente 1: Resolución del contrato (con ejecución de garantía); Expediente 2: Terminación Anticipada del contrato; y Expediente 3: Declaratoria de Nulidad del contrato.\n\nDesglose del Caso:\n• Esta casuística triple es una de las favoritas del examen SICAN porque evalúa si distingues con claridad las causales de Resolución, Terminación Anticipada y Nulidad.",
+    options: [
+      { letter: "A", text: "Expediente 1: Nulidad; Expediente 2: Resolución; y Expediente 3: Terminación Anticipada", isCorrect: false, why: "Mezcla e invierte las tres figuras jurídicas." },
+      { letter: "B", text: "En los tres expedientes corresponde otorgar la conformidad final y pagar el 100% al contratista", isCorrect: false, why: "Es incorrecta porque ninguno de los tres supuestos amerita conformidad total de la prestación." },
+      { letter: "C", text: "Expediente 1: Ampliación de plazo de oficio; Expediente 2: Nulidad por falsedad; y Expediente 3: Adenda de premio", isCorrect: false, why: "Es totalmente contraria a la normativa." },
+      { letter: "D", text: "Expediente 1: Resolución del contrato (con ejecución de garantía); Expediente 2: Terminación Anticipada del contrato; y Expediente 3: Declaratoria de Nulidad del contrato", isCorrect: true, why: "¡Es la alternativa CORRECTA! Asigna la figura jurídica exacta a cada uno de los tres casos prácticos." }
+    ]
+  },
+  {
+    id: 455,
+    page: 75,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M8",
+    concept: "Casuística Real M8: Plazos de Recomendación (7d Hábiles) vs. Decisión (7d y 10d Calendario) en la JPRD",
+    question: "[CASUÍSTICA DE EXAMEN SICAN-OECE] En la ejecución de una obra hospitalaria con un plazo de 360 días calendario (que cuenta obligatoriamente con una Junta de Prevención y Resolución de Disputas - JPRD por superar los 240 días calendario), la JPRD emite el lunes una RECOMENDACIÓN sobre una interferencia en el terreno y, en paralelo, notifica una DECISIÓN sobre una controversia técnica. Conforme a la Directiva N° 002-2025-OECE-CD, ¿cuál es el plazo de la Entidad para pronunciarse sobre la Recomendación y cuáles son los plazos para que la Decisión quede firme y se inicie su implementación?",
+    correct: "B",
+    legalRef: "Directiva N° 002-2025-OECE-CD (Junta de Prevención y Resolución de Disputas - JPRD)",
+    examTip: "¡La trampa maestra de JPRD (Hábiles vs. Calendario)!:\n• RECOMENDACIÓN = 7 DÍAS HÁBILES para pronunciarse.\n• DECISIÓN = 7 DÍAS CALENDARIO para quedar firme y obligatoria (sin objeción) y 10 DÍAS CALENDARIO para que la Entidad inicie su implementación.",
+    explanation: "Respuesta Correcta: B) Para la Recomendación la Entidad tiene siete (7) días hábiles para pronunciarse; mientras que la Decisión queda firme y obligatoria en siete (7) días calendario de no ser objetada, teniendo la Entidad diez (10) días calendario para iniciar su implementación.\n\nDesglose del Caso (Directiva N° 002-2025-OECE-CD):\n• Nota cómo en la Recomendación se cuenta en días HÁBILES (7d hábiles), pero en la Decisión tanto la firmeza (7d calendario) como el inicio de implementación (10d calendario) se cuentan en días CALENDARIO.",
+    options: [
+      { letter: "A", text: "Recomendación: 30 días calendario; Decisión: 60 días hábiles para quedar firme", isCorrect: false, why: "Plazos y tipos de días completamente erróneos." },
+      { letter: "B", text: "Para la Recomendación la Entidad tiene siete (7) días hábiles para pronunciarse; mientras que la Decisión queda firme y obligatoria en siete (7) días calendario de no ser objetada, teniendo la Entidad diez (10) días calendario para iniciar su implementación", isCorrect: true, why: "¡Es la alternativa CORRECTA! Distingue con precisión quirúrgica los 7 días hábiles de la recomendación frente a los 7 y 10 días calendario de la decisión." },
+      { letter: "C", text: "Para la Recomendación son 7 días calendario y para la Decisión son 7 días hábiles", isCorrect: false, why: "¡Cuidado! Esta es la alternativa trampa que invierte 'hábiles' por 'calendario'." },
+      { letter: "D", text: "Las decisiones de la JPRD no son obligatorias y la Entidad puede ignorarlas sin plazo alguno", isCorrect: false, why: "Es incorrecta porque las decisiones de la JPRD son vinculantes y de obligatorio cumplimiento." }
+    ]
+  },
+  {
+    id: 456,
+    page: 75,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M8",
+    concept: "Casuística Real M8: Contratación Masiva de Emergencia (40 Días Hábiles) y PAS ante el TCP (10d Hábiles / 4 Meses)",
+    question: "[CASUÍSTICA DE EXAMEN SICAN-OECE] A consecuencia de un sismo severo, un Gobierno Regional realiza en un mismo mes veinticinco (25) contrataciones no competitivas por situación de emergencia para rehabilitar vías y albergues. En una de ellas se detecta posteriormente una presunta infracción del proveedor, por lo que se inicia un Procedimiento Administrativo Sancionador (PAS) ante el TCP. ¿Cuál es el plazo máximo que tiene el Gobierno Regional para regularizar esas contrataciones masivas de emergencia y cuáles son los plazos del PAS para presentar descargos y emitir el informe final de la fase instructiva?",
+    correct: "C",
+    legalRef: "Ley N° 32069 y Reglamento D.S. N° 009-2025-EF (Regularización en Emergencias Masivas y Plazos del PAS ante el TCP)",
+    examTip: "Cómo resolver este caso doble:\n1) Emergencia ordinaria = 20 días hábiles, pero al ser contrataciones MASIVAS en un mes (25 compras) se amplía a 40 DÍAS HÁBILES.\n2) En el PAS del TCP: Descargos = 10 DÍAS HÁBILES | Informe final de la Fase Instructiva (Secretaría Técnica) = máximo 4 MESES.",
+    explanation: "Respuesta Correcta: C) El plazo para regularizar las contrataciones masivas de emergencia se amplía hasta cuarenta (40) días hábiles; y en el PAS la Secretaría Técnica otorga hasta diez (10) días hábiles para los descargos y cuenta con un máximo de cuatro (4) meses en la fase instructiva para emitir su informe final.\n\nDesglose del Caso:\n• Emergencia masiva (25 contrataciones en un mes): el plazo de regularización pasa de 20 a 40 días hábiles.\n• PAS ante el TCP: Fase Instructiva (Secretaría Técnica) = 10 días hábiles para descargos y 4 meses para el informe final.",
+    options: [
+      { letter: "A", text: "Regularización en 2 días calendario; descargos en 1 día y fase instructiva en 5 años", isCorrect: false, why: "Todos los plazos son falsos." },
+      { letter: "B", text: "En emergencias nunca se regulariza la documentación y el Comité de Selección sanciona al proveedor en 24 horas", isCorrect: false, why: "Es incorrecta porque toda emergencia debe regularizarse y el único órgano que sanciona es el TCP." },
+      { letter: "C", text: "El plazo para regularizar las contrataciones masivas de emergencia se amplía hasta cuarenta (40) días hábiles; y en el PAS la Secretaría Técnica otorga hasta diez (10) días hábiles para los descargos y cuenta con un máximo de cuatro (4) meses en la fase instructiva para emitir su informe final", isCorrect: true, why: "¡Es la alternativa CORRECTA! Reúne los tres plazos exactos de emergencias masivas y del PAS sancionador." },
+      { letter: "D", text: "El plazo de regularización masiva es de 5 días hábiles y los descargos en el PAS son de 60 días hábiles", isCorrect: false, why: "Es incorrecta porque en emergencias masivas son 40 días hábiles y en el PAS los descargos son en 10 días hábiles." }
+    ]
   }
 ];

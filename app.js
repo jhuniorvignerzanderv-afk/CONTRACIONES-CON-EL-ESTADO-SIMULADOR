@@ -489,6 +489,23 @@
         <p style="color:var(--text-secondary); font-size:0.95rem;">${activeMod.summary}</p>
       </div>
 
+      <div style="background:linear-gradient(135deg, rgba(16,185,129,0.12), rgba(59,130,246,0.10)); border:2px solid var(--primary); border-radius:14px; padding:18px; margin-bottom:20px;">
+        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-bottom:10px;">
+          <h3 style="margin:0; font-size:1.02rem; color:var(--primary);">🎯 Guía Didáctica para Responder en 10 Segundos (${activeMod.code})</h3>
+          <span class="pill-tag green">Fórmula: Si el caso dice [Pista] → Marca [Respuesta]</span>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:10px;">
+          ${getModuleDidacticRules(activeMod.id).map(r => `
+            <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-left:4px solid ${activeMod.color}; border-radius:10px; padding:12px;">
+              <div style="font-size:0.78rem; color:var(--text-muted); font-weight:700; margin-bottom:4px;">🔎 SI LA PREGUNTA MENCIONA:</div>
+              <div style="font-size:0.88rem; font-weight:800; color:var(--text-primary); margin-bottom:6px;">${r.trigger}</div>
+              <div style="font-size:0.78rem; color:#10b981; font-weight:700; margin-bottom:2px;">✅ MARCA SIEMPRE:</div>
+              <div style="font-size:0.85rem; color:var(--text-secondary); line-height:1.4;">${r.answer}</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+
       <div>
         ${activeMod.keyPoints.map((kp, idx) => `
           <div class="keypoint-card">
@@ -501,6 +518,40 @@
         `).join('')}
       </div>
 
+      <div style="margin-top:24px; background:var(--bg-elevated); border:2px solid #f59e0b; border-radius:14px; padding:18px;">
+        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-bottom:12px;">
+          <div>
+            <h3 style="margin:0; font-size:1.05rem; color:#fbbf24;">📋 Casuísticas de Examen Real Resueltas Paso a Paso (${activeMod.code})</h3>
+            <p style="margin:4px 0 0; font-size:0.84rem; color:var(--text-secondary);">Así es como vienen planteados los casos largos en el examen SICAN del OECE y cómo debes desarmarlos:</p>
+          </div>
+          <button class="btn btn-gold btn-sm" onclick="switchView('simulator'); startExam(35, 50, 'EXTERNAL_SIM', '📋 Simulacro Casuísticas Reales SICAN-OECE')">
+            ⏱️ Rendir Simulacro de Casuísticas →
+          </button>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          ${questions.filter(q => q.isTopeCasuistica || q.isWebFija).slice(-4).reverse().map(cq => {
+            const winOpt = cq.options.find(o => o.letter === cq.correct) || { text: '' };
+            return `
+              <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:10px; padding:14px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:8px;">
+                  <span class="pill-tag gold">Caso Oficial #${cq.id} · ${escapeHtml(cq.concept)}</span>
+                  <span style="font-size:0.76rem; color:var(--text-muted); font-weight:700;">📖 ${escapeHtml(cq.legalRef || 'Ley N° 32069 y D.S. N° 009-2025-EF')}</span>
+                </div>
+                <div style="font-size:0.9rem; font-weight:600; color:var(--text-primary); line-height:1.5; margin-bottom:10px;">
+                  ${escapeHtml(cq.question)}
+                </div>
+                <div style="background:rgba(16,185,129,0.12); border-left:4px solid #10b981; padding:10px 12px; border-radius:6px; margin-bottom:8px; font-size:0.86rem;">
+                  <strong style="color:#34d399;">✅ Respuesta Correcta (${cq.correct}):</strong> ${escapeHtml(winOpt.text)}
+                </div>
+                <div style="font-size:0.82rem; color:var(--text-secondary); line-height:1.45;">
+                  🎯 <strong>Cómo detectarla en el examen:</strong> ${escapeHtml(cq.examTip)}
+                </div>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </div>
+
       <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:28px; padding-top:20px; border-top:1px solid var(--border-color);">
         <button class="btn btn- ${isCompleted ? 'btn-success' : 'btn-outline'}" onclick="toggleModuleCompleted('${activeMod.id}')">
           ${isCompleted ? '✅ Ya marcaste este módulo como estudiado' : '☑️ Marcar este Módulo como Estudiado'}
@@ -510,6 +561,60 @@
         </button>
       </div>
     `;
+  }
+
+  function getModuleDidacticRules(modId) {
+    const map = {
+      M1: [
+        { trigger: "«Elegir el menor precio sin evaluar soporte, ciclo de vida o calidad»", answer: "Vulneración del Principio de VALOR POR DINERO (Art. 5 Ley 32069: combina calidad + ciclo de vida + sostenibilidad + precio)." },
+        { trigger: "«¿Qué hace el OECE?» vs. «¿El OECE firma contratos o da la buena pro?»", answer: "El OECE supervisa según su Plan Anual, administra la PLADICOP y certifica. NUNCA firma contratos ni adjudica procesos de las entidades." },
+        { trigger: "«¿Qué fases integran la plataforma digital PLADICOP?»", answer: "Integra SEACE + RNP y cubre las 3 fases: 1) Actuaciones Preparatorias, 2) Selección y 3) Ejecución Contractual." },
+        { trigger: "«Enfoque de la Ley N° 32069 frente a meros formalismos»", answer: "Gestión por Resultados y Valor por Dinero: priorizar la finalidad pública sobre formalidades no esenciales." }
+      ],
+      M2: [
+        { trigger: "«Aprobar el PAC, aprobar el expediente, aprobar compatibilización o resolver apelación <= 50 UIT»", answer: "Autoridad de la Gestión Administrativa (AGA - Art. 25): Secretario General (Ministerio), Gerente General (GORE) o Gerente Municipal." },
+        { trigger: "«Nivel de certificación exigido al Oficial de Compras vs. al Jefe de la DEC»", answer: "Oficial de Compras (comprador de la DEC) = Nivel Intermedio o Avanzado | Responsable/Jefe titular de la DEC = Nivel Avanzado." },
+        { trigger: "«Hospital u obra de alta complejidad técnica al formular el requerimiento»", answer: "Área Técnica Estratégica (ATE): brinda soporte técnico especializado o formula el requerimiento complejo." },
+        { trigger: "«¿Quién elabora la Estrategia de Contratación y conduce la Interacción con el Mercado?»", answer: "La Dependencia Encargada de las Contrataciones (DEC)." }
+      ],
+      M3: [
+        { trigger: "«Segmentación de contrataciones: Rutinarias/Operacionales vs. Críticas/Estratégicas» (Art. 42 y 125)", answer: "Bajo riesgo (Rutinarias y Operacionales) = Atención oportuna y reducción de costos | Alto riesgo (Críticas y Estratégicas) = Disminuir riesgos." },
+        { trigger: "«¿Cuándo una compra de bienes o servicios es de ALTO RIESGO en la segmentación?»", answer: "Últimos 2 años: 1) Declarada desierta, o 2) Promedio <= 3 postores en bienes o <= 2 en servicios, o 3) Disponibilidad limitada." },
+        { trigger: "«Difusión del requerimiento en PLADICOP (Consultas técnicas de proveedores)»", answer: "Mínimo 5 días hábiles para que proveedores formulen consultas y 3 días hábiles para que la entidad las absuelva." },
+        { trigger: "«Pedir una marca o modelo específico por tener equipos preexistentes»", answer: "Proceso de COMPATIBILIZACIÓN (Directiva N° 0001-2025-EF/54.01, antes llamado estandarización), aprobado por la AGA." }
+      ],
+      M4: [
+        { trigger: "«Compra igual o menor a 8 UIT (<= S/ 42,800) y el hermano del Alcalde o un proveedor sin RNP»", answer: "Es un CONTRATO MENOR: SÍ le aplican todos los impedimentos del Art. 30 (hasta 2° grado), SÍ exige RNP vigente y SÍ se registra en PLADICOP." },
+        { trigger: "«¿Quiénes están impedidos por parentesco según el Art. 30 de la Ley 32069?»", answer: "Cónyuge, conviviente y parientes hasta el SEGUNDO (2°) GRADO de consanguinidad (padres, hijos, hermanos, abuelos, nietos) y de afinidad." },
+        { trigger: "«Persona jurídica donde una autoridad impedida tiene acciones o participaciones»", answer: "Impedida cuando la participación directa o indirecta supera el 30% (> 30%) del capital o patrimonio social." },
+        { trigger: "«¿Se puede aplicar un impedimento por analogía a un primo hermano (4° grado)?»", answer: "NO. Los impedimentos del Art. 30 tienen reserva de ley y son de interpretación restrictiva (prohibida la analogía)." }
+      ],
+      M5: [
+        { trigger: "«¿Qué procedimiento corresponde según el monto en Bienes vs. Servicios/Consultorías?»", answer: "Bienes > S/ 485,000 = Licitación Pública | Bienes entre S/ 42,800 y S/ 485,000 = LP Abreviada | Servicios/Consultorías > S/ 485,000 = Concurso Público." },
+        { trigger: "«Falta de firma o error formal en oferta que NO altera el contenido esencial ni el precio» (Art. 78.4)", answer: "Subsanable por PLADICOP en 2 DÍAS HÁBILES (+ 2 días hábiles adicionales a solicitud del postor). El precio jamás es subsanable." },
+        { trigger: "«El proceso se declara DESIERTO (Art. 84): ¿se aprueba otra vez el expediente?»", answer: "SOLO si el informe de causas del desierto determina que debe modificarse algún documento que motivó su aprobación." },
+        { trigger: "«Proveedor único con habilitación legal exclusiva, emergencia o desabastecimiento inminente»", answer: "Procedimiento de Selección NO COMPETITIVO (Art. 55 de la Ley N° 32069)." }
+      ],
+      M6: [
+        { trigger: "«Plazo para apelar la buena pro: Licitación/Concurso Público vs. Modalidad Abreviada»", answer: "8 días hábiles en Licitación Pública / Concurso Público | 5 días hábiles en Modalidades Abreviadas." },
+        { trigger: "«¿Quién resuelve la apelación según la cuantía?» (Art. 74 Ley 32069)", answer: "Cuantía <= 50 UIT: resuelve la Entidad Contratante (AGA) | Cuantía > 50 UIT: resuelve el Tribunal de Contrataciones Públicas (TCP)." },
+        { trigger: "«Garantía por interposición de recurso de apelación» (Art. 73.2 Ley 32069)", answer: "Régimen general = 3% de la cuantía o ítem impugnado (tope 300 UIT) | Si es MYPE acreditada = 0.5% (tope 25 UIT)." },
+        { trigger: "«Retención del 10% como Garantía de Fiel Cumplimiento en vez de Carta Fianza» (Art. 114)", answer: "Procede en: 1) Bienes/Servicios <= S/ 480,000; 2) Obras <= S/ 5,000,000; o 3) Contratistas MYPE sin límite de monto." }
+      ],
+      M7: [
+        { trigger: "«Límites porcentuales en Adicionales de Obra y Modificaciones»", answer: "Todo adicional exige ajustar proporcionalmente la garantía | > 40% requiere autorización expresa | > 50% del valor original está PROHIBIDO." },
+        { trigger: "«El contratista pide Ampliación de Plazo por lluvias intensas (atraso ajeno a su voluntad)»", answer: "Debe solicitarla DENTRO del plazo contractual vigente y la Entidad decide con informe técnico previo." },
+        { trigger: "«Tres plazos fijos en Ejecución: Supervisión, Pago de Valorización y Silencio en Recepción de Obra»", answer: "Supervisión periódica: máx. cada 30 días | Pago de valorización: máx. 15 días hábiles | Silencio en culminación de obra: 30 días hábiles (se presume conformidad)." },
+        { trigger: "«Diferencia entre Resolución, Terminación Anticipada y Nulidad del Contrato»", answer: "Incumplimiento grave o tope 10% de mora = Resolución (se ejecuta garantía) | Cambio de política institucional = Terminación Anticipada | Documentos falsos = Nulidad." }
+      ],
+      M8: [
+        { trigger: "«JPRD (Directiva 002-2025-OECE-CD): Duración mínima y Recomendación vs. Decisión»", answer: "Obligatoria en contratos >= 240 días calendario | Recomendación = 7 días hábiles para pronunciarse | Decisión = 7 días calendario para quedar firme y 10 días calendario para implementarla." },
+        { trigger: "«Procedimiento Administrativo Sancionador (PAS) ante el TCP: Fases y Plazos»", answer: "Fase Instructiva (Secretaría Técnica): 10 días hábiles para descargos y máx. 4 meses para informe final | Fase Sancionadora: resuelve el TCP." },
+        { trigger: "«Contratación de Emergencia: Plazo de regularización, adelanto y exoneración de fianza»", answer: "Regularización: máx. 20 días hábiles (40 días hábiles si es masiva) | Adelanto Gobierno Nacional: hasta 30 UIT | Exonera fianza en compras de 72 horas." },
+        { trigger: "«Mecanismos Diferenciados de Adquisición (MDA en Salud) y Contratos de Contingencia»", answer: "MDA = enfermedades raras/oncológicas de alto costo (exige Registro Sanitario vigente o condicionado en Perú) | Contingencia = evento futuro e incierto (pago por disponibilidad)." }
+      ]
+    };
+    return map[modId] || [];
   }
 
   window.toggleModuleCompleted = function (modId) {
@@ -2370,6 +2475,78 @@
     renderTopesSimulator();
   };
 
+  window.openExpress5Min = function () {
+    switchView('topes');
+    topesActiveTab = 'EXPRESS5';
+    renderTopesSimulator();
+  };
+
+  const DAYS_GAME_ITEMS = [
+    { prompt: "Subsanación de ofertas en la PLADICOP (plazo principal de 2 días + 2 de prórroga, Art. 78.4 D.S. 009-2025-EF)", num: "2 (+2) días", correct: "HABILES", why: "Art. 78.4 D.S. 009-2025-EF: El postor cuenta con 2 DÍAS HÁBILES desde el día siguiente de la notificación en la PLADICOP (+ 2 días hábiles adicionales a solicitud)." },
+    { prompt: "Firmeza de una DECISIÓN emitida por la JPRD si ninguna parte la objeta (Directiva 002-2025-OECE-CD)", num: "7 días", correct: "CALENDARIO", why: "¡Trampa clásica de JPRD! La DECISIÓN queda firme en 7 DÍAS CALENDARIO (mientras que el pronunciamiento sobre una Recomendación es en 7 días hábiles)." },
+    { prompt: "Pronunciamiento de la Entidad sobre una RECOMENDACIÓN de la JPRD (Directiva 002-2025-OECE-CD)", num: "7 días", correct: "HABILES", why: "En JPRD: Recomendación = 7 DÍAS HÁBILES para pronunciarse. Decisión = 7 días calendario para quedar firme." },
+    { prompt: "Plazo de la Entidad para iniciar la implementación de una DECISIÓN firme de la JPRD", num: "10 días", correct: "CALENDARIO", why: "Directiva N° 002-2025-OECE-CD: Una vez firme la decisión de la JPRD, la Entidad tiene 10 DÍAS CALENDARIO para iniciar su implementación." },
+    { prompt: "Duración mínima del contrato para que sea OBLIGATORIA la JPRD", num: ">= 240 días", correct: "CALENDARIO", why: "El umbral mínimo de duración contractual para la obligatoriedad de la JPRD es de 240 DÍAS CALENDARIO (~8 meses)." },
+    { prompt: "Plazo máximo para pagar una valorización luego de otorgada la conformidad", num: "15 días", correct: "HABILES", why: "El pago de valorizaciones tras su conformidad tiene un plazo máximo de 15 DÍAS HÁBILES." },
+    { prompt: "Silencio de la Entidad tras el aviso de culminación de obra (presunción de conformidad)", num: "30 días", correct: "HABILES", why: "Comunicada la culminación de la obra, si la Entidad no se pronuncia en 30 DÍAS HÁBILES se presume legalmente la conformidad." },
+    { prompt: "Plazo para interponer Recurso de Apelación (8 en LP/CP y 5 en Modalidad Abreviada)", num: "8 o 5 días", correct: "HABILES", why: "Todos los plazos de impugnación (8 días en LP/CP y 5 días en abreviadas) se computan en DÍAS HÁBILES." },
+    { prompt: "Consultas técnicas en la difusión del requerimiento en PLADICOP (5 para proveedores y 3 para absolver)", num: "5 y 3 días", correct: "HABILES", why: "En la difusión del requerimiento por PLADICOP son mínimo 5 DÍAS HÁBILES para consultas y 3 DÍAS HÁBILES para absolución." },
+    { prompt: "Regularización de contratación no competitiva por Situación de Emergencia (20 ordinaria / 40 masiva)", num: "20 o 40 días", correct: "HABILES", why: "La regularización en emergencia es de máximo 20 DÍAS HÁBILES (o 40 DÍAS HÁBILES cuando son contrataciones masivas en un mes)." }
+  ];
+
+  let daysGameState = { idx: 0, selected: null, streak: 0, best: 0 };
+
+  window.answerDaysGame = function (choice) {
+    if (daysGameState.selected) return;
+    daysGameState.selected = choice;
+    const item = DAYS_GAME_ITEMS[daysGameState.idx];
+    if (choice === item.correct) {
+      daysGameState.streak++;
+      if (daysGameState.streak > daysGameState.best) daysGameState.best = daysGameState.streak;
+    } else {
+      daysGameState.streak = 0;
+    }
+    renderTopesSimulator();
+  };
+
+  window.nextDaysGame = function () {
+    daysGameState.idx = (daysGameState.idx + 1) % DAYS_GAME_ITEMS.length;
+    daysGameState.selected = null;
+    renderTopesSimulator();
+  };
+
+  const ACTORS_GAME_ITEMS = [
+    { task: "Aprobar el Expediente de Contratación, el PAC y el proceso de Compatibilización (Directiva 0001-2025-EF/54.01)", correct: "AGA", why: "Art. 25 de la Ley N° 32069: La Autoridad de la Gestión Administrativa (AGA: Secretario General, Gerente General o Gerente Municipal) aprueba el PAC, expedientes y compatibilización." },
+    { task: "Evaluar y aprobar el informe para exceptuar el uso de la Subasta Inversa Electrónica (SIE) por riesgo de mercado", correct: "AGA", why: "La Autoridad de la Gestión Administrativa (AGA) evalúa y aprueba exceptuar la SIE previo informe sustentado de la DEC." },
+    { task: "Resolver un Recurso de Apelación cuando la cuantía del procedimiento es igual o menor a 50 UIT (<= S/ 267,500)", correct: "AGA", why: "Art. 74 de la Ley N° 32069: En procedimientos de cuantía <= 50 UIT resuelve la Entidad Contratante a través de la Autoridad de la Gestión Administrativa (AGA)." },
+    { task: "Resolver un Recurso de Apelación cuando la cuantía del procedimiento SUPERA las 50 UIT (> S/ 267,500)", correct: "TCP", why: "Art. 74 de la Ley N° 32069: Cuando la cuantía supera las 50 UIT (o en Acuerdos Marco), la competencia resolutiva corresponde al Tribunal de Contrataciones Públicas (TCP del OECE)." },
+    { task: "Elaborar la Estrategia de Contratación, realizar la Segmentación (Art. 42 y 125) y conducir la Interacción con el Mercado", correct: "DEC", why: "La Dependencia Encargada de las Contrataciones (DEC), a través de sus Oficiales de Compras certificados, elabora la Estrategia de Contratación y realiza la segmentación." },
+    { task: "Brindar soporte técnico especializado o formular el requerimiento en proyectos u hospitales de alta complejidad", correct: "ATE", why: "Art. 25 de la Ley N° 32069: El Área Técnica Estratégica (ATE) interviene cuando el requerimiento exige alto nivel de especialización técnica que supera al área usuaria." },
+    { task: "Verificar el cumplimiento de las especificaciones técnicas de los bienes entregados y emitir la CONFORMIDAD de recepción", correct: "USUARIA", why: "El Área Usuaria es la responsable de verificar la calidad/cumplimiento de los bienes o servicios y emitir la conformidad (o solicitar su rectificación)." },
+    { task: "Imponer sanciones de multa o inhabilitación a proveedores en la Fase Sancionadora del PAS", correct: "TCP", why: "El Tribunal de Contrataciones Públicas (TCP) es el órgano colegiado encargado de la Fase Sancionadora del PAS (mientras la Secretaría Técnica lleva la Fase Instructiva)." }
+  ];
+
+  let actorsGameState = { idx: 0, selected: null, streak: 0, best: 0 };
+
+  window.answerActorsGame = function (choice) {
+    if (actorsGameState.selected) return;
+    actorsGameState.selected = choice;
+    const item = ACTORS_GAME_ITEMS[actorsGameState.idx];
+    if (choice === item.correct) {
+      actorsGameState.streak++;
+      if (actorsGameState.streak > actorsGameState.best) actorsGameState.best = actorsGameState.streak;
+    } else {
+      actorsGameState.streak = 0;
+    }
+    renderTopesSimulator();
+  };
+
+  window.nextActorsGame = function () {
+    actorsGameState.idx = (actorsGameState.idx + 1) % ACTORS_GAME_ITEMS.length;
+    actorsGameState.selected = null;
+    renderTopesSimulator();
+  };
+
   window.setTopesTab = function (tab) {
     topesActiveTab = tab;
     renderTopesSimulator();
@@ -2990,6 +3167,160 @@
           </div>
         </div>
       `;
+    } else if (topesActiveTab === 'DAYS') {
+      const dgItem = DAYS_GAME_ITEMS[daysGameState.idx];
+      const dgSel = daysGameState.selected;
+      const dgOk = dgSel === dgItem.correct;
+      tabBodyHtml = `
+        <div class="question-box" style="border-top:5px solid #3b82f6;">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px;">
+            <div>
+              <span class="pill-tag" style="background:rgba(59,130,246,0.2); color:#60a5fa;">📅 ENTRENADOR VISUAL: HÁBILES VS. CALENDARIO</span>
+              <h3 style="margin-top:6px;">No caigas en la trampa #1 del examen: ¿Se cuenta en Días Hábiles o Días Calendario?</h3>
+            </div>
+            <div style="font-weight:800; color:#fbbf24;">🔥 Racha: ${daysGameState.streak} · 🏆 Récord: ${daysGameState.best}</div>
+          </div>
+
+          <div style="background:var(--bg-elevated); border:2px solid var(--primary); border-radius:12px; padding:18px; margin-bottom:22px;">
+            <div style="font-size:0.8rem; color:var(--text-muted); font-weight:700; margin-bottom:6px;">
+              RETO RÁPIDO (${daysGameState.idx + 1} de ${DAYS_GAME_ITEMS.length}) · Plazo: <strong style="color:#fbbf24;">${escapeHtml(dgItem.num)}</strong>
+            </div>
+            <div style="font-size:1.05rem; font-weight:800; margin-bottom:14px;">${escapeHtml(dgItem.prompt)}</div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+              <button class="btn ${dgSel ? (dgItem.correct === 'HABILES' ? 'btn-success' : (dgSel === 'HABILES' ? 'btn-danger' : 'btn-outline')) : 'btn-primary'}" style="padding:14px; font-size:0.95rem; font-weight:800;" onclick="answerDaysGame('HABILES')">
+                💼 DÍAS HÁBILES (${dgItem.num})
+              </button>
+              <button class="btn ${dgSel ? (dgItem.correct === 'CALENDARIO' ? 'btn-success' : (dgSel === 'CALENDARIO' ? 'btn-danger' : 'btn-outline')) : 'btn-gold'}" style="padding:14px; font-size:0.95rem; font-weight:800;" onclick="answerDaysGame('CALENDARIO')">
+                🗓️ DÍAS CALENDARIO (${dgItem.num})
+              </button>
+            </div>
+            ${dgSel ? `
+              <div style="margin-top:14px; padding:12px; border-radius:8px; background:${dgOk ? 'rgba(16,185,129,0.14)' : 'rgba(239,68,68,0.14)'}; border-left:4px solid ${dgOk ? '#10b981' : '#ef4444'};">
+                <div style="font-weight:800; color:${dgOk ? '#34d399' : '#f87171'}; margin-bottom:4px;">
+                  ${dgOk ? '✅ ¡Correcto!' : `❌ Cuidado con la trampa: La respuesta correcta es DÍAS ${dgItem.correct}`}
+                </div>
+                <div style="font-size:0.86rem; color:var(--text-secondary);">${escapeHtml(dgItem.why)}</div>
+                <button class="btn btn-primary btn-sm" style="margin-top:10px;" onclick="nextDaysGame()">Siguiente Plazo →</button>
+              </div>
+            ` : ''}
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:16px;">
+            <div style="background:var(--bg-elevated); border:1px solid rgba(59,130,246,0.4); border-top:4px solid #3b82f6; border-radius:12px; padding:16px;">
+              <h4 style="color:#60a5fa; margin-bottom:10px;">💼 SIEMPRE EN DÍAS HÁBILES (Sin sábados, domingos ni feriados)</h4>
+              <ul style="font-size:0.85rem; line-height:1.6; padding-left:18px; color:var(--text-secondary);">
+                <li><strong>2 días hábiles (+2 de prórroga):</strong> Subsanación de ofertas en PLADICOP (Art. 78.4 D.S. 009-2025-EF).</li>
+                <li><strong>5 y 3 días hábiles:</strong> Consultas técnicas en difusión del requerimiento (5d) y absolución (3d).</li>
+                <li><strong>5 días hábiles:</strong> Apelar Modalidades Abreviadas (LP/CP Abreviada) y 1ra reunión de JPRD.</li>
+                <li><strong>7 días hábiles:</strong> Pronunciamiento de la Entidad sobre una <em>Recomendación</em> de la JPRD.</li>
+                <li><strong>8 días hábiles:</strong> Apelar Licitación Pública y Concurso Público ordinarios.</li>
+                <li><strong>10 días hábiles:</strong> Descargos del proveedor en el PAS ante el TCP.</li>
+                <li><strong>15 días hábiles:</strong> Plazo máximo para pagar una valorización tras su conformidad.</li>
+                <li><strong>20 / 40 días hábiles:</strong> Regularizar contratación de emergencia (20d ordinaria / 40d masiva).</li>
+                <li><strong>30 días hábiles:</strong> Silencio en culminación de obra (se presume conformidad) y suspensión JPRD por impago.</li>
+              </ul>
+            </div>
+
+            <div style="background:var(--bg-elevated); border:1px solid rgba(245,158,11,0.4); border-top:4px solid #f59e0b; border-radius:12px; padding:16px;">
+              <h4 style="color:#fbbf24; margin-bottom:10px;">🗓️ SIEMPRE EN DÍAS CALENDARIO (Todos los días corridos)</h4>
+              <ul style="font-size:0.85rem; line-height:1.6; padding-left:18px; color:var(--text-secondary);">
+                <li><strong>7 días calendario:</strong> Plazo para que una <em>Decisión</em> de la JPRD quede firme y obligatoria si no se objeta.</li>
+                <li><strong>10 días calendario:</strong> Plazo de la Entidad para iniciar la implementación de una <em>Decisión</em> firme de la JPRD.</li>
+                <li><strong>Cada 30 días:</strong> Frecuencia máxima de supervisión periódica durante la ejecución contractual.</li>
+                <li><strong>>= 240 días calendario:</strong> Duración mínima del contrato para obligatoriedad de la JPRD.</li>
+                <li><strong>Plazos de ejecución contractual:</strong> Los plazos de ejecución de contratos y cálculo de penalidad diaria por mora se computan en días calendario.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      `;
+    } else if (topesActiveTab === 'ACTORS') {
+      const agItem = ACTORS_GAME_ITEMS[actorsGameState.idx];
+      const agSel = actorsGameState.selected;
+      const agOk = agSel === agItem.correct;
+      const actorBtns = [
+        { code: 'AGA', label: '🏛️ AGA (Autoridad Gestión Administrativa)' },
+        { code: 'DEC', label: '🛒 DEC (Oficiales de Compras)' },
+        { code: 'USUARIA', label: '📋 Área Usuaria' },
+        { code: 'ATE', label: '🔬 ATE (Área Técnica Estratégica)' },
+        { code: 'TCP', label: '⚖️ TCP (Tribunal de Contrataciones)' }
+      ];
+      tabBodyHtml = `
+        <div class="question-box" style="border-top:5px solid #10b981;">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px;">
+            <div>
+              <span class="pill-tag green">🏛️ SIMULADOR DE AUTORIDADES (ART. 25 Y 74 LEY N° 32069)</span>
+              <h3 style="margin-top:6px;">¿Qué órgano o autoridad es competente para aprobar o resolver este acto?</h3>
+            </div>
+            <div style="font-weight:800; color:#34d399;">🔥 Racha: ${actorsGameState.streak} · 🏆 Récord: ${actorsGameState.best}</div>
+          </div>
+
+          <div style="background:var(--bg-elevated); border:2px solid #10b981; border-radius:12px; padding:18px; margin-bottom:22px;">
+            <div style="font-size:0.8rem; color:var(--text-muted); font-weight:700; margin-bottom:6px;">
+              CASO DE COMPETENCIA (${actorsGameState.idx + 1} de ${ACTORS_GAME_ITEMS.length}):
+            </div>
+            <div style="font-size:1.05rem; font-weight:800; margin-bottom:14px;">«${escapeHtml(agItem.task)}»</div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:10px;">
+              ${actorBtns.map(b => `
+                <button class="btn ${agSel ? (agItem.correct === b.code ? 'btn-success' : (agSel === b.code ? 'btn-danger' : 'btn-outline')) : 'btn-outline'}" style="padding:12px; font-weight:700;" onclick="answerActorsGame('${b.code}')">
+                  ${b.label}
+                </button>
+              `).join('')}
+            </div>
+            ${agSel ? `
+              <div style="margin-top:14px; padding:12px; border-radius:8px; background:${agOk ? 'rgba(16,185,129,0.14)' : 'rgba(239,68,68,0.14)'}; border-left:4px solid ${agOk ? '#10b981' : '#ef4444'};">
+                <div style="font-weight:800; color:${agOk ? '#34d399' : '#f87171'}; margin-bottom:4px;">
+                  ${agOk ? '✅ ¡Exacto! Competencia correcta.' : `❌ Incorrecto: La autoridad competente es ${agItem.correct}`}
+                </div>
+                <div style="font-size:0.86rem; color:var(--text-secondary);">${escapeHtml(agItem.why)}</div>
+                <button class="btn btn-primary btn-sm" style="margin-top:10px;" onclick="nextActorsGame()">Siguiente Trámite →</button>
+              </div>
+            ` : ''}
+          </div>
+        </div>
+      `;
+    } else if (topesActiveTab === 'EXPRESS5') {
+      tabBodyHtml = `
+        <div class="question-box" style="border-top:5px solid #ef4444;">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px;">
+            <div>
+              <span class="pill-tag" style="background:rgba(239,68,68,0.2); color:#f87171;">🚨 REPASO DE EMERGENCIA EN 5 MINUTOS (PUERTA DEL EXAMEN SICAN)</span>
+              <h3 style="margin-top:6px;">Las 25 Reglas, Cifras y Palabras Clave que te dan el Aprobado Directo</h3>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(290px, 1fr)); gap:14px;">
+            <div style="background:var(--bg-elevated); padding:14px; border-radius:10px; border-left:4px solid #38bdf8; font-size:0.84rem; line-height:1.55;">
+              <h4 style="color:#38bdf8; margin-bottom:8px;">💰 1. Topes en Soles y UIT (2026)</h4>
+              <div>• <strong><= 8 UIT (S/ 42,800):</strong> Contrato Menor (SÍ exige RNP, SÍ registra en PLADICOP, SÍ aplica Art. 30).</div>
+              <div>• <strong>Entre S/ 42,800 y S/ 485,000:</strong> LP Abreviada (Bienes) / CP Abreviado (Servicios).</div>
+              <div>• <strong>> S/ 485,000:</strong> Licitación Pública (Bienes/Obras) / Concurso Público (Servicios/Consultoría).</div>
+              <div>• <strong><= 50 UIT vs. > 50 UIT (Art. 74):</strong> Apelación <= 50 UIT resuelve la Entidad (AGA); > 50 UIT resuelve el TCP.</div>
+              <div>• <strong>Retención 10% Fiel Cumplimiento (Art. 114):</strong> Bienes/Servicios <= S/ 480,000 | Obras <= S/ 5,000,000 | <strong>MYPE: sin límite de monto</strong>.</div>
+            </div>
+
+            <div style="background:var(--bg-elevated); padding:14px; border-radius:10px; border-left:4px solid #34d399; font-size:0.84rem; line-height:1.55;">
+              <h4 style="color:#34d399; margin-bottom:8px;">📊 2. Porcentajes y Segmentación</h4>
+              <div>• <strong>0.5% MYPE vs. 3% General (Art. 73.2):</strong> Garantía por apelación = 3% (tope 300 UIT) general; <strong>0.5% (tope 25 UIT) para MYPE</strong>.</div>
+              <div>• <strong>10%:</strong> Garantía de Fiel Cumplimiento, Tope de Penalidad por Mora y umbral de instalación para Pago Mixto (>10%).</div>
+              <div>• <strong>> 30% en Persona Jurídica (Art. 30):</strong> Impedimento societario para autoridad o pariente hasta 2° grado.</div>
+              <div>• <strong>> 40% y > 50% en Obras:</strong> Adicional > 40% exige autorización expresa; modificación > 50% está <strong>PROHIBIDA</strong>.</div>
+              <div>• <strong>Segmentación (Art. 125):</strong> Rutinarias/Operacionales (bajo riesgo = reducir costos y oportunidad) | Críticas/Estratégicas (alto riesgo = disminuir riesgos; desierto o <=3 postores bienes / <=2 servicios en últimos 2 años).</div>
+            </div>
+
+            <div style="background:var(--bg-elevated); padding:14px; border-radius:10px; border-left:4px solid #fbbf24; font-size:0.84rem; line-height:1.55;">
+              <h4 style="color:#fbbf24; margin-bottom:8px;">⏱️ 3. Plazos Fijos Anti-Trampas</h4>
+              <div>• <strong>2 + 2 días hábiles (Art. 78.4):</strong> Subsanar ofertas en PLADICOP (2d hábiles + 2d de prórroga; silencio aprueba prórroga).</div>
+              <div>• <strong>5 y 3 días hábiles:</strong> Consultas en difusión del requerimiento (5d) y absolución (3d).</div>
+              <div>• <strong>8 y 5 días hábiles:</strong> Apelar LP/CP (8d) vs. Modalidad Abreviada (5d).</div>
+              <div>• <strong>15 y 30 días hábiles:</strong> Pago de valorización (15d háb.) y silencio en recepción de obra (30d háb. = conformidad).</div>
+              <div>• <strong>JPRD (Directiva 002-2025):</strong> >= 240d cal. obligatoria | Recomendación = <strong>7d hábiles</strong> | Decisión = <strong>7d calendario</strong> firme y <strong>10d calendario</strong> implementar.</div>
+              <div>• <strong>Emergencia y PAS:</strong> Regularizar emergencia = <strong>20d hábiles</strong> (<strong>40d hábiles</strong> masiva) | PAS: <strong>10d hábiles</strong> descargos y <strong>4 meses</strong> fase instructiva.</div>
+            </div>
+          </div>
+        </div>
+      `;
     }
 
     container.innerHTML = `
@@ -2999,6 +3330,9 @@
           <p style="font-size:0.88rem; color:var(--text-secondary)">Aprende visualmente los topes de la Ley N° 32069 con el Termómetro en Vivo, entrena reflejos con el Reto Relámpago, repasa las 4 Escaleras de Memoria o resuelve casos de 3 pasos.</p>
         </div>
         <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="btn btn-primary" style="background:#ef4444" onclick="setTopesTab('EXPRESS5')">
+            🚨 Repaso 5 Min Pre-Examen
+          </button>
           <button class="btn btn-outline" onclick="setTopesTab('POCKET')">
             🖨️ Mi Resumen de Bolsillo (1 Hoja PDF)
           </button>
@@ -3032,6 +3366,15 @@
         </button>
         <button class="topes-tab-btn ${topesActiveTab === 'POCKET' ? 'active' : ''}" onclick="setTopesTab('POCKET')">
           📄 7. Resumen PDF de Bolsillo
+        </button>
+        <button class="topes-tab-btn ${topesActiveTab === 'DAYS' ? 'active' : ''}" onclick="setTopesTab('DAYS')">
+          📅 8. ¿Hábiles o Calendario?
+        </button>
+        <button class="topes-tab-btn ${topesActiveTab === 'ACTORS' ? 'active' : ''}" onclick="setTopesTab('ACTORS')">
+          🏛️ 9. ¿Quién Aprueba Qué?
+        </button>
+        <button class="topes-tab-btn ${topesActiveTab === 'EXPRESS5' ? 'active' : ''}" onclick="setTopesTab('EXPRESS5')">
+          🚨 10. Repaso 5 Minutos
         </button>
       </div>
 
