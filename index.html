@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1120" />
+  <link rel="manifest" href="manifest.json" />
   <title>Certificación OECE 2026 | Academia, Balotario Explicado y Simulador – Ley N° 32069</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,6 +123,9 @@
 
       <div class="topbar-info">
         <span class="pill-tag green" id="topStatsPill">✅ 0 dominadas · 🎯 Precisión: 0%</span>
+        <button class="btn btn-gold btn-sm" id="pwaInstallBtn" style="display:none;" onclick="installPWAApp()" title="Instalar aplicación OECE en tu celular o PC">
+          📲 Instalar App
+        </button>
         <button class="btn btn-outline btn-sm" id="topbarThemeBtn" onclick="toggleTheme()" title="Alternar Modo Oscuro / Modo Claro">
           🌙 Modo Oscuro Activo
         </button>

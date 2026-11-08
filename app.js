@@ -367,6 +367,44 @@
 
       <div class="section-header">
         <div>
+          <h2 class="section-title">📅 Plan Recta Final de 7 Días para Aprobar en SICAN-OECE</h2>
+          <p style="font-size:0.88rem; color:var(--text-secondary)">Marca cada día completado. Con 45 a 60 minutos diarios cubres el 100% de la Ley N° 32069 y D.S. N° 009-2025-EF:</p>
+        </div>
+      </div>
+
+      ${(() => {
+        const planDays = [
+          { id: 'D1', day: 'Día 1', title: 'Principios, Actores (DEC, Oficial de Compras) y Montos UIT', action: "practiceModule('M1')" },
+          { id: 'D2', day: 'Día 2', title: 'Actuaciones Preparatorias, PAC, PLADICOP y Estrategia', action: "practiceModule('M2')" },
+          { id: 'D3', day: 'Día 3', title: 'Procedimientos (LP/CP/Abreviadas) y Plazos de Apelación (5d/8d)', action: "switchView('topes')" },
+          { id: 'D4', day: 'Día 4', title: 'Contratos, Garantías (10%), Adicionales (25%) y Ampliación (10d)', action: "practiceModule('M4')" },
+          { id: 'D5', day: 'Día 5', title: 'Obras (Adicionales 15%/30%/50%) y JPRD Obligatoria (≥240d)', action: "practiceModule('M5')" },
+          { id: 'D6', day: 'Día 6', title: 'Tribunal (TCP >50 UIT), Sanciones y Emergencias (20d regularizar)', action: "practiceModule('M6')" },
+          { id: 'D7', day: 'Día 7', title: 'Simulacro Oficial Completo (72 Preguntas en 120 min · Meta ≥58 pts)', action: "switchView('simulator')" }
+        ];
+        const donePlan = state.plan7Days || {};
+        return `
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:10px; margin-bottom:28px;">
+            ${planDays.map(d => {
+              const checked = !!donePlan[d.id];
+              return `
+                <div style="background:var(--bg-surface); border:1px solid ${checked ? '#10b981' : 'var(--border-color)'}; border-radius:10px; padding:12px; display:flex; flex-direction:column; justify-content:space-between; gap:8px;">
+                  <label style="display:flex; align-items:flex-start; gap:8px; cursor:pointer; font-size:0.84rem;">
+                    <input type="checkbox" ${checked ? 'checked' : ''} onchange="togglePlanDay('${d.id}', this.checked)" style="margin-top:3px;" />
+                    <span><strong style="color:${checked ? '#34d399' : '#38bdf8'}">${d.day}:</strong> ${d.title}</span>
+                  </label>
+                  <button class="btn btn-outline btn-sm" style="width:100%; font-size:0.76rem;" onclick="${d.action}">
+                    Ir a la meta del ${d.day} →
+                  </button>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        `;
+      })()}
+
+      <div class="section-header">
+        <div>
           <h2 class="section-title">Ruta de Aprendizaje por Módulos (Ley N° 32069 y D.S. N° 009-2025-EF)</h2>
           <p style="font-size:0.88rem; color:var(--text-secondary)">Estudia primero la explicación teórica de cada módulo y luego resuelve sus preguntas oficiales con retroalimentación inmediata.</p>
         </div>
@@ -597,8 +635,14 @@
             <span style="font-size:0.84rem; color:var(--text-muted); font-weight:600;">
               ${idx + 1} de ${total}
             </span>
+            <button class="btn ${state.highlightClues ? 'btn-gold' : 'btn-outline'} btn-sm" onclick="toggleHighlightClues()" title="Subrayar automáticamente montos, plazos y palabras clave del caso">
+              🖍️ Pistas Clave
+            </button>
             <button class="btn btn-outline btn-sm" onclick="useFiftyFifty(${currentQ.id})" title="Descartar 2 opciones incorrectas (Técnica 50/50)">
               ✂️ 50/50 Descartar 2
+            </button>
+            <button class="btn ${window._podcastActive ? 'btn-success' : 'btn-outline'} btn-sm" onclick="togglePodcastMode()" title="Modo Podcast Manos Libres: lee automáticamente pregunta tras pregunta con su respuesta">
+              ${window._podcastActive ? '🎧 Podcast Activo (Detener)' : '🎧 Modo Podcast'}
             </button>
             <button class="btn btn-outline btn-sm" onclick="speakCurrentQuestion(${currentQ.id})" title="Escuchar pregunta y explicación por voz">
               🔊 Escuchar
@@ -613,7 +657,7 @@
         </div>
 
         <div class="question-stem">
-          ${currentQ.id}. ${escapeHtml(currentQ.question)}
+          ${currentQ.id}. ${formatQuestionStem(currentQ.question)}
         </div>
 
         <div class="options-list">
@@ -1093,6 +1137,9 @@
                 <input type="checkbox" ${activeExam.instantFeedback ? 'checked' : ''} onchange="toggleExamInstantFeedback(this.checked)" />
                 ⚡ Corrección Inmediata Activa
               </label>
+              <button class="btn ${state.highlightClues ? 'btn-gold' : 'btn-outline'} btn-sm" onclick="toggleHighlightClues()" title="Resaltar montos, plazos y palabras gatillo del caso">
+                🖍️ Pistas Clave
+              </button>
               <button class="btn btn-outline btn-sm" onclick="useFiftyFifty(${q.id})" title="Descartar 2 opciones trampa (50/50)">
                 ✂️ 50/50 Descartar 2
               </button>
@@ -1109,7 +1156,7 @@
           </div>
 
           <div class="question-stem">
-            ${activeExam.currentIndex + 1}. ${escapeHtml(q.question)}
+            ${activeExam.currentIndex + 1}. ${formatQuestionStem(q.question)}
           </div>
 
           ${showInstant ? `
@@ -1698,6 +1745,33 @@
     const sb = document.getElementById('sidebar');
     if (sb) sb.classList.toggle('open');
   };
+
+  window.togglePlanDay = function (dayId, checked) {
+    state.plan7Days = state.plan7Days || {};
+    state.plan7Days[dayId] = !!checked;
+    saveState();
+    renderDashboard();
+  };
+
+  window.toggleHighlightClues = function () {
+    state.highlightClues = !state.highlightClues;
+    saveState();
+    const activeSection = document.querySelector('.view-section.active');
+    if (activeSection && activeSection.id === 'view-simulator') {
+      renderSimulator();
+    } else {
+      renderTrainer();
+    }
+  };
+
+  function formatQuestionStem(rawText) {
+    const safe = escapeHtml(rawText || '');
+    if (!state.highlightClues) return safe;
+    return safe.replace(
+      /(\b\d+\s*(?:UIT|días\s+hábiles|días\s+calendario|años|meses|%)|S\/\s*[\d,.\s]+|\b(?:PLADICOP|JPRD|TCP|DEC|Contrato\s+Menor|Licitación\s+Pública(?:\s+Abreviada)?|Concurso\s+Público(?:\s+Abreviado)?|Situación\s+de\s+Emergencia|Contraloría|fraccionamiento|silencio\s+positivo|aprobación\s+automática|vicios\s+ocultos)\b)/gi,
+      '<mark style="background:rgba(251,191,36,0.28); color:#fde68a; padding:1px 5px; border-radius:4px; font-weight:800;">$1</mark>'
+    );
+  }
 
   window._fiftyFiftyMap = {};
   window.useFiftyFifty = function (qid) {
@@ -3026,6 +3100,35 @@
             <div id="sicanOutputBox" style="background:var(--bg-elevated); border:1px solid var(--border-color); border-radius:10px; padding:16px; font-size:0.88rem;"></div>
           </div>
         </div>
+
+        <!-- CALCULADORA DE PENALIDAD DIARIA POR MORA (FACTOR F Y TOPE 10%) -->
+        <div class="question-box" style="margin-bottom:0; border-top:4px solid #ef4444;">
+          <h3 style="margin-bottom:12px; color:#f87171;">⏱️ 3. Calculadora de Penalidad Diaria por Mora (Factor F y Tope 10%)</h3>
+          <div style="display:flex; flex-direction:column; gap:12px;">
+            <div>
+              <label style="font-size:0.82rem; font-weight:700;">Objeto del Contrato:</label>
+              <select id="moraObjeto" class="control-select" style="width:100%; margin-top:4px;" onchange="runMoraCalculator()">
+                <option value="BS">Bienes, Servicios o Consultoría de Obra</option>
+                <option value="OBRA">Ejecución de Obra Pública</option>
+              </select>
+            </div>
+            <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px;">
+              <div>
+                <label style="font-size:0.78rem; font-weight:700;">Monto Vigente (S/):</label>
+                <input type="number" id="moraMonto" class="control-input" style="width:100%; margin-top:4px;" value="200000" min="1000" step="5000" oninput="runMoraCalculator()" />
+              </div>
+              <div>
+                <label style="font-size:0.78rem; font-weight:700;">Plazo Contrato (días):</label>
+                <input type="number" id="moraPlazo" class="control-input" style="width:100%; margin-top:4px;" value="50" min="1" step="5" oninput="runMoraCalculator()" />
+              </div>
+              <div>
+                <label style="font-size:0.78rem; font-weight:700;">Días de Atraso:</label>
+                <input type="number" id="moraAtraso" class="control-input" style="width:100%; margin-top:4px;" value="8" min="1" step="1" oninput="runMoraCalculator()" />
+              </div>
+            </div>
+            <div id="moraOutputBox" style="background:var(--bg-elevated); border:1px solid var(--border-color); border-radius:10px; padding:16px; font-size:0.88rem;"></div>
+          </div>
+        </div>
       </div>
 
       <!-- CUADRO COMPARATIVO LEY 30225 VS LEY 32069 -->
@@ -3080,7 +3183,53 @@
 
     runLiveCalculator();
     runSicanEvaluator();
+    runMoraCalculator();
   }
+
+  window.runMoraCalculator = function () {
+    const objEl = document.getElementById('moraObjeto');
+    const montoEl = document.getElementById('moraMonto');
+    const plazoEl = document.getElementById('moraPlazo');
+    const atrasoEl = document.getElementById('moraAtraso');
+    const outEl = document.getElementById('moraOutputBox');
+    if (!objEl || !montoEl || !plazoEl || !atrasoEl || !outEl) return;
+
+    const obj = objEl.value;
+    const monto = parseFloat(montoEl.value) || 0;
+    const plazo = Math.max(1, parseInt(plazoEl.value, 10) || 1);
+    const atraso = Math.max(0, parseInt(atrasoEl.value, 10) || 0);
+
+    let factorF = 0.40;
+    let reglaF = 'Plazo ≤ 60 días (para cualquier objeto) → F = 0.40';
+    if (plazo > 60) {
+      if (obj === 'OBRA') {
+        factorF = 0.15;
+        reglaF = 'Plazo > 60 días en Ejecución de Obras → F = 0.15';
+      } else {
+        factorF = 0.25;
+        reglaF = 'Plazo > 60 días en Bienes, Servicios o Consultoría → F = 0.25';
+      }
+    }
+
+    const penalidadDiaria = (0.10 * monto) / (factorF * plazo);
+    const penalidadAcumulada = penalidadDiaria * atraso;
+    const topeDiezPct = monto * 0.10;
+    const superaTope = penalidadAcumulada >= topeDiezPct;
+    const penalidadAplicable = Math.min(penalidadAcumulada, topeDiezPct);
+
+    outEl.innerHTML = `
+      <div style="margin-bottom:6px;">📐 <strong>Fórmula Oficial:</strong> <code>(0.10 × Monto) / (F × Plazo)</code></div>
+      <div style="margin-bottom:6px;">🔢 <strong>Factor F aplicable:</strong> <span style="color:#38bdf8; font-weight:800;">${factorF.toFixed(2)}</span> <span style="font-size:0.78rem; color:var(--text-secondary);">(${reglaF})</span></div>
+      <div style="margin-bottom:6px;">📅 <strong>Penalidad Diaria por Mora:</strong> <strong>S/ ${penalidadDiaria.toLocaleString('es-PE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</strong> por día</div>
+      <div style="margin-bottom:6px;">💰 <strong>Mora calculada (${atraso} días):</strong> S/ ${penalidadAcumulada.toLocaleString('es-PE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</div>
+      <div style="margin-bottom:8px;">🛡️ <strong>Tope Máximo Legal (10% del contrato):</strong> <strong style="color:#fbbf24;">S/ ${topeDiezPct.toLocaleString('es-PE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</strong> (Monto a cobrar: <strong>S/ ${penalidadAplicable.toLocaleString('es-PE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</strong>)</div>
+      <div style="padding:8px 10px; border-radius:6px; background:${superaTope ? 'rgba(239,68,68,0.18)' : 'rgba(16,185,129,0.15)'}; color:${superaTope ? '#f87171' : '#34d399'}; font-weight:700; font-size:0.82rem;">
+        ${superaTope
+          ? '🚨 ¡ALCANZÓ O SUPERÓ EL TOPE DEL 10%! La Entidad puede RESOLVER EL CONTRATO directamente sin necesidad de requerimiento previo (apercibimiento).'
+          : '✅ Aún no supera el tope del 10% de mora máxima. Se descuenta de los pagos a cuenta o de la liquidación final.'}
+      </div>
+    `;
+  };
 
   window.runLiveCalculator = function () {
     const objEl = document.getElementById('calcObjeto');
@@ -3175,8 +3324,10 @@
     `;
   };
 
-  // AUDIO (TEXT-TO-SPEECH) & PERSONAL NOTES
-  window.speakCurrentQuestion = function (qid) {
+  // AUDIO (TEXT-TO-SPEECH), PODCAST MODE & PERSONAL NOTES
+  window._podcastActive = false;
+
+  window.speakCurrentQuestion = function (qid, onEndCallback) {
     if (!('speechSynthesis' in window)) {
       alert('Tu navegador no soporta lectura por voz.');
       return;
@@ -3185,18 +3336,64 @@
     const q = (window.OECE_QUESTIONS || []).find(x => x.id === qid);
     if (!q) return;
 
-    const optsText = q.options.map(o => `Opción ${o.letter}: ${o.text}`).join('. ');
-    const ansText = `La respuesta correcta es la opción ${q.correct}. ${q.examTip}`;
-    const utter = new SpeechSynthesisUtterance(`Pregunta ${q.id}. ${q.question}. ${optsText}. ${ansText}`);
+    const correctOpt = q.options.find(o => o.letter === q.correct);
+    const ansText = `La respuesta correcta es la opción ${q.correct}: ${correctOpt ? correctOpt.text : ''}. Regla de oro: ${q.examTip}`;
+    const utter = new SpeechSynthesisUtterance(`Pregunta ${q.id}. ${q.question}. ${ansText}`);
     utter.lang = 'es-PE';
-    utter.rate = 1.02;
+    utter.rate = 1.03;
+    if (typeof onEndCallback === 'function') {
+      utter.onend = onEndCallback;
+    }
     window.speechSynthesis.speak(utter);
   };
 
+  window.togglePodcastMode = function () {
+    if (!('speechSynthesis' in window)) {
+      alert('Tu navegador no soporta lectura por voz.');
+      return;
+    }
+    window._podcastActive = !window._podcastActive;
+    if (!window._podcastActive) {
+      window.speechSynthesis.cancel();
+      renderTrainer();
+      return;
+    }
+    runPodcastStep();
+  };
+
+  function runPodcastStep() {
+    if (!window._podcastActive) return;
+    const filtered = getFilteredTrainerQuestions();
+    const q = filtered[state.trainerFilter.currentIndex];
+    if (!q) {
+      window._podcastActive = false;
+      renderTrainer();
+      return;
+    }
+    renderTrainer();
+    window.speakCurrentQuestion(q.id, function () {
+      if (!window._podcastActive) return;
+      setTimeout(function () {
+        if (!window._podcastActive) return;
+        if (state.trainerFilter.currentIndex < filtered.length - 1) {
+          state.trainerFilter.currentIndex++;
+          saveState();
+          runPodcastStep();
+        } else {
+          window._podcastActive = false;
+          renderTrainer();
+        }
+      }, 1500);
+    });
+  }
+
   window.stopSpeech = function () {
+    window._podcastActive = false;
     if ('speechSynthesis' in window) {
       window.speechSynthesis.cancel();
     }
+    const activeSection = document.querySelector('.view-section.active');
+    if (activeSection && activeSection.id === 'view-trainer') renderTrainer();
   };
 
   window.saveQuestionNote = function (qid, text) {
@@ -3209,8 +3406,33 @@
     saveState();
   };
 
+  // PWA INSTALL HANDLER
+  let deferredInstallPrompt = null;
+  window.addEventListener('beforeinstallprompt', function (e) {
+    e.preventDefault();
+    deferredInstallPrompt = e;
+    const btn = document.getElementById('pwaInstallBtn');
+    if (btn) btn.style.display = 'inline-flex';
+  });
+
+  window.installPWAApp = function () {
+    if (deferredInstallPrompt) {
+      deferredInstallPrompt.prompt();
+      deferredInstallPrompt.userChoice.finally(function () {
+        deferredInstallPrompt = null;
+        const btn = document.getElementById('pwaInstallBtn');
+        if (btn) btn.style.display = 'none';
+      });
+    } else {
+      alert('📱 Para instalar en tu Celular:\n• En Android (Chrome): Toca el menú ⋮ (arriba a la derecha) → «Añadir a pantalla de inicio» o «Instalar aplicación».\n• En iPhone (Safari): Toca el botón Compartir → «Agregar a inicio».');
+    }
+  };
+
   // INIT
   document.addEventListener('DOMContentLoaded', function () {
+    if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+      navigator.serviceWorker.register('./sw.js').catch(function () {});
+    }
     if (window.OECE_TOPES_QUESTIONS && window.OECE_QUESTIONS) {
       const existingIds = new Set(window.OECE_QUESTIONS.map(q => q.id));
       window.OECE_TOPES_QUESTIONS.forEach(tq => {
