@@ -221,8 +221,11 @@
           <button class="btn btn-primary" style="background:#8b5cf6" onclick="switchView('topes')">
             🎯 3. Simulador de Topes y Casuísticas
           </button>
+          <button class="btn btn-primary" style="background:#0284c7" onclick="switchView('simulator'); startExam(35, 50, 'EXTERNAL_SIM', '🌐 Simulacro Portales Externos OECE / SICAN 2026')">
+            🌐 4. Simulacro Fijas Portales Externos OECE
+          </button>
           <button class="btn btn-outline" style="background:rgba(255,255,255,0.12); color:#fff; border-color:rgba(255,255,255,0.3)" onclick="switchView('simulator')">
-            ⏱️ 4. Simulacro Oficial OECE (72 preg.)
+            ⏱️ 5. Simulacro Oficial OECE (72 preg.)
           </button>
           <button class="btn btn-outline" style="background:rgba(239,68,68,0.22); color:#fca5a5; border-color:rgba(239,68,68,0.45)" onclick="switchView('simulator'); startExam(15, 25, 'ALL', '🔥 Reto Muerte Súbita (15 Sin Errores)', true)">
             🔥 5. Reto Muerte Súbita (Sin Errores)
@@ -538,8 +541,9 @@
     return all.filter(q => {
       if (f.hideDuplicates && q.isDuplicateOf !== null) return false;
       if (f.module === 'WEB_FIJAS' && !q.isWebFija) return false;
+      else if (f.module === 'EXTERNAL_SIM' && !q.isExternalSim && !q.isWebFija) return false;
       else if (f.module === 'TOPES_CASUISTICA' && !isTopeOrCasuisticaQuestion(q)) return false;
-      else if (f.module !== 'ALL' && f.module !== 'WEB_FIJAS' && f.module !== 'TOPES_CASUISTICA' && q.module !== f.module) return false;
+      else if (f.module !== 'ALL' && f.module !== 'WEB_FIJAS' && f.module !== 'EXTERNAL_SIM' && f.module !== 'TOPES_CASUISTICA' && q.module !== f.module) return false;
 
       if (f.status === 'UNANSWERED' && state.answered[q.id]) return false;
       if (f.status === 'WRONG' && (!state.answered[q.id] || state.answered[q.id].isCorrect)) return false;
@@ -576,6 +580,7 @@
       <div class="trainer-controls">
         <select class="control-select" onchange="updateTrainerFilter('module', this.value)">
           <option value="ALL" ${state.trainerFilter.module === 'ALL' ? 'selected' : ''}>📚 Todos los Módulos (${(window.OECE_QUESTIONS || []).length})</option>
+          <option value="EXTERNAL_SIM" ${state.trainerFilter.module === 'EXTERNAL_SIM' ? 'selected' : ''}>🌐 Simuladores Externos OECE / SICAN (Fijas 2026)</option>
           <option value="WEB_FIJAS" ${state.trainerFilter.module === 'WEB_FIJAS' ? 'selected' : ''}>🔥 Fijas de Examen Web & Casuística SICAN</option>
           <option value="TOPES_CASUISTICA" ${state.trainerFilter.module === 'TOPES_CASUISTICA' ? 'selected' : ''}>🎯 Solo Topes, Plazos, Montos y Casuísticas</option>
           ${modules.map(m => `<option value="${m.id}" ${state.trainerFilter.module === m.id ? 'selected' : ''}>${m.code}: ${m.title.split(':')[0]}</option>`).join('')}
@@ -1066,6 +1071,17 @@
               </button>
             </div>
 
+            <div class="module-card" style="border:2px solid #0284c7;">
+              <div>
+                <span class="pill-tag" style="background:rgba(2,132,199,0.2); color:#38bdf8;">🌐 Portales Externos OECE / SICAN</span>
+                <h3 style="margin-top:8px;">Simulacro Fijas Externas (35 Preguntas)</h3>
+                <p class="module-desc" style="margin-top:6px;">Recopilación exclusiva de casuísticas reales extraídas de portales de preparación OECE/SICAN (Segmentación, Subsanación Art. 78, Retención 10% MYPE/480k/5M, Desierto, AGA y Topes). Duración: <strong>50 minutos</strong>.</p>
+              </div>
+              <button class="btn btn-primary" style="width:100%; background:#0284c7" onclick="startExam(35, 50, 'EXTERNAL_SIM', '🌐 Simulacro Portales Externos OECE / SICAN')">
+                Iniciar Simulacro Externo (35) →
+              </button>
+            </div>
+
             <div class="module-card" style="border:2px solid #ef4444;">
               <div>
                 <span class="pill-tag" style="background:rgba(239,68,68,0.2); color:#f87171;">🔥 Modo Muerte Súbita</span>
@@ -1354,6 +1370,8 @@
     let pool = (window.OECE_QUESTIONS || []).filter(q => q.isDuplicateOf === null);
     if (moduleFilter === 'TOPES_CASUISTICA') {
       pool = (window.OECE_QUESTIONS || []).filter(q => isTopeOrCasuisticaQuestion(q));
+    } else if (moduleFilter === 'EXTERNAL_SIM') {
+      pool = (window.OECE_QUESTIONS || []).filter(q => q.isExternalSim || q.isWebFija);
     } else if (moduleFilter === 'WEB_FIJAS') {
       pool = (window.OECE_QUESTIONS || []).filter(q => q.isWebFija || isTopeOrCasuisticaQuestion(q));
     } else if (moduleFilter === 'MISTAKES_ONLY') {

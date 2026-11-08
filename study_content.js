@@ -267,15 +267,29 @@ window.OECE_FLASHCARDS = [
   { id: 17, category: "MDA (Salud)", front: "¿Qué es un MDA y qué requisito es indispensable en su fase de nominación?", back: "Mecanismo Diferenciado de Adquisición para tecnologías sanitarias de alto costo (enfermedades raras u oncológicas). Exige Registro Sanitario vigente o condicionado en el Perú." },
   { id: 18, category: "Directiva PAC", front: "En la evaluación del PAC, ¿cuándo se considera 'convocada' y cuándo 'contratada' una compra por Catálogo Electrónico?", back: "• Convocada: Con la emisión de la solicitud de cotización.\n• Contratada: Cuando cuenta con Orden de Compra." },
   { id: 19, category: "Expediente", front: "¿Por cuánto tiempo mínimo debe conservar la entidad los expedientes de contratación culminados?", back: "Al menos 5 años tras la recepción del bien/servicio o la liquidación final." },
-  { id: 20, category: "Ejecución Contractual", front: "Diferencia entre Resolución, Terminación Anticipada y Nulidad del Contrato", back: "• Resolución: Por incumplimiento grave del contratista (se ejecuta la garantía).\n• Terminación Anticipada: Desaparece la necesidad por cambio de política institucional.\n• Nulidad: Se descubre que el ganador presentó documentos falsos." }
+  { id: 20, category: "Ejecución Contractual", front: "Diferencia entre Resolución, Terminación Anticipada y Nulidad del Contrato", back: "• Resolución: Por incumplimiento grave del contratista (se ejecuta la garantía).\n• Terminación Anticipada: Desaparece la necesidad por cambio de política institucional.\n• Nulidad: Se descubre que el ganador presentó documentos falsos." },
+  { id: 21, category: "Simuladores Externos OECE", front: "¿Cuáles son las 4 categorías de la Segmentación de Contrataciones (Art. 42 y 125 D.S. 009-2025-EF) y el objetivo de cada par?", back: "• Rutinarias (baja cuantía, bajo riesgo) y Operacionales (alta cuantía, bajo riesgo): orientadas a ATENCIÓN OPORTUNA y REDUCCIÓN DE COSTOS.\n• Críticas (baja cuantía, alto riesgo) y Estratégicas (alta cuantía, alto riesgo): orientadas a DISMINUIR LOS RIESGOS." },
+  { id: 22, category: "Simuladores Externos OECE", front: "¿Cuáles son los 3 criterios objetivos para calificar una contratación de Bienes y Servicios como de ALTO RIESGO en la segmentación (Art. 125 D.S. 009-2025-EF)?", back: "1) Declarada desierta en los últimos 2 años.\n2) Promedio de postores en los 2 años previos menor o igual a 3 (en bienes) o menor o igual a 2 (en servicios).\n3) Disponibilidad limitada en el mercado.\n(Nota: La segmentación NO aplica a contratos menores)." },
+  { id: 23, category: "Simuladores Externos OECE", front: "Según el Art. 78.4 del Reglamento D.S. 009-2025-EF y Comunicado N° 021-2025-OECE, ¿cuál es el plazo exacto para subsanar ofertas en la PLADICOP?", back: "• Plazo principal: 2 días hábiles desde el día siguiente de la notificación en la PLADICOP.\n• Prórroga: +2 días hábiles adicionales a solicitud del postor (si la Entidad no responde en 2 días hábiles, se aprueba automáticamente).\n• ¡Ojo! '1 a 3 días hábiles' era de la derogada Ley 30225." },
+  { id: 24, category: "Simuladores Externos OECE", front: "Según el Art. 114 del D.S. 009-2025-EF, ¿en qué 3 supuestos procede la Retención de Pago (10%) como Garantía de Fiel Cumplimiento?", back: "1) Bienes y Servicios cuya cuantía adjudicada sea <= S/ 480,000.\n2) Obras cuya cuantía adjudicada sea <= S/ 5,000,000.\n3) Cuando el contratista sea una MYPE (con independencia del monto del contrato)." },
+  { id: 25, category: "Simuladores Externos OECE", front: "Según el Art. 84 del D.S. 009-2025-EF, si un procedimiento se declara DESIERTO, ¿cuándo se debe volver a aprobar el Expediente de Contratación?", back: "Únicamente cuando el informe de evaluación de las causas del desierto determine que debe modificarse algún documento que motivó su aprobación." },
+  { id: 26, category: "Simuladores Externos OECE", front: "Según el Art. 73.2 de la Ley N° 32069, ¿cuál es el porcentaje de la Garantía por Interposición del Recurso de Apelación para postores generales vs. MYPE?", back: "• Postor general (No MYPE): 3% de la cuantía del procedimiento o ítem impugnado (tope máximo: 300 UIT).\n• Postor acreditado como MYPE: se reduce a 0.5% de la cuantía o ítem impugnado (tope máximo: 25 UIT)." }
 ];
 
 window.OECE_CHEATSHEET = [
   { group: "Actuaciones Preparatorias y PAC", item: "Conservación física/digital del expediente de contratación", value: "Mínimo 5 años tras recepción o liquidación" },
   { group: "Actuaciones Preparatorias y PAC", item: "Plazo mínimo para formular consultas técnicas en PLADICOP", value: "5 días hábiles" },
   { group: "Actuaciones Preparatorias y PAC", item: "Plazo de la entidad para absolver consultas técnicas en PLADICOP", value: "3 días hábiles" },
+  { group: "Actuaciones Preparatorias y PAC", item: "Segmentación (Art. 42 y 125 D.S. 009-2025-EF): Rutinarias y Operacionales", value: "Bajo Riesgo → Atención oportuna y reducción de costos" },
+  { group: "Actuaciones Preparatorias y PAC", item: "Segmentación (Art. 42 y 125 D.S. 009-2025-EF): Críticas y Estratégicas", value: "Alto Riesgo → Disminuir los riesgos en la contratación" },
+  { group: "Actuaciones Preparatorias y PAC", item: "Criterio de Alto Riesgo en Segmentación (últimos 2 años)", value: "Desierto previo o <= 3 postores (bienes) / <= 2 postores (servicios)" },
+  { group: "Actuaciones Preparatorias y PAC", item: "Compatibilización del Requerimiento (Directiva N° 0001-2025-EF/54.01)", value: "Sustituye a 'Estandarización'; aprueba la AGA" },
   { group: "Selección y Topes Monetarios", item: "Licitación Pública (Bienes / Obras) y Concurso Público (Servicios / Consultorías)", value: "Mayor a S/ 485,000" },
   { group: "Selección y Topes Monetarios", item: "Licitación Pública Abreviada (Bienes)", value: "Entre S/ 42,800 y S/ 485,000" },
+  { group: "Selección y Topes Monetarios", item: "Subsanación de ofertas en PLADICOP (Art. 78.4 D.S. 009-2025-EF)", value: "2 días hábiles (+ 2 días hábiles adicionales a solicitud del postor)" },
+  { group: "Selección y Topes Monetarios", item: "Retención de pago 10% Garantía Fiel Cumplimiento (Art. 114 D.S. 009-2025-EF)", value: "B/S <= S/ 480,000 | Obras <= S/ 5,000,000 | MYPE: sin tope de monto" },
+  { group: "Selección y Topes Monetarios", item: "Garantía por Recurso de Apelación (Art. 73.2 Ley N° 32069)", value: "General: 3% (tope 300 UIT) | MYPE: 0.5% (tope 25 UIT)" },
+  { group: "Selección y Topes Monetarios", item: "Competencia para resolver Apelación (Art. 74 Ley N° 32069)", value: "<= 50 UIT: Entidad (AGA) | > 50 UIT: Tribunal (TCP del OECE)" },
   { group: "Selección y Topes Monetarios", item: "Comparación de Precios (servicios no especializados del balotario)", value: "Ej. S/ 70,000 (disponibilidad inmediata)" },
   { group: "Apelaciones y Perfeccionamiento", item: "Apelación en Licitación Pública y Concurso Público", value: "8 días hábiles desde notificación" },
   { group: "Apelaciones y Perfeccionamiento", item: "Apelación en Selección / Modalidad Abreviada", value: "5 días hábiles desde notificación" },
@@ -316,7 +330,12 @@ window.OECE_ARTICLES = [
   { art: "Art. 25 (Ley 32069)", title: "Autoridad de la Gestión Administrativa (AGA) y Actores", body: "Define los roles del Titular de la Entidad, la Autoridad de la Gestión Administrativa (Secretario General, Gerente General o Gerente Municipal), el Área Usuaria, el Área Técnica Estratégica (ATE) y la Dependencia Encargada de las Contrataciones (DEC)." },
   { art: "Art. 30 (Ley 32069)", title: "Impedimentos para Contratar con el Estado", body: "Agrupa los impedimentos en 4 bloques: 1) Personales (autoridades y servidores), 2) Parentesco (cónyuge, conviviente y parientes hasta el 2° grado de consanguinidad o afinidad), 3) Personas jurídicas (participación > 30%), y 4) Sancionados/Inhabilitados. Son taxativos (no aplica analogía) y rigen también en Contratos Menores." },
   { art: "Art. 55 (Ley 32069)", title: "Procedimientos de Selección No Competitivos", body: "Regula las causales excepcionales donde no hay etapa competitiva: proveedor único con habilitación exclusiva, situación de emergencia (prevención o atención inmediata), desabastecimiento inminente y servicios personalísimos." },
-  { art: "Art. 78 (D.S. 009-2025-EF)", title: "Subsanación de Ofertas en Selección", body: "Permite subsanar errores materiales o formales en documentos preexistentes en un plazo de 1 a 2 días hábiles vía PLADICOP, siempre que NO altere el contenido esencial de la oferta ni modifique el monto de la oferta económica." },
+  { art: "Art. 73.2 y 74 (Ley 32069)", title: "Recurso de Apelación: Garantía (3% / 0.5% MYPE) y Competencia (50 UIT)", body: "Art. 73.2: Garantía por apelación = 3% de la cuantía o ítem impugnado (tope 300 UIT) en régimen general, y 0.5% (tope 25 UIT) para MYPE acreditadas. Art. 74: Competencia resolutiva = hasta 50 UIT resuelve la Entidad Contratante (AGA); más de 50 UIT resuelve el Tribunal de Contrataciones Públicas (TCP del OECE)." },
+  { art: "Art. 42 y 125 (D.S. 009-2025-EF)", title: "Segmentación de Contrataciones (Cuantía vs. Riesgo)", body: "Clasifica bienes y servicios en: Rutinarios (baja cuantía, bajo riesgo) y Operacionales (alta cuantía, bajo riesgo) orientados a atención oportuna y reducción de costos; Críticos (baja cuantía, alto riesgo) y Estratégicos (alta cuantía, alto riesgo) orientados a disminuir riesgos. Alto riesgo: desierto en últimos 2 años, promedio <= 3 postores en bienes o <= 2 en servicios, o disponibilidad limitada." },
+  { art: "Art. 78 y 78.4 (D.S. 009-2025-EF)", title: "Subsanación de Ofertas en PLADICOP (2 + 2 días hábiles)", body: "Art. 78.1-78.2 y Comunicado N° 021-2025-OECE: Permite subsanar errores formales, falta de firma/foliatura y documentos públicos preexistentes siempre que NO altere el contenido esencial ni el precio. Art. 78.4: Plazo principal de 2 días hábiles desde el día siguiente de la notificación en la PLADICOP, prorrogable por 2 días hábiles adicionales a solicitud del postor." },
+  { art: "Art. 84 (D.S. 009-2025-EF)", title: "Declaratoria de Desierto y Expediente de Contratación", body: "Tras declararse desierto un procedimiento, los evaluadores emiten informe sobre las causas. Solo es obligatorio volver a aprobar el expediente de contratación cuando dicho informe determine que debe modificarse algún documento que motivó su aprobación." },
+  { art: "Art. 114 (D.S. 009-2025-EF)", title: "Retención de Pago (10%) como Garantía de Fiel Cumplimiento", body: "Permite retener el 10% en forma prorrateada durante la primera mitad de los pagos previstos en vez de carta fianza cuando: 1) Bienes y servicios <= S/ 480,000; 2) Obras <= S/ 5,000,000; o 3) El contratista sea MYPE (con independencia del monto del contrato)." },
+  { art: "Directiva N° 0001-2025-EF/54.01", title: "Directiva de Compatibilización del Requerimiento (Ex-Estandarización)", body: "Regula el proceso de racionalización para ajustar excepcionalmente bienes o servicios a una marca, modelo o fabricante determinado cuando existe equipamiento o infraestructura preexistente. Requiere aprobación expresa de la Autoridad de la Gestión Administrativa (AGA)." },
   { art: "Art. 187.1 y 206 (D.S. 009-2025-EF)", title: "Supervisión del Contrato y Programa de Ejecución", body: "La supervisión es responsable del control técnico, económico y administrativo del contrato. Evalúa y remite a la entidad la versión definitiva del programa de ejecución, verifica la calidad de los trabajos y emite conformidad sobre el programa (no remite informes al público en general)." },
   { art: "Art. 221 (D.S. 009-2025-EF)", title: "Contenido de las Bases y Proforma de Contrato", body: "Las bases del procedimiento deben incluir obligatoriamente los factores de evaluación, los requisitos de calificación y la proforma del contrato elegido con sus adecuaciones." },
   { art: "Directiva N° 002-2025-OECE-CD", title: "Junta de Prevención y Resolución de Disputas (JPRD)", body: "Establece el Contrato Tripartito, obligatoriedad en contratos ≥ 240 días calendario, cómputo en días hábiles (sin sábados, domingos ni feriados), primera reunión en 5 días hábiles, precisión de consulta en 2 días hábiles, ampliación por complejidad hasta +15 días hábiles, recomendación en 7 días hábiles, firmeza de decisión en 7 días calendario e implementación en 10 días calendario." },
@@ -464,17 +483,257 @@ window.OECE_TOPES_QUESTIONS = [
     isWebFija: true,
     isTopeCasuistica: true,
     module: "M6",
-    concept: "Competencia Resolutiva en Apelaciones según Tope de Cuantía",
-    question: "[CASUÍSTICA DE TOPES] Una municipalidad convoca una Licitación Pública Abreviada para adquirir equipos informáticos por S/ 180,000. Un postor descalificado interpone recurso de apelación al cuarto día hábil de notificada la buena pro, adjuntando la garantía respectiva. ¿Es admisible el recurso y quién es competente para resolverlo?",
+    concept: "Competencia Resolutiva en Apelaciones según Tope de 50 UIT (Art. 74 Ley N° 32069)",
+    question: "[CASUÍSTICA DE TOPES] Una municipalidad convoca una Licitación Pública Abreviada para adquirir equipos informáticos por S/ 180,000 (aprox. 33.6 UIT, menor a 50 UIT). Un postor descalificado interpone recurso de apelación al cuarto día hábil de notificada la buena pro, adjuntando la garantía respectiva. ¿Es admisible el recurso y quién es competente para resolverlo según el Art. 74 de la Ley N° 32069?",
     correct: "A",
-    legalRef: "Ley N° 32069 y Reglamento D.S. N° 009-2025-EF (Recurso de Apelación: Plazos y Competencia)",
-    examTip: "En una LP Abreviada (plazo máximo: 5 días hábiles), presentar la apelación al 4° día hábil con garantía es ADMISIBLE y PROCEDENTE. Por su cuantía (S/ 180,000, menor al tope para el TCP), resuelve la propia Entidad Contratante (AGA/DEC), nunca el Comité de Selección.",
-    explanation: "Respuesta Correcta: A) Sí es procedente porque se presentó dentro de los 5 días hábiles con garantía, y debe ser resuelto por la propia Entidad Contratante (a través de un órgano imparcial / Autoridad de la Gestión Administrativa).\n\nFundamento Normativo: En modalidades abreviadas el plazo para apelar es de 5 días hábiles (el 4° día está en plazo). Además, al ser un proceso de S/ 180,000, la competencia resolutiva recae en la propia Entidad Contratante (nunca en el comité de selección que emitió el acto ni en el TCP si no supera el umbral de ley).",
+    legalRef: "Artículo 74 de la Ley N° 32069 y Reglamento D.S. N° 009-2025-EF (Recurso de Apelación: Plazos y Competencia por tope de 50 UIT)",
+    examTip: "En LP Abreviada el plazo para apelar es de 5 días hábiles (al 4° día está en plazo). Por cuantía <= 50 UIT (S/ 180,000 es menor a 50 UIT), resuelve la propia Entidad Contratante (Autoridad de la Gestión Administrativa - AGA), nunca el Comité de Selección.",
+    explanation: "Respuesta Correcta: A) Sí es procedente porque se presentó dentro de los 5 días hábiles con garantía, y al ser la cuantía igual o menor a 50 UIT (Art. 74 de la Ley N° 32069) debe ser resuelto por la propia Entidad Contratante (Autoridad de la Gestión Administrativa - AGA).\n\nFundamento Normativo: Conforme al artículo 74 de la Ley N° 32069, la competencia resolutiva se divide en 50 UIT: cuando la cuantía es <= 50 UIT resuelve la Entidad Contratante (a través de la AGA, sin haber intervenido antes), y cuando supera las 50 UIT resuelve el Tribunal de Contrataciones Públicas (TCP) del OECE.",
     options: [
-      { letter: "A", text: "Sí es procedente porque se presentó dentro de los 5 días hábiles con garantía, y debe ser resuelto por la propia Entidad Contratante (a través de un órgano imparcial / Autoridad de la Gestión Administrativa)", isCorrect: true, why: "¡Es la alternativa CORRECTA! Cumple el plazo de 5 días hábiles, cuenta con garantía y define correctamente la competencia de la Entidad." },
+      { letter: "A", text: "Sí es procedente porque se presentó dentro de los 5 días hábiles con garantía, y al ser la cuantía igual o menor a 50 UIT (Art. 74 de la Ley N° 32069) debe ser resuelto por la propia Entidad Contratante (Autoridad de la Gestión Administrativa - AGA)", isCorrect: true, why: "¡Es la alternativa CORRECTA! Cumple el plazo de 5 días hábiles en abreviadas y aplica el tope de <= 50 UIT del Art. 74 de la Ley N° 32069." },
       { letter: "B", text: "Es improcedente por extemporáneo porque en abreviadas el plazo es de 2 días hábiles", isCorrect: false, why: "Es incorrecta porque el plazo en modalidades abreviadas es de 5 días hábiles, no de 2 días." },
       { letter: "C", text: "Debe ser resuelto por el mismo Comité de Selección que otorgó la buena pro", isCorrect: false, why: "Es incorrecta porque el Comité de Selección jamás puede resolver apelaciones contra sus propios actos por conflicto de intereses y falta de imparcialidad." },
       { letter: "D", text: "Se puede perfeccionar el contrato de todas formas mientras se tramita la apelación", isCorrect: false, why: "Es incorrecta porque la interposición del recurso de apelación suspende obligatoriamente el perfeccionamiento del contrato." }
+    ]
+  },
+  {
+    id: 429,
+    page: 71,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M3",
+    concept: "Simulador Externo OECE: Matriz de Segmentación de Contrataciones (Art. 42 y 125 D.S. 009-2025-EF)",
+    question: "[SIMULADOR EXTERNO OECE / SICAN] Durante las actuaciones preparatorias bajo la Ley N° 32069 y los artículos 42 y 125 de su Reglamento D.S. N° 009-2025-EF, la Dependencia Encargada de las Contrataciones (DEC) realiza la segmentación de bienes y servicios en cuatro categorías según su cuantía y riesgo: Rutinarios, Operacionales, Críticos y Estratégicos. ¿Cuál es la orientación correcta de la estrategia de contratación según cada categoría?",
+    correct: "B",
+    legalRef: "Artículos 42 y 125 del Reglamento D.S. N° 009-2025-EF (Segmentación de Contrataciones y Estrategia de Contratación)",
+    examTip: "Fija de Simuladores OECE (Art. 125 D.S. 009-2025-EF): Bajo Riesgo (Rutinarios y Operacionales) = Atención oportuna y reducción de costos | Alto Riesgo (Críticos y Estratégicos) = Disminuir los riesgos en la contratación.",
+    explanation: "Respuesta Correcta: B) Las contrataciones Rutinarias y Operacionales (bajo riesgo) se orientan a la atención oportuna y reducción de costos, mientras que las Críticas y Estratégicas (alto riesgo) se orientan a disminuir los riesgos en el proceso de contratación.\n\nFundamento Normativo: Conforme a los artículos 42 y 125 del Reglamento D.S. N° 009-2025-EF:\n• Rutinarios (baja cuantía, bajo riesgo) y Operacionales (alta cuantía, bajo riesgo): buscan eficiencia, atención oportuna y reducción de costos.\n• Críticos (baja cuantía, alto riesgo) y Estratégicos (alta cuantía, alto riesgo): buscan mitigar y disminuir los riesgos de desabastecimiento o incumplimiento.",
+    options: [
+      { letter: "A", text: "Las Rutinarias y Críticas buscan únicamente elegir el menor precio sin evaluar calidad", isCorrect: false, why: "Es incorrecta porque las contrataciones Críticas tienen alto riesgo y requieren mitigar riesgos, además de regir siempre el principio de Valor por Dinero." },
+      { letter: "B", text: "Las contrataciones Rutinarias y Operacionales (bajo riesgo) se orientan a la atención oportuna y reducción de costos, mientras que las Críticas y Estratégicas (alto riesgo) se orientan a disminuir los riesgos en el proceso de contratación", isCorrect: true, why: "¡Es la alternativa CORRECTA! Refleja exactamente la regla oficial de los artículos 42 y 125 del D.S. N° 009-2025-EF." },
+      { letter: "C", text: "La segmentación solo es obligatoria para los contratos menores iguales o inferiores a 8 UIT", isCorrect: false, why: "Es una trampa clásica: el Reglamento establece expresamente que la segmentación NO es aplicable a los contratos menores." },
+      { letter: "D", text: "Las contrataciones Estratégicas son aquellas de baja cuantía y bajo riesgo", isCorrect: false, why: "Es incorrecta porque las Estratégicas son de ALTA cuantía y ALTO riesgo." }
+    ]
+  },
+  {
+    id: 430,
+    page: 71,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M3",
+    concept: "Simulador Externo OECE: Criterios Numéricos de Alto Riesgo en Segmentación (Art. 125 D.S. 009-2025-EF)",
+    question: "[SIMULADOR EXTERNO OECE / SICAN] Un Oficial de Compras está clasificando el nivel de riesgo de los requerimientos incluidos en el PAC. Según el artículo 125 del Reglamento de la Ley N° 32069 (D.S. N° 009-2025-EF), ¿cuál de los siguientes supuestos constituye un criterio objetivo para calificar una contratación de bienes o servicios como de ALTO RIESGO?",
+    correct: "C",
+    legalRef: "Artículo 125 del Reglamento D.S. N° 009-2025-EF (Criterios para determinar Alto Riesgo en la Segmentación)",
+    examTip: "Criterios de Alto Riesgo en Segmentación (Art. 125 D.S. 009-2025-EF, últimos 2 años): 1) Declarado desierto; 2) Promedio de postores <= 3 en bienes o <= 2 en servicios; 3) Disponibilidad limitada en el mercado.",
+    explanation: "Respuesta Correcta: C) Que en los últimos dos (2) años el procedimiento haya sido declarado desierto, o haya tenido un promedio de postores menor o igual a tres (3) en bienes o menor o igual a dos (2) en servicios.\n\nFundamento Normativo: El artículo 125 del Reglamento D.S. N° 009-2025-EF fija estos topes históricos precisos de los últimos 2 años para clasificar una compra como de alto riesgo (Crítica o Estratégica): haber quedado desierta, registrar baja concurrencia (<= 3 postores en bienes o <= 2 en servicios) o tener disponibilidad limitada en el mercado.",
+    options: [
+      { letter: "A", text: "Que hayan participado más de diez (10) postores en el año anterior", isCorrect: false, why: "Es incorrecta porque una alta concurrencia de postores demuestra un mercado competitivo de bajo riesgo." },
+      { letter: "B", text: "Que sea un contrato menor por un monto de 2 UIT", isCorrect: false, why: "Es incorrecta porque los contratos menores (<= 8 UIT) están excluidos de la segmentación." },
+      { letter: "C", text: "Que en los últimos dos (2) años el procedimiento haya sido declarado desierto, o haya tenido un promedio de postores menor o igual a tres (3) en bienes o menor o igual a dos (2) en servicios", isCorrect: true, why: "¡Es la alternativa CORRECTA! Son los topes numéricos exactos del Art. 125 del Reglamento D.S. N° 009-2025-EF." },
+      { letter: "D", text: "Que el requerimiento haya sido formulado por el Área Usuaria dentro del plazo", isCorrect: false, why: "Es incorrecta porque cumplir los plazos del requerimiento es una obligación ordinaria y no un indicador de riesgo de mercado." }
+    ]
+  },
+  {
+    id: 431,
+    page: 71,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M5",
+    concept: "Simulador Externo OECE: Plazo de Subsanación de Ofertas (Art. 78.4 D.S. 009-2025-EF y Comunicado 021-2025-OECE)",
+    question: "[SIMULADOR EXTERNO OECE / SICAN] En una Licitación Pública bajo la Ley N° 32069, los evaluadores advierten que un postor presentó declaraciones juradas omitiendo la firma o foliatura en un anexo que no altera el contenido esencial de la oferta ni el precio. Conforme al artículo 78 (numerales 78.1 y 78.4) del Reglamento D.S. N° 009-2025-EF y al Comunicado N° 021-2025-OECE, ¿cuál es el plazo exacto que se le otorga en la PLADICOP para subsanar y qué prórroga procede?",
+    correct: "A",
+    legalRef: "Artículo 78 (78.1, 78.2 y 78.4) del Reglamento D.S. N° 009-2025-EF y Comunicado N° 021-2025-OECE",
+    examTip: "¡Cuidado con los simuladores desactualizados! En la antigua Ley 30225 era 'de 1 a 3 días hábiles'. En el NUEVO Reglamento D.S. N° 009-2025-EF (Art. 78.4) el plazo es de DOS (2) DÍAS HÁBILES desde el día siguiente de la notificación en la PLADICOP, prorrogable por DOS (2) DÍAS HÁBILES ADICIONALES a solicitud del postor.",
+    explanation: "Respuesta Correcta: A) Se le otorga un plazo de dos (2) días hábiles desde el día siguiente de la notificación en la PLADICOP, pudiendo la Entidad otorgar un plazo adicional de dos (2) días hábiles a solicitud del postor.\n\nFundamento Normativo Contrastado (Art. 78.4 del D.S. N° 009-2025-EF y Comunicado N° 021-2025-OECE):\n1) Alcance (Art. 78.1 y Comunicado 021-2025-OECE): Son subsanables omisiones en formatos/declaraciones juradas (excepto el precio u oferta económica y plazos totales/parciales), falta de firma, rúbrica, foliatura o legalización notarial, y documentos públicos preexistentes (Art. 78.2), siempre que NO alteren el contenido esencial.\n2) Plazo exacto (Art. 78.4): El postor cuenta con DOS (2) días hábiles para subsanar vía PLADICOP, y puede pedir una prórroga de DOS (2) días hábiles adicionales (si la Entidad no responde en 2 días hábiles, se considera autorizada automáticamente).",
+    options: [
+      { letter: "A", text: "Se le otorga un plazo de dos (2) días hábiles desde el día siguiente de la notificación en la PLADICOP, pudiendo la Entidad otorgar un plazo adicional de dos (2) días hábiles a solicitud del postor", isCorrect: true, why: "¡Es la alternativa CORRECTA! Cita con total exactitud el numeral 78.4 del Reglamento D.S. N° 009-2025-EF vigente." },
+      { letter: "B", text: "Se le otorga un plazo de 1 a 3 días hábiles sin posibilidad de prórroga conforme al derogado D.S. N° 344-2018-EF", isCorrect: false, why: "Es una TRAMPA de simuladores antiguos: el rango 'de 1 a 3 días hábiles' pertenecía al Art. 60 del derogado reglamento de la Ley 30225; hoy rige el Art. 78.4 del D.S. 009-2025-EF (2 días hábiles + 2 días hábiles adicionales a solicitud)." },
+      { letter: "C", text: "Se permite subsanar modificando libremente el monto de la oferta económica en un plazo de 15 días hábiles", isCorrect: false, why: "Es incorrecta porque el Comunicado N° 021-2025-OECE y el Art. 78 prohíben expresamente subsanar o alterar el precio u oferta económica." },
+      { letter: "D", text: "Se declara nulo todo el procedimiento de selección desde la convocatoria", isCorrect: false, why: "Es incorrecta porque un defecto formal subsanable de un postor no acarrea la nulidad del procedimiento." }
+    ]
+  },
+  {
+    id: 432,
+    page: 71,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M6",
+    concept: "Simulador Externo OECE: Retención del 10% como Garantía de Fiel Cumplimiento (Art. 114 D.S. 009-2025-EF)",
+    question: "[SIMULADOR EXTERNO OECE / SICAN] Para el perfeccionamiento del contrato bajo la Ley N° 32069 y el artículo 114 de su Reglamento (D.S. N° 009-2025-EF), el ganador de la buena pro solicita que se le aplique la RETENCIÓN DE PAGO (10%) como garantía de fiel cumplimiento en sustitución de la carta fianza o póliza de caución. ¿En cuáles de los siguientes casos procede legalmente dicha retención?",
+    correct: "D",
+    legalRef: "Ley N° 32069 y Artículo 114 del Reglamento D.S. N° 009-2025-EF (Garantía de Fiel Cumplimiento mediante Retención de Pago)",
+    examTip: "Fija de Garantías (Art. 114 D.S. 009-2025-EF): La retención del 10% (prorrateada en la primera mitad de pagos) procede en: 1) Bienes y Servicios <= S/ 480,000; 2) Obras <= S/ 5,000,000; o 3) Contratistas acreditados como MYPE (sin límite de monto).",
+    explanation: "Respuesta Correcta: D) En contratos de bienes y servicios cuya cuantía adjudicada no supere S/ 480,000, en obras que no superen S/ 5,000,000, o cuando el contratista califique como MYPE con independencia del monto de la contratación.\n\nFundamento Normativo: Conforme a la Ley N° 32069 y al artículo 114 del Reglamento D.S. N° 009-2025-EF, la retención del 10% se descuenta de forma prorrateada durante la primera mitad del número total de pagos previstos. Para las MYPE procede sin tope de monto; para los demás proveedores (No MYPE) procede hasta S/ 480,000 en bienes/servicios y hasta S/ 5,000,000 en obras.",
+    options: [
+      { letter: "A", text: "Únicamente en contratos menores que no superen las 8 UIT", isCorrect: false, why: "Es incorrecta porque en los contratos menores por regla general no se exige garantía de fiel cumplimiento, y la retención del Art. 114 aplica a contratos de hasta S/ 480,000 (B/S), S/ 5,000,000 (Obras) o MYPE." },
+      { letter: "B", text: "Solo en obras públicas mayores a S/ 50,000,000 ejecutadas por empresas extranjeras no MYPE", isCorrect: false, why: "Es incorrecta porque para empresas no MYPE en obras el tope máximo para acogerse a la retención es de S/ 5,000,000." },
+      { letter: "C", text: "En ningún caso, ya que la Ley N° 32069 eliminó la retención de pagos para todas las empresas", isCorrect: false, why: "Es incorrecta porque la Ley N° 32069 y el Art. 114 del D.S. N° 009-2025-EF fortalecieron el mecanismo de retención, especialmente a favor de las MYPE." },
+      { letter: "D", text: "En contratos de bienes y servicios cuya cuantía adjudicada no supere S/ 480,000, en obras que no superen S/ 5,000,000, o cuando el contratista califique como MYPE con independencia del monto de la contratación", isCorrect: true, why: "¡Es la alternativa CORRECTA! Reúne los tres supuestos y topes monetarios exactos del artículo 114 del Reglamento D.S. N° 009-2025-EF." }
+    ]
+  },
+  {
+    id: 433,
+    page: 71,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M5",
+    concept: "Simulador Externo OECE: Declaratoria de Desierto y Expediente (Art. 84 D.S. 009-2025-EF)",
+    question: "[SIMULADOR EXTERNO OECE / SICAN] Una entidad pública convoca un procedimiento de selección que finalmente es declarado DESIERTO al no quedar ninguna oferta válida. Conforme al artículo 84 del Reglamento D.S. N° 009-2025-EF, antes de realizar la siguiente convocatoria, ¿en qué supuesto es obligatorio volver a aprobar el Expediente de Contratación?",
+    correct: "B",
+    legalRef: "Artículo 84 del Reglamento D.S. N° 009-2025-EF (Declaratoria de Desierto)",
+    examTip: "Fija de Desierto (Art. 84 D.S. 009-2025-EF): NO siempre se vuelve a aprobar el expediente; SOLO se aprueba nuevamente si el informe de evaluación sobre las causas del desierto determina que se debe modificar algún documento que motivó su aprobación.",
+    explanation: "Respuesta Correcta: B) Únicamente cuando el informe de evaluación sobre las causas del desierto determine que se debe modificar algún documento o condición que motivó la aprobación inicial del expediente.\n\nFundamento Normativo: Según el artículo 84 del Reglamento D.S. N° 009-2025-EF, tras declararse desierto un procedimiento los evaluadores emiten un informe analizando las causas. Solo si producto de dicho informe se modifica algún documento que sustentó la aprobación del expediente, corresponde gestionar una nueva aprobación del expediente de contratación.",
+    options: [
+      { letter: "A", text: "En todos los casos sin excepción, aunque no se modifique ningún documento del expediente", isCorrect: false, why: "Es incorrecta porque exigir una nueva aprobación cuando nada ha cambiado vulnera la celeridad y contradice el Art. 84 del Reglamento." },
+      { letter: "B", text: "Únicamente cuando el informe de evaluación sobre las causas del desierto determine que se debe modificar algún documento o condición que motivó la aprobación inicial del expediente", isCorrect: true, why: "¡Es la alternativa CORRECTA! Es la regla exacta del artículo 84 del D.S. N° 009-2025-EF evaluada en los simuladores OECE." },
+      { letter: "C", text: "Nunca se puede volver a convocar un proceso declarado desierto en el mismo año fiscal", isCorrect: false, why: "Es incorrecta porque tras evaluar las causas del desierto la entidad debe efectuar la siguiente convocatoria para atender la necesidad pública." },
+      { letter: "D", text: "Solo cuando lo autorice previamente el Tribunal de Contrataciones Públicas mediante resolución", isCorrect: false, why: "Es incorrecta porque el TCP no autoriza segundas convocatorias ni aprueba expedientes de las entidades." }
+    ]
+  },
+  {
+    id: 434,
+    page: 71,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M2",
+    concept: "Simulador Externo OECE: Autoridad de la Gestión Administrativa (AGA - Art. 25 Ley 32069)",
+    question: "[SIMULADOR EXTERNO OECE / SICAN] Un hospital público requiere adquirir un medicamento que cuenta con ficha técnica de Subasta Inversa Electrónica (SIE); sin embargo, la DEC sustenta en un informe técnico que usar la SIE generaría riesgo de desabastecimiento porque las condiciones del mercado actual impiden una puja real. Conforme a la Ley N° 32069 y su Reglamento, ¿qué autoridad interna de la entidad evalúa y aprueba exceptuar el uso de la SIE?",
+    correct: "C",
+    legalRef: "Artículo 25 de la Ley N° 32069 y Reglamento D.S. N° 009-2025-EF (Funciones de la Autoridad de la Gestión Administrativa - AGA)",
+    examTip: "En la Ley N° 32069 (Art. 25), las aprobaciones de gestión interna (PAC, expedientes, compatibilización, excepción de SIE, apelaciones <= 50 UIT) corresponden a la Autoridad de la Gestión Administrativa (AGA).",
+    explanation: "Respuesta Correcta: C) La Autoridad de la Gestión Administrativa (AGA) de la entidad contratante, previa evaluación del informe sustentado por la DEC.\n\nFundamento Normativo: El artículo 25 de la Ley N° 32069 y su Reglamento desconcentran las decisiones administrativas del Titular de la Entidad hacia la Autoridad de la Gestión Administrativa (Secretario General en ministerios, Gerente General en gobiernos regionales o Gerente Municipal en municipalidades).",
+    options: [
+      { letter: "A", text: "El Residente de Obra del hospital", isCorrect: false, why: "Es incorrecta porque el residente de obra no es una autoridad administrativa de la entidad ni interviene en compras de medicamentos." },
+      { letter: "B", text: "El Tribunal de Contrataciones Públicas (TCP) en primera instancia", isCorrect: false, why: "Es incorrecta porque el TCP resuelve apelaciones (> 50 UIT) y aplica sanciones, no gestiona las compras internas de cada hospital." },
+      { letter: "C", text: "La Autoridad de la Gestión Administrativa (AGA) de la entidad contratante, previa evaluación del informe sustentado por la DEC", isCorrect: true, why: "¡Es la alternativa CORRECTA! La AGA es la máxima autoridad administrativa interna encargada de estas aprobaciones en la Ley N° 32069." },
+      { letter: "D", text: "Cualquier proveedor inscrito en el RNP mediante solicitud simple", isCorrect: false, why: "Es incorrecta porque los proveedores no aprueban excepciones a las modalidades de selección de la entidad." }
+    ]
+  },
+  {
+    id: 435,
+    page: 71,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M3",
+    concept: "Simulador Externo OECE: Contenido de la Estrategia de Contratación en el Expediente",
+    question: "[SIMULADOR EXTERNO OECE / SICAN] En la fase de Actuaciones Preparatorias bajo la Ley N° 32069 y el D.S. N° 009-2025-EF, la Dependencia Encargada de las Contrataciones (DEC) elabora la Estrategia de Contratación como documento clave del expediente. ¿Qué elemento debe incorporarse obligatoriamente como parte de dicha Estrategia de Contratación?",
+    correct: "A",
+    legalRef: "Ley N° 32069 y Reglamento D.S. N° 009-2025-EF (Estrategia de Contratación e Interacción con el Mercado)",
+    examTip: "Estrategia de Contratación = elaborada por la DEC e incluye obligatoriamente el resultado de la Interacción con el Mercado (Consulta al mercado / Difusión del requerimiento), la modalidad de pago, la segmentación y la gestión de riesgos.",
+    explanation: "Respuesta Correcta: A) La información obtenida en la Interacción con el Mercado, así como la determinación del procedimiento de selección, modalidad de pago, segmentación y gestión de riesgos.\n\nFundamento Normativo: Bajo la Ley N° 32069 y el D.S. N° 009-2025-EF, el antiguo 'estudio de mercado' evoluciona hacia la Estrategia de Contratación, la cual integra obligatoriamente la Interacción con el Mercado, la categoría de segmentación, el análisis de riesgos y el tipo de procedimiento aplicable.",
+    options: [
+      { letter: "A", text: "La información obtenida en la Interacción con el Mercado, así como la determinación del procedimiento de selección, modalidad de pago, segmentación y gestión de riesgos", isCorrect: true, why: "¡Es la alternativa CORRECTA! Define con exactitud el contenido esencial de la Estrategia de Contratación en el Reglamento D.S. N° 009-2025-EF." },
+      { letter: "B", text: "El laudo arbitral definitivo emitido tras la liquidación del contrato", isCorrect: false, why: "Es incorrecta porque el laudo arbitral pertenece a una eventual controversia al final de la ejecución, no a las actuaciones preparatorias." },
+      { letter: "C", text: "El acta de recepción final de la obra firmada por el comité de recepción", isCorrect: false, why: "Es incorrecta porque el acta de recepción ocurre al concluir la obra, no al preparar el expediente antes de convocar." },
+      { letter: "D", text: "La factura comercial emitida por el contratista por el último pago", isCorrect: false, why: "Es incorrecta porque en actuaciones preparatorias aún no existe contratista ni facturación." }
+    ]
+  },
+  {
+    id: 436,
+    page: 71,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M1",
+    concept: "Simulador Externo OECE: Principio de Valor por Dinero vs. Menor Precio (Art. 5 Ley 32069)",
+    question: "[SIMULADOR EXTERNO OECE / SICAN] Una entidad contratante necesita adquirir ambulancias equipadas para zonas altoandinas. Al diseñar los factores de evaluación en las bases, un servidor sugiere adjudicar únicamente al postor que ofrezca el precio más bajo, sin evaluar soporte técnico, disponibilidad de repuestos ni vida útil. ¿Qué principio rector del artículo 5 de la Ley N° 32069 se estaría vulnerando?",
+    correct: "D",
+    legalRef: "Artículo 5 de la Ley N° 32069 (Principio de Valor por Dinero)",
+    examTip: "Principio estrella de la Ley N° 32069 (Art. 5): VALOR POR DINERO = maximizar el valor de los recursos públicos combinando calidad, sostenibilidad, costo del ciclo de vida, oportunidad y precio (NO es comprar lo más barato).",
+    explanation: "Respuesta Correcta: D) El principio de Valor por Dinero, el cual exige maximizar el resultado de los recursos públicos considerando la calidad, el costo total del ciclo de vida, la sostenibilidad y la oportunidad, y no meramente el menor precio inicial.\n\nFundamento Normativo: El Principio de Valor por Dinero (Art. 5 de la Ley N° 32069) es el pilar central del nuevo régimen y sustituye la visión cortoplacista del menor precio por la evaluación integral de calidad, durabilidad, mantenimiento y eficacia para satisfacer la finalidad pública.",
+    options: [
+      { letter: "A", text: "Ninguno, porque la Ley N° 32069 prohíbe evaluar la calidad técnica en bienes", isCorrect: false, why: "Es incorrecta porque la Ley N° 32069 promueve expresamente evaluar calidad y ciclo de vida." },
+      { letter: "B", text: "El principio de confidencialidad absoluta del presupuesto público", isCorrect: false, why: "Es incorrecta porque las contrataciones públicas se rigen por publicidad y transparencia, no por secreto presupuestal." },
+      { letter: "C", text: "El principio de exclusividad de postor único en licitaciones públicas", isCorrect: false, why: "Es incorrecta porque en las licitaciones públicas rige la libre concurrencia y competencia." },
+      { letter: "D", text: "El principio de Valor por Dinero, el cual exige maximizar el resultado de los recursos públicos considerando la calidad, el costo total del ciclo de vida, la sostenibilidad y la oportunidad, y no meramente el menor precio inicial", isCorrect: true, why: "¡Es la alternativa CORRECTA! Define exactamente el alcance del principio de Valor por Dinero del Art. 5 de la Ley N° 32069." }
+    ]
+  },
+  {
+    id: 437,
+    page: 71,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M3",
+    concept: "Simulador Externo OECE: Compatibilización del Requerimiento (Directiva N° 0001-2025-EF/54.01)",
+    question: "[SIMULADOR EXTERNO OECE / SICAN] El área de tecnologías de la información de un ministerio solicita adquirir licencias y módulos de expansión de una marca específica porque la entidad ya posee la plataforma matriz en funcionamiento y cambiarla haría perder la inversión preexistente. Bajo el Reglamento D.S. N° 009-2025-EF y la Directiva N° 0001-2025-EF/54.01, ¿qué figura debe aprobar previamente la Autoridad de la Gestión Administrativa (AGA) para permitir mencionar dicha marca en el requerimiento?",
+    correct: "B",
+    legalRef: "Reglamento D.S. N° 009-2025-EF y Directiva N° 0001-2025-EF/54.01 (Directiva de Compatibilización del Requerimiento)",
+    examTip: "Cambio de nombre clave en el examen OECE: Lo que en la Ley 30225 se llamaba 'Estandarización', en la Ley 32069 y la Directiva N° 0001-2025-EF/54.01 se denomina 'COMPATIBILIZACIÓN DEL REQUERIMIENTO' y la aprueba la AGA.",
+    explanation: "Respuesta Correcta: B) Un proceso de Compatibilización del requerimiento debidamente sustentado técnicamente y aprobado por la Autoridad de la Gestión Administrativa (AGA), al existir equipamiento o infraestructura preexistente.\n\nFundamento Normativo: Conforme al Reglamento D.S. N° 009-2025-EF y a la Directiva N° 0001-2025-EF/54.01 ('Directiva de compatibilización del requerimiento'), está prohibido aludir a marcas o patentes salvo que la Autoridad de la Gestión Administrativa (AGA) apruebe previamente la compatibilización para garantizar la operatividad de los bienes o sistemas preexistentes.",
+    options: [
+      { letter: "A", text: "Un fraccionamiento libre sin informe técnico", isCorrect: false, why: "Es incorrecta porque el fraccionamiento indebido está prohibido y no autoriza a pedir marcas específicas." },
+      { letter: "B", text: "Un proceso de Compatibilización del requerimiento debidamente sustentado técnicamente y aprobado por la Autoridad de la Gestión Administrativa (AGA), al existir equipamiento o infraestructura preexistente", isCorrect: true, why: "¡Es la alternativa CORRECTA! Cita el término exacto vigente ('Compatibilización') y la autoridad que lo aprueba (AGA) según la Directiva N° 0001-2025-EF/54.01." },
+      { letter: "C", text: "Una resolución de contrato por mutuo disenso", isCorrect: false, why: "Es incorrecta porque la resolución de contrato ocurre en la fase de ejecución, no al formular el requerimiento." },
+      { letter: "D", text: "Una denuncia ante el Tribunal de Contrataciones Públicas", isCorrect: false, why: "Es incorrecta porque el TCP no aprueba requerimientos de marcas." }
+    ]
+  },
+  {
+    id: 438,
+    page: 71,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M4",
+    concept: "Simulador Externo OECE: Contratos Menores (<= 8 UIT) e Impedimentos del Art. 30 Ley 32069",
+    question: "[SIMULADOR EXTERNO OECE / SICAN] Una municipalidad distrital va a contratar un servicio de mantenimiento por S/ 18,000 (monto inferior a 8 UIT, calificado como Contrato Menor). El hermano del Alcalde de dicha municipalidad presenta su cotización alegando que, por ser un contrato menor, no le aplican los impedimentos de ley ni requiere inscripción en el RNP. ¿Es correcto lo afirmado por el proveedor?",
+    correct: "C",
+    legalRef: "Artículo 30 y disposiciones sobre Contratos Menores de la Ley N° 32069 y D.S. N° 009-2025-EF",
+    examTip: "Fija de Contratos Menores (<= 8 UIT): SÍ les aplican todos los impedimentos del Art. 30 (el hermano del Alcalde es pariente en 2° grado de consanguinidad y está impedido), SÍ requieren RNP vigente y SÍ se registran en PLADICOP.",
+    explanation: "Respuesta Correcta: C) No es correcto, porque en los Contratos Menores (<= 8 UIT) rigen plenamente los impedimentos del artículo 30 de la Ley N° 32069 (incluyendo parientes hasta el segundo grado de consanguinidad del Alcalde) y es obligatorio contar con inscripción vigente en el RNP.\n\nFundamento Normativo: La Ley N° 32069 incorpora a los Contratos Menores dentro de su ámbito de supervisión y transparencia en la PLADICOP; ningún familiar impedido según el Art. 30 puede contratar mediante órdenes de compra o servicio menores a 8 UIT.",
+    options: [
+      { letter: "A", text: "Sí es correcto, porque los contratos menores a 8 UIT no tienen ninguna regulación ni control estatal", isCorrect: false, why: "Es incorrecta porque la Ley N° 32069 regula expresamente los contratos menores y prohíbe contratar con personas impedidas." },
+      { letter: "B", text: "Sí es correcto, porque el hermano del Alcalde es pariente de cuarto grado y solo se prohíbe hasta el primer grado", isCorrect: false, why: "Es incorrecta porque los hermanos son parientes en segundo grado de consanguinidad y el impedimento cubre hasta el segundo grado de consanguinidad y afinidad." },
+      { letter: "C", text: "No es correcto, porque en los Contratos Menores (<= 8 UIT) rigen plenamente los impedimentos del artículo 30 de la Ley N° 32069 (incluyendo parientes hasta el segundo grado de consanguinidad del Alcalde) y es obligatorio contar con inscripción vigente en el RNP", isCorrect: true, why: "¡Es la alternativa CORRECTA! Aplica con precisión el Art. 30 y las reglas de Contratos Menores." },
+      { letter: "D", text: "Solo está impedido si el monto supera los S/ 5,000,000", isCorrect: false, why: "Es incorrecta porque los impedimentos del Art. 30 aplican desde el primer sol de contratación pública." }
+    ]
+  },
+  {
+    id: 439,
+    page: 71,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M6",
+    concept: "Simulador Externo OECE: Garantía por Recurso de Apelación: 3% General y 0.5% MYPE (Art. 73.2 Ley 32069)",
+    question: "[SIMULADOR EXTERNO OECE / SICAN] Un postor decide impugnar el otorgamiento de la buena pro mediante un Recurso de Apelación. Conforme al numeral 73.2 del artículo 73 de la Ley N° 32069, ¿cuál es el porcentaje y tope de la garantía por interposición del recurso de apelación para un postor del régimen general y cuál es el porcentaje reducido cuando el impugnante es una MYPE acreditada?",
+    correct: "A",
+    legalRef: "Artículo 73 (numeral 73.2) de la Ley N° 32069 y Reglamento D.S. N° 009-2025-EF (Garantía por Interposición del Recurso de Apelación)",
+    examTip: "Fija de Apelación en la Ley N° 32069 (Art. 73.2): Postor general = 3% de la cuantía del procedimiento o ítem impugnado (tope: 300 UIT). Si el postor es MYPE = se reduce a 0.5% de la cuantía o ítem impugnado (tope: 25 UIT).",
+    explanation: "Respuesta Correcta: A) Para postores del régimen general equivale al 3% de la cuantía del procedimiento o ítem impugnado (con tope de 300 UIT), y para las MYPE acreditadas se reduce al 0.5% de la cuantía o ítem impugnado (con tope de 25 UIT).\n\nFundamento Normativo Contrastado (Art. 73.2 de la Ley N° 32069): Una de las grandes novedades de la Ley N° 32069 a favor de las Micro y Pequeñas Empresas (MYPE) es reducir la garantía por interposición de apelación del 3% (tope 300 UIT) a tan solo el 0.5% (con un tope máximo de 25 UIT), facilitando el acceso a la tutela impugnativa.",
+    options: [
+      { letter: "A", text: "Para postores del régimen general equivale al 3% de la cuantía del procedimiento o ítem impugnado (con tope de 300 UIT), y para las MYPE acreditadas se reduce al 0.5% de la cuantía o ítem impugnado (con tope de 25 UIT)", isCorrect: true, why: "¡Es la alternativa CORRECTA! Cita los porcentajes (3% general / 0.5% MYPE) y topes en UIT (300 UIT / 25 UIT) exactos del Art. 73.2 de la Ley N° 32069." },
+      { letter: "B", text: "Tanto las grandes empresas como las MYPE deben depositar el 10% del valor total de la obra para poder apelar", isCorrect: false, why: "Es incorrecta porque el 10% corresponde a la garantía de fiel cumplimiento del contrato, no a la garantía de apelación (que es 3% general y 0.5% para MYPE)." },
+      { letter: "C", text: "No se requiere ninguna garantía económica para apelar en licitaciones públicas de obras", isCorrect: false, why: "Es incorrecta porque la garantía del Art. 73.2 es un requisito obligatorio de admisibilidad del recurso." },
+      { letter: "D", text: "El porcentaje para MYPE es del 25% del contrato y para no MYPE del 50%", isCorrect: false, why: "Es incorrecta porque esos porcentajes no existen para la garantía de apelación." }
+    ]
+  },
+  {
+    id: 440,
+    page: 71,
+    isWebFija: true,
+    isExternalSim: true,
+    isTopeCasuistica: true,
+    module: "M7",
+    concept: "Simulador Externo OECE: Cálculo de Penalidad Diaria por Mora y Tope del 10%",
+    question: "[SIMULADOR EXTERNO OECE / SICAN] Un contratista tiene un contrato de adquisición de mobiliario (bienes) por S/ 100,000 con un plazo de ejecución de 25 días calendario. Incurre en un retraso injustificado de 5 días. Sabiendo que para bienes y servicios el factor F es 0.40 y que la fórmula oficial es Penalidad Diaria = (0.10 x Monto) / (F x Plazo), ¿cuánto es la penalidad diaria y cuál es el tope máximo acumulable antes de poder resolver el contrato?",
+    correct: "B",
+    legalRef: "Reglamento D.S. N° 009-2025-EF (Fórmula de Penalidad Diaria por Mora y Tope del 10%)",
+    examTip: "Cálculo rápido: Numerador = 0.10 x 100,000 = 10,000. Denominador = 0.40 x 25 = 10. Penalidad Diaria = 10,000 / 10 = S/ 1,000 por día (en 5 días = S/ 5,000). Tope máximo de penalidad = 10% del monto contractual (S/ 10,000).",
+    explanation: "Respuesta Correcta: B) La penalidad diaria es de S/ 1,000 (acumulando S/ 5,000 en los 5 días de mora), y el tope máximo de penalidad aplicable es el 10% del monto del contrato vigente (S/ 10,000).\n\nFundamento Normativo: Aplicando la fórmula del Reglamento para bienes y servicios (F = 0.40):\n• Penalidad diaria = (0.10 × 100,000) / (0.40 × 25) = 10,000 / 10 = S/ 1,000 por día.\n• Por 5 días de atraso: 5 × S/ 1,000 = S/ 5,000.\n• Si el contratista llega a acumular el tope máximo del 10% del contrato (S/ 10,000), la Entidad queda facultada para resolver el contrato por incumplimiento.",
+    options: [
+      { letter: "A", text: "La penalidad diaria es de S/ 50,000 y el tope máximo es el 80% del contrato", isCorrect: false, why: "Es incorrecta tanto en el resultado matemático como en el tope legal (el tope máximo es el 10%, no el 80%)." },
+      { letter: "B", text: "La penalidad diaria es de S/ 1,000 (acumulando S/ 5,000 en los 5 días de mora), y el tope máximo de penalidad aplicable es el 10% del monto del contrato vigente (S/ 10,000)", isCorrect: true, why: "¡Es la alternativa CORRECTA! Aplica con exactitud la fórmula (0.10 x Monto) / (0.40 x Plazo) y el tope legal del 10%." },
+      { letter: "C", text: "No se aplica ninguna penalidad si el retraso es menor a 30 días", isCorrect: false, why: "Es incorrecta porque la penalidad por mora se aplica de forma automática desde el primer día calendario de retraso injustificado." },
+      { letter: "D", text: "El factor F para bienes es 0.15 y el tope máximo de penalidad es 50%", isCorrect: false, why: "Es incorrecta porque 0.15 corresponde a obras con plazos mayores a 60 días, y el tope de penalidades es 10% (50% es el tope prohibido para adicionales)." }
     ]
   }
 ];
